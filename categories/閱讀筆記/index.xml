@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog on JJ&#39;s Life Blog</title>
-    <link>https://yucheng2007.github.io/blog/</link>
-    <description>Recent content in blog on JJ&#39;s Life Blog</description>
+    <title>閱讀筆記 on JJ&#39;s Life Blog</title>
+    <link>https://yucheng2007.github.io/categories/%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98/</link>
+    <description>Recent content in 閱讀筆記 on JJ&#39;s Life Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-tw</language>
-    <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate><atom:link href="https://yucheng2007.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://yucheng2007.github.io/blog/post-1/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0800</pubDate>
-      
-      <guid>https://yucheng2007.github.io/blog/post-1/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    
+    <language>zh-tw</language><atom:link href="https://yucheng2007.github.io/categories/%E9%96%B1%E8%AE%80%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[閱讀] 為了活下去：脫北女孩朴研美</title>
       <link>https://yucheng2007.github.io/blog/post-2/</link>
