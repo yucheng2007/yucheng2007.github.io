@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog on JJ&#39;s Life Blog</title>
+    <title>blog on JJ&#39;s Blog</title>
     <link>https://yucheng2007.github.io/blog/</link>
-    <description>Recent content in blog on JJ&#39;s Life Blog</description>
+    <description>Recent content in blog on JJ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate><atom:link href="https://yucheng2007.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://yucheng2007.github.io/blog/post-1/</link>
-      <pubDate>Tue, 29 Oct 2019 07:00:00 +0800</pubDate>
-      
-      <guid>https://yucheng2007.github.io/blog/post-1/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    
-    <item>
       <title>[閱讀] 為了活下去：脫北女孩朴研美</title>
-      <link>https://yucheng2007.github.io/blog/post-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>https://yucheng2007.github.io/blog/readingnotes_001/</link>
+      <pubDate>Sat, 10 Apr 2021 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/post-2/</guid>
+      <guid>https://yucheng2007.github.io/blog/readingnotes_001/</guid>
       <description>最近聽到podcast在介紹「為了活下去：脫北女孩朴研美」這本書，花了幾天看完這本買了很久的書，好奇的研究了一下地圖上，與北韓有經商往來且僅僅一河之隔的中國，為什麼脫北者卻還要選擇越過戈壁沙漠到蒙古在輾轉回南韓，走一條最接近死亡的路。
 看到北韓不經想到自己曾經短暫到韓國坡州(파주)出差，這是個被稱為最接近北韓的地方，記得某次假日徒步爬上「烏頭山統一展望臺」(오두산 통일전망대)，這是一個使用望遠鏡就可以看見北韓的宣傳村，很難想像在一線之隔的對岸，人民是生活在如此沒自由且封閉的社會。
 這本書除了描述北韓的極權專制與在脫北過程中所經歷的種種情非得已外，個人覺得最值得省思的是，這些脫北者接下來要如何面對在南韓社會的適應問題與現實的生存困境。
@@ -29,6 +20,15 @@
 很喜歡這本書中的一些描述：
 💡 「每個人都有自己要橫越的沙漠，別人或許跟我的不同，但我們都得橫越沙漠，才能找到此生的意義，得到自由。」
 💡 「閱讀教了我活著的意義，以及身為人的價值，當你有更豐富的字彙形容這個世界的時候，思考複雜事物的能力也會跟著提高。」</description>
+    </item>
+    
+    <item>
+      <title>How To Use Checklists To Improve Your UX</title>
+      <link>https://yucheng2007.github.io/blog/post-1/</link>
+      <pubDate>Tue, 29 Oct 2019 07:00:00 +0800</pubDate>
+      
+      <guid>https://yucheng2007.github.io/blog/post-1/</guid>
+      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
     </item>
     
   </channel>
