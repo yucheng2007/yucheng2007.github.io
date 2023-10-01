@@ -108,7 +108,6 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto">
-
         <h2>如何在Notepad++中，垂直對齊逗號分隔值？</h2>
         <div class="mb-3 post-meta">
           <span>By JJ.Chang</span>
@@ -122,10 +121,22 @@
           
         </div>
         
+        <hr class="my-4" style="border-color: lightgray; border-width: 2px; border-style: solid; font-weight: bold;">
         <div class="content mb-5">
-          <p>在Excel可以透過「資料剖析」的方式將匯入的數據依據分號、逗號或空格拆解到每個欄位(Column)上，</p>
-<p>還讓資料在閱讀上</p>
-<!-- raw HTML omitted -->
+          <p>在Excel可以透過「<strong>資料剖析</strong>」的方式將匯入的數據依據分號、逗號或空格拆解到每個欄位(Column)上，方便Raw Data的閱讀。</p>
+<p><img src="/images/post/tech/tech_001_02.png" alt="Excel_Parse"></p>
+<p><em><strong>如果想要在Notepad++上做到一樣的效果要如果做呢？</strong></em></p>
+<p><img src="/images/post/tech/tech_001_01.png" alt="Notepad++_RawData"></p>
+<p>首先，打開Notepad++，點選「<strong>外掛</strong>」→「<strong>管理外掛模組</strong>」搜尋「<strong>PythonScript</strong>」安裝。</p>
+<p><img src="/images/post/tech/tech_001_03.png" alt="Notepad++外掛"></p>
+<p>接者，點選「<strong>New Script</strong>」，命名為「<strong>CSVtoTable.py</strong>」，將下面的Python Source Code貼上，存檔。</p>
+<p><img src="/images/post/tech/tech_001_04.png" alt="CSVtoTable設定"></p>
+<p>CSVtoTable.py
+<script type="application/javascript" src="https://gist.github.com/yucheng2007/8522f33804f72f737787935bb01f85d9.js"></script>
+</p>
+<p>載入需要分拆的數據，點選「<strong>Scripts</strong>」，執行剛剛存檔的「<strong>CSVtoTable</strong>」，即會開一個新檔，同時會將欄位都垂直對齊逗號分隔。</p>
+<p><img src="/images/post/tech/tech_001_05.png" alt="CSVtoTable執行"></p>
+<p>以上就是透過Python外掛，自行編寫腳本來實現類似Excel的資料剖析功能。這樣可以將匯入的數據按照逗號分隔拆解成每個欄位，達到直觀閱讀原始數據的效果。</p>
 
         </div>
 

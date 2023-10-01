@@ -13,8 +13,11 @@
       <pubDate>Fri, 29 Sep 2023 07:00:00 +0800</pubDate>
       
       <guid>https://yucheng2007.github.io/blog/technotes_001/</guid>
-      <description>在Excel可以透過「資料剖析」的方式將匯入的數據依據分號、逗號或空格拆解到每個欄位(Column)上，
-還讓資料在閱讀上</description>
+      <description>在Excel可以透過「資料剖析」的方式將匯入的數據依據分號、逗號或空格拆解到每個欄位(Column)上，方便Raw Data的閱讀。
+如果想要在Notepad++上做到一樣的效果要如果做呢？
+首先，打開Notepad++，點選「外掛」→「管理外掛模組」搜尋「PythonScript」安裝。
+接者，點選「New Script」，命名為「CSVtoTable.py」，將下面的Python Source Code貼上，存檔。
+CSVtoTable.py 載入需要分拆的數據，點選「Scripts」，執行剛剛存檔的「CSVtoTable」，即會開一個新檔，同時會將欄位都垂直對齊逗號分隔。</description>
     </item>
     
     <item>
