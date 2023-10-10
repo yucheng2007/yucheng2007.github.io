@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SCRUM on JJ&#39;s Blog</title>
+    <link>https://yucheng2007.github.io/tags/scrum/</link>
+    <description>Recent content in SCRUM on JJ&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 12 Jun 2022 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/tags/scrum/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>可以善良，但你要有底線不當好人：人際關係斷．捨．離，勉強自己和別人好，不如找人真心對你好</title>
+      <link>https://yucheng2007.github.io/blog/readingnotes_028/</link>
+      <pubDate>Sun, 12 Jun 2022 07:00:00 +0800</pubDate>
+      
+      <guid>https://yucheng2007.github.io/blog/readingnotes_028/</guid>
+      <description>📖 可以善良，但你要有底線不當好人 《可以善良，但你要有底線不當好人》本書圍繞在不要當濫好人為主軸，作者用「小惡精神」來看事物本質，與《被討厭的勇氣》這類書有異曲同工之妙，但本書更想告訴讀者的是如何獲得「精神的自由」，這本書適合給第一次接觸「不當好人」這類議題的人，本書淺顯易懂，如果已經是職場金腰帶等級的建議就翻翻或跳過就好。
+║ 為什麼想讀這本書? 最近身邊一些人有這類困擾，花了一個早上看完，在職場不管你是菜鳥還是老鳥，或多或少在職場應對進退還沒辦法拿捏的很恰當，許多人一直無法跳脫不想得罪其他人的枷鎖，與其當個職場濫好人，不如先思考「疲憊當好人，快樂做自己，你怎麼選？」
+到了中年這個年紀(驚!!!)，在很多處事上要做到盡量圓滑，只要方向邏輯是對的，通常也不大會為迎合周遭而偏離本意。所以如何訓練自己「思路清晰」與「情緒管理」這兩項課題很重要。
+║ 面對爭執，更要冷靜而理性，無法改變的事，就用氣度去面對 作者提到，我們首先要認清哪些事靠自己的力量可以改變，哪些不能，然後保持「冷靜」並且鼓起「勇氣」去改變能改變的部分；同時培養「氣度」，面對那些我們無法改變的事實。</description>
+    </item>
+    
+    <item>
+      <title>告別瀑布，擁抱Scrum：解析微軟與Adobe如何在30天內開發出新軟體</title>
+      <link>https://yucheng2007.github.io/blog/readingnotes_024/</link>
+      <pubDate>Sat, 09 Apr 2022 07:00:00 +0800</pubDate>
+      
+      <guid>https://yucheng2007.github.io/blog/readingnotes_024/</guid>
+      <description>📖 告別瀑布，擁抱Scrum：解析微軟與Adobe如何在30天內開發出新軟體 《告別瀑布，擁抱Scrum》本書不是在講述敏捷技巧而是對於敏捷管理的系統性介紹，作者Jeff Sutherland及Ken Schwaber同時也是Scrum的創造者之一，從事軟體開發已經有70餘年的經驗，將這套敏捷開發心法推廣，也是這幾年矽谷大企業與新創公司普遍採用的方法。
+書中舉了蠻多實際發生的經典案例，很值得一看，譬如美國FBI的查詢系統建置，由原本耗資4億美元動用400名軟體工程師的專案，最後導入Scrum後，僅用了1年的時間人力縮減到45人且僅耗費3000萬美元即完成90%的功能。
+Adobe當年在開發Premier Pro CS3升級到CS4時，也遇到耗費需多的人力與資源，最後產品推出時間延期與成效不彰的狀況，最後也是導入敏捷開發後，大幅縮短產品推出週期，到現在Adobe甚至將敏捷這套管理方式，開發成軟體(Workfront)商用套件販售。
+關於在講述Scrum時，我們常聽到的每日站立會議(Daily Standup Meeting)、故事(User Story)、衝刺(Sprint) 及 衝刺回顧(Sprint Retrospective) 等事件，以及Scrum的各角色與權責，如產品負責人、Scrum Master、開發團隊等，在本書附錄有詳盡的解釋，也可以搭配看先前分享的另一本書《SCRUM：用一半的時間做兩倍的事》，會更有心得，這也是Jeff Sutherland的另一本著作。</description>
+    </item>
+    
+    <item>
+      <title>SCRUM：用一半的時間做兩倍的事</title>
+      <link>https://yucheng2007.github.io/blog/readingnotes_017/</link>
+      <pubDate>Sat, 22 Jan 2022 07:00:00 +0800</pubDate>
+      
+      <guid>https://yucheng2007.github.io/blog/readingnotes_017/</guid>
+      <description>📖 SCRUM：用一半的時間做兩倍的事 《SCRUM：用一半的時間做兩倍的事》這是本在講述Scrum的理念和背後思維的一本書，作者Jeff Sutherland是Scrum發起者之一，書中講述Scrum在設計上的思維邏輯，透過一些案例與研究探討，讓我們能更清楚知道傳統瀑布與敏捷開發上的優缺，不管是套用到工作或是生活上都相當實用。
+什麼人適合看？ 你聽過Scrum，但不知道這是什麼？你是PM又或者想了解為什麼專案常常delay，且最後結果總是不如客戶預期？想改變傳統的管理或開發方式，但不知道如何下手，或許這本書就很適合你。
+書名「用一半的時間做兩倍的事」個人覺得換成「用一半的時間產出兩倍的效率」這種說法會更為貼切。本書中在講述Scrum時，常會聽到的幾個關鍵名詞，這邊粗略的分享其目的與背後意義。
+每日站立會議(Daily Standup Meeting)：站立的目的是不希望過久的會議時間，用意是讓整個團隊的成員清楚知道，在這一段衝刺期裡每件事的進度以及每日該完成的進度。</description>
+    </item>
+    
+  </channel>
+</rss>
