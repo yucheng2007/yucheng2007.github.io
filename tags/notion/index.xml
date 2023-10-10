@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>軟體開發筆記 on JJ&#39;s Blog</title>
-    <link>https://yucheng2007.github.io/categories/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/</link>
-    <description>Recent content in 軟體開發筆記 on JJ&#39;s Blog</description>
+    <title>Notion on JJ&#39;s Blog</title>
+    <link>https://yucheng2007.github.io/tags/notion/</link>
+    <description>Recent content in Notion on JJ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 10 Oct 2023 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/categories/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Oct 2023 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/tags/notion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>10 個我最常用的 Markdown 語法介紹</title>
       <link>https://yucheng2007.github.io/blog/technotes_002/</link>
@@ -17,19 +17,6 @@
 而最近在嘗試自己架站(Hugo+Github)，Hugo主要是用GO語言實現的靜態網站（Static Site Generator），利用Markdown將內容跟樣式外觀完整分開，再利用生成的靜態網頁直接發佈到Server上。
 網路上對於Markdown的教學很多，譬如「Markdown文件」，這裡有完整的語法介紹。而本文只著重在Notion中我自己最常用的十種Markdown元素跟大家介紹分享：
 H1、H2、H3 標題（Headings） 主要分為一級標題（H1）、二級標題（H2）及三級標題（H3） 在Notion上也可以透過打：「/h1 + Enter」、「/h2 + Enter」、「/h3 + Enter」呼叫對應的標題階層。 粗體（Bold）、斜體（Italic）、底線（Underline） 主要是用於突顯重要文字或給予特殊意義時使用，除了用下面Markdown的語法，這三個算是個人最常直接用快捷鍵達成。</description>
-    </item>
-    
-    <item>
-      <title>如何在Notepad&#43;&#43;中，垂直對齊逗號分隔值？</title>
-      <link>https://yucheng2007.github.io/blog/technotes_001/</link>
-      <pubDate>Fri, 29 Sep 2023 07:00:00 +0800</pubDate>
-      
-      <guid>https://yucheng2007.github.io/blog/technotes_001/</guid>
-      <description>在Excel可以透過「資料剖析」的方式將匯入的數據依據分號、逗號或空格拆解到每個欄位(Column)上，方便Raw Data的閱讀。
-如果想要在Notepad++上做到一樣的效果要如果做呢？
-首先，打開Notepad++，點選「外掛」→「管理外掛模組」搜尋「PythonScript」安裝。
-接者，點選「New Script」，命名為「CSVtoTable.py」，將下面的Python Source Code貼上，存檔。
-CSVtoTable.py 載入需要分拆的數據，點選「Scripts」，執行剛剛存檔的「CSVtoTable」，即會開一個新檔，同時會將欄位都垂直對齊逗號分隔。</description>
     </item>
     
   </channel>

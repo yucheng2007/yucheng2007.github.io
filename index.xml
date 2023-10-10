@@ -6,7 +6,19 @@
     <description>Recent content on JJ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 29 Sep 2023 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Oct 2023 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>10 個我最常用的 Markdown 語法介紹</title>
+      <link>https://yucheng2007.github.io/blog/technotes_002/</link>
+      <pubDate>Tue, 10 Oct 2023 07:00:00 +0800</pubDate>
+      
+      <guid>https://yucheng2007.github.io/blog/technotes_002/</guid>
+      <description>會想分享這篇Markdown語法，主要是先前使用的Trello跟目前使用的Notion都是用此語法。
+而最近在嘗試自己架站(Hugo+Github)，Hugo主要是用GO語言實現的靜態網站（Static Site Generator），利用Markdown將內容跟樣式外觀完整分開，再利用生成的靜態網頁直接發佈到Server上。
+網路上對於Markdown的教學很多，譬如「Markdown文件」，這裡有完整的語法介紹。而本文只著重在Notion中我自己最常用的十種Markdown元素跟大家介紹分享：
+H1、H2、H3 標題（Headings） 主要分為一級標題（H1）、二級標題（H2）及三級標題（H3） 在Notion上也可以透過打：「/h1 + Enter」、「/h2 + Enter」、「/h3 + Enter」呼叫對應的標題階層。 粗體（Bold）、斜體（Italic）、底線（Underline） 主要是用於突顯重要文字或給予特殊意義時使用，除了用下面Markdown的語法，這三個算是個人最常直接用快捷鍵達成。</description>
+    </item>
+    
     <item>
       <title>如何在Notepad&#43;&#43;中，垂直對齊逗號分隔值？</title>
       <link>https://yucheng2007.github.io/blog/technotes_001/</link>
