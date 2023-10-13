@@ -108,92 +108,73 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto">
-        <h2>Notion 10 個我最常用的 Markdown 語法介紹</h2>
+        <h2>LeetCode #1 Two Sum</h2>
         <div class="mb-3 post-meta">
           <span>By JJ.Chang</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>2023-10-10</span>
+          <span>2023-10-13</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
           
-          <a href="/categories/%e8%bb%9f%e9%ab%94%e9%96%8b%e7%99%bc%e7%ad%86%e8%a8%98" class="text-primary">軟體開發筆記</a>
+          <a href="/categories/leetcode" class="text-primary">Leet code</a>
           
         </div>
         
         <hr class="my-4" style="border-color: lightgray; border-width: 2px; border-style: solid; font-weight: bold;">
         <div class="content mb-5">
-          <p>會想分享這篇Markdown語法，主要是先前使用的Trello跟目前使用的Notion都是用此語法。</p>
-<p>而最近在嘗試自己架站(Hugo+Github)，Hugo主要是用GO語言實現的靜態網站（Static Site Generator），利用Markdown將內容跟樣式外觀完整分開，再利用生成的靜態網頁直接發佈到Server上。</p>
-<p>網路上對於Markdown的教學很多，譬如「<a href="https://markdown.tw/">Markdown文件</a>」，這裡有完整的語法介紹。而本文只著重在Notion中我自己最常用的十種Markdown元素跟大家介紹分享：</p>
+          <h5 id="原文題目">原文題目：</h5>
+<p>Given an array of integers <code>nums</code> and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>
+<p>You may assume that each input would have <strong><em>exactly</em> one solution</strong>, and you may not use the <em>same</em> element twice.</p>
+<p>You can return the answer in any order.</p>
+<h6 id="題目解釋與目的">題目解釋與目的：</h6>
+<p>給定一個整數數組 <strong><code>nums</code></strong> 和一個整數 <strong><code>target</code></strong>，要求找出數組中兩個數字的索引，使它們的和等於目標值 <strong><code>target</code></strong>。假設每個輸入只有一個解，而且不能使用相同的元素兩次。需要返回這兩個數字的索引，按非降序排列。</p>
+<p>這個問題的目的是在給定數組中找到兩個數字，使它們的和等於目標值，並返回這兩個數字的索引。</p>
+<h6 id="限制條件">限制條件：</h6>
+<ul>
+<li>陣列中只有一組解</li>
+<li>不能使用同一個元素兩次</li>
+</ul>
+<p>接下來我們會分別用C#和Python來解答，並提供每段程式碼的詳細註解。</p>
+<h6 id="c-解答">C# 解答：</h6>
+<script type="application/javascript" src="https://gist.github.com/yucheng2007/86a484442751fe2cfaffe404f4c957d6.js"></script>
+
+<h6 id="解釋">解釋：</h6>
+<ol>
+<li>使用 <strong><code>Dictionary</code></strong> 來存儲數字及其對應的索引。</li>
+<li>遍歷數組，對於每個數字，計算與目標值的補數。</li>
+<li>如果補數存在於字典中，返回補數的索引以及當前數字的索引，即為答案。</li>
+<li>如果不在字典中，將當前數字及其索引存入字典。</li>
+<li>如果沒有解，拋出異常。</li>
+</ol>
+<h6 id="python-解答">Python 解答：</h6>
+<script type="application/javascript" src="https://gist.github.com/yucheng2007/f2d368b7e7cf721fe71d5526c66e2f9f.js"></script>
+
+<h6 id="解釋-1">解釋：</h6>
+<ol>
+<li>使用字典來存儲數字及其對應的索引。</li>
+<li>遍歷數組，對於每個數字，計算與目標值的補數。</li>
+<li>如果補數存在於字典中，返回補數的索引以及當前數字的索引，即為答案。</li>
+<li>如果不在字典中，將當前數字及其索引存入字典。</li>
+<li>如果沒有解，拋出異常。</li>
+</ol>
+<p>接下來我們來總結一下這題的目的和解題技巧。</p>
+<h6 id="解題總結">解題總結：</h6>
+<p>這個問題的目的是要在給定的數組中找到兩個數字，使它們的和等於目標值。使用哈希表可以將查找時間從O(n)降低到O(1)，提高了解題效率。該題展示了哈希表的優越性，特別適用於需要快速查找的情境。</p>
+<hr>
+<h6 id="補充說明">補充說明：</h6>
+<p>哈希表（Hash Table）是一種常用的資料結構，用於儲存鍵值對（key-value pairs）。它通過將鍵（key）進行哈希函數運算，將結果映射到表中的一個位置，再在該位置進行資料的儲存或查詢。這樣可以在平均情況下以常量時間複雜度（O(1)）進行資料的查詢、插入和刪除操作。</p>
+<p><strong>哈希表的主要組成部分包括：</strong></p>
 <ol>
 <li>
-<h5 id="h1h2h3-標題headings">H1、H2、H3 標題（Headings）</h5>
+<p>哈希函數（Hash Function）： 將鍵轉換為特定範圍的索引，通常是一個整數。這個轉換過程稱為哈希化。一個好的哈希函數可以最大程度地避免碰撞，即不同的鍵經過哈希函數映射後得到相同的索引。</p>
+</li>
+<li>
+<p>哈希表（Hash Table）： 是由多個哈希桶（buckets）組成的資料結構，每個哈希桶存儲多個鍵值對。哈希桶可以是陣列、連結列表或其他資料結構。</p>
 </li>
 </ol>
-<ul>
-<li>主要分為<strong>一級標題</strong>（<strong>H1</strong>）<strong>、二級標題</strong>（<strong>H2</strong>）<strong>及三級標題</strong>（<strong>H3</strong>）</li>
-<li>在Notion上也可以透過打：「<strong><code>/h1 + Enter</code></strong>」、「<strong><code>/h2 + Enter</code></strong>」、「<strong><code>/h3 + Enter</code></strong>」呼叫對應的標題階層。</li>
-</ul>
-<p><img src="/images/post/tech/tech_002_01.png" alt="Notion"></p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/3d9f71f54d34e844eceff95c62248f97.js"></script>
-
-<ol start="2">
-<li>
-<h5 id="粗體bold斜體italic底線underline">粗體（Bold）、斜體（Italic）、底線（Underline）</h5>
-</li>
-</ol>
-<p>主要是用於突顯重要文字或給予特殊意義時使用，除了用下面Markdown的語法，這三個算是個人最常直接用快捷鍵達成。</p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/5ed043533499ac6189eb108f44da7ed4.js"></script>
-
-<ol start="3">
-<li>
-<h5 id="列表清單lists">列表清單（Lists）</h5>
-<p>列出清單項目，Markdown支援有序清單（Ordered List）和無序清單（Unordered List）。</p>
-<p>無序清單支援使用星號（*）、加號（+）或是減號（-）作為清單標記；而有序清單需要打「<strong><code>1. + 空格</code></strong>」這樣的指令來建立。</p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/d8abf1e35199d6a58e98bff26d2327e.js"></script>
-
-</li>
-<li>
-<h5 id="待辦事項to-do">待辦事項（To-do）</h5>
-<p>標記待辦事項，勾選已完成事項。待辦事項是相當實用的功能，方便記錄各種事項，只要在每行最前面加上「<strong><code>- [ ]</code></strong>」。</p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/ad7bdf605eccd31f181b07d41ae9a5fb.js"></script>
-
-</li>
-<li>
-<h5 id="插入連結links自動連結auto-links">插入連結（Links）、自動連結（Auto Links）</h5>
-<p>插入超連結。使用 Markdown「<strong><code>[連結文字](網址)</code></strong>」建立超連結（比插入圖片少了一個驚嘆號）。</p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/97e076886755c4670928d192906c4576.js"></script>
-
-</li>
-<li>
-<h5 id="插入圖片insert-image">插入圖片（Insert Image）</h5>
-<p>Markdown 要插入圖片，須使用「<strong><code>![圖片說明文字](圖片網址)</code></strong>」語法，現在大部分 Markdown 軟體，都已支援直接貼上，手 Key 指令的機會已少得多，但在自己寫HTML時還是要知道語法會比較好。</p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/2d35cce4396c203aa53c0f65e2746946.js"></script>
-
-</li>
-<li>
-<h5 id="行分隔符horizontal-line">行分隔符（Horizontal Line）</h5>
-<p>插入水平分隔線。</p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/e20eeb20759ca7c159d08aee8a356050.js"></script>
-
-</li>
-<li>
-<h5 id="引用blockquote">引用（Blockquote）</h5>
-<p>引用他人的話或重要資訊。在純Markdwon上使透過用「<strong><code>&gt;+空格</code></strong>」來達成，但在Notion時如果打「<strong><code>&gt;+空格</code></strong>」會變成Toggle List，所以在Notion個人會更推薦用<a href="https://www.notion.so/Callout-1163474c7cbb41fa9e1b41ec01c6fcd6?pvs=21">Callout 區塊</a>替代引言，理由highlight——因為它更加美觀、突顯。Callout 無法透過快捷鍵建立，只能使用指令「<strong><code>/callout</code></strong>」呼叫。</p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/3068b7b5c173c4646ead7335c6ae844d.js"></script>
-
-</li>
-<li>
-<h5 id="行內程式碼inline-code">行內程式碼（Inline Code）</h5>
-<p>要標記一小段行內程式碼，可以用反引號把它包起來。Markdown 語法為「<strong><code>程式碼</code></strong>」，使用 Notion 的快捷鍵即反白文字後「<strong><code>cmd + e</code></strong>」。</p>
-</li>
-<li>
-<h5 id="程式碼區塊code-block">程式碼區塊（Code Block）</h5>
-<p>使用三個反引號包裹程式碼區塊。Markdown 語法要透過開頭與結尾的三個反引號，才能建立程式碼區塊，而且想要有特定程式語言的語法突顯（Syntax Highlight），還要在開頭的反引號，後面加上程式語言的名稱——比如「python」——才行，在Notion我都是直接使用指令「<strong><code>/Code + Enter</code></strong>」，在選擇要用的語法，快速與方便許多。</p>
-</li>
-</ol>
-<p>總的來說，Markdown語法簡單，是一個強大而靈活的工具，應用範疇廣泛，學會這些基本語法對於提高文字編輯效率和品質非常有幫助。</p>
+<p>碰撞解決方法（Collision Resolution）： 因為哈希函數可能產生相同的索引（碰撞），所以需要一種方法來處理碰撞。常用的碰撞解決方法有鏈接法（使用連結列表解決碰撞）和開放地址法（在發生碰撞時尋找下一個空位置）。</p>
+<p>哈希表的優點是能夠快速進行查詢、插入和刪除操作，具有良好的平均時間複雜度。然而，在某些情況下可能會有較差的最壞情況時間複雜度，特別是當哈希函數導致大量碰撞時。選擇適合的哈希函數和碰撞解決方法對於保證哈希表效率至關重要。</p>
 
         </div>
 
