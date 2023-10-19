@@ -6,7 +6,20 @@
     <description>Recent content in 軟體開發筆記 on JJ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 10 Oct 2023 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/categories/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Oct 2023 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/categories/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>淺談時間複雜度與空間複雜度 Time &amp; Space Complexity</title>
+      <link>https://yucheng2007.github.io/blog/technotes_003/</link>
+      <pubDate>Thu, 19 Oct 2023 07:00:00 +0800</pubDate>
+      
+      <guid>https://yucheng2007.github.io/blog/technotes_003/</guid>
+      <description>最近在刷LeetCode，剛好科普一下「時間複雜度（Time Complexity）」與「空間複雜度（Space Complexity）」。
+在軟體開發和演算法設計中，我們經常需要評估演算法的效率。其中，「時間複雜度」和「空間複雜度」是兩個關鍵概念，對於評估算法性能至關重要。本篇技術分享將淺顯易懂地介紹這兩個概念，並以C#和Python為例進行示範。
+時間複雜度 Time Complexity 簡單的來說就是，電腦執行演算法所需要耗費的時間成本。
+時間複雜度描述了一個算法執行所需的時間，通常以「步驟數」表示。這裡的「步驟」可以指基本操作的次數，或者是其他衡量執行效率的單位。
+時間複雜度常以「大O符號」（O符號）來表示，表示最壞情況下的執行時間。以下列出幾種常見的時間複雜度：</description>
+    </item>
+    
     <item>
       <title>Notion 10 個我最常用的 Markdown 語法介紹</title>
       <link>https://yucheng2007.github.io/blog/technotes_002/</link>

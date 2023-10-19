@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>JJ&#39;s Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="JJ&#39;s Webside">
+  
+  <meta name="author" content="JJ.Chang">
+  
+
+  
+  <meta name="theme-name" content="liva-hugo" />
+
+  <meta name="generator" content="Hugo 0.117.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-49V7315XN5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-49V7315XN5');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand" href="https://yucheng2007.github.io">
+        <span class="text-body">JJ's Blog</span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        
+        <div style="flex: 1;"></div>
+
+        <ul class="navbar-nav">
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/blog/">Blog</a>
+          </li>
+          
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/about/">About</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://yucheng2007.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2>淺談時間複雜度與空間複雜度 Time &amp; Space Complexity</h2>
+        <div class="mb-3 post-meta">
+          <span>By JJ.Chang</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2023-10-19</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          
+          <a href="/categories/%e8%bb%9f%e9%ab%94%e9%96%8b%e7%99%bc%e7%ad%86%e8%a8%98" class="text-primary">軟體開發筆記</a>
+          
+        </div>
+        
+        <hr class="my-4" style="border-color: lightgray; border-width: 2px; border-style: solid; font-weight: bold;">
+        <div class="content mb-5">
+          <p>最近在刷LeetCode，剛好科普一下「<strong>時間複雜度（Time Complexity）</strong>」與「<strong>空間複雜度（Space Complexity）</strong>」。</p>
+<p>在軟體開發和演算法設計中，我們經常需要評估演算法的效率。其中，「時間複雜度」和「空間複雜度」是兩個關鍵概念，對於評估算法性能至關重要。本篇技術分享將淺顯易懂地介紹這兩個概念，並以C#和Python為例進行示範。</p>
+<h6 id="時間複雜度-time-complexity">時間複雜度 Time Complexity</h6>
+<blockquote>
+<p>簡單的來說就是，<strong>電腦執行演算法所需要耗費的時間成本</strong>。</p>
+</blockquote>
+<p>時間複雜度描述了一個算法執行所需的時間，通常以「<strong>步驟數</strong>」表示。這裡的「步驟」可以指基本操作的次數，或者是其他衡量執行效率的單位。</p>
+<p>時間複雜度常以「<strong>大O符號</strong>」（O符號）來表示，表示最壞情況下的執行時間。以下列出幾種常見的時間複雜度：</p>
+<ul>
+<li><strong>O(1)</strong>：常數時間複雜度，表示不管輸入的大小如何增加，算法的執行時間是恆定的。</li>
+<li><strong>O(log n)</strong>：對數時間複雜度，常見於二分搜索等分而治之的演算法。</li>
+<li><strong>O(n)</strong>：線性時間複雜度，表示執行時間與輸入大小成線性關係。</li>
+<li><strong>O(n log n)</strong>：線性對數時間複雜度，常見於快速排序和合併排序等演算法。</li>
+<li><strong>O(n^2)</strong>：平方時間複雜度，常見於嵌套迴圈等演算法。</li>
+</ul>
+<p>舉例來說，如果一個算法的時間複雜度為O(n)，當輸入數據增加一倍時，執行時間也會增加一倍。</p>
+<p>以下是一個簡單的C#範例，計算n個數字的總和：</p>
+<script type="application/javascript" src="https://gist.github.com/yucheng2007/80174088f73ef122663160203eec4513.js"></script>
+
+<p>在這個例子中，因為它包含一個for迴圈，迴圈的次數與n成正比，計算總和的循環執行了n次，因此時間複雜度為O(n)。</p>
+<h6 id="空間複雜度-space-complexity">空間複雜度 Space Complexity</h6>
+<blockquote>
+<p>簡單的來說就是，<strong>電腦執行演算法所需要耗費的空間 ( 記憶體 ) 成本</strong>。</p>
+</blockquote>
+<p>空間複雜度描述了算法執行所需的記憶體空間，也常以「大O符號」表示。與時間複雜度類似，空間複雜度也描述了最壞情況下的記憶體利用情況。</p>
+<p>以下列出幾種常見的空間複雜度：</p>
+<ul>
+<li><strong>O(1)</strong>：常數空間複雜度，表示算法使用的記憶體與輸入大小無關。</li>
+<li><strong>O(n)</strong>：線性空間複雜度，表示空間利用與輸入大小成線性關係。</li>
+<li><strong>O(n^2)</strong>：平方空間複雜度，表示空間利用與輸入大小的平方成正比。</li>
+<li><strong>O(log n)</strong>：對數空間複雜度，常見於遞歸算法中的深度。</li>
+</ul>
+<p>我們一樣以計算n個數字的總和為例：</p>
+<script type="application/javascript" src="https://gist.github.com/yucheng2007/3c8fbffdb56bbde6d9a1a7de44c481c1.js"></script>
+
+<p>這個算法的空間複雜度是O(1)，因為它只使用了一個變數來存儲總和，與輸入大小無關。</p>
+<h6 id="總結">總結</h6>
+<p>時間複雜度和空間複雜度是評估演算法效率的重要工具，對於LeetCode解題也至關重要。我們應該充分了解這兩個概念，並在解題時考慮最優解，這將有助於我們在演算法的世界中取得更大的成就。</p>
+<h6 id="解釋完時間複雜度與空間複雜度後那對於leetcode刷題上會有什麼幫助呢">解釋完時間複雜度與空間複雜度後，那對於LeetCode刷題上會有什麼幫助呢？</h6>
+<p>在刷LeetCode時，有時光搞懂問題需求並轉換成程式語言就搞很久了，通常第一版效率都是最直觀的解法，而部分的LeetCode題目也要求我們考慮節省空間，尤其是在面對大數據集時。尋找具有較低空間複雜度的解決方案至關重要。</p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-yucheng2007-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+>
+
+<script>
+  var indexURL = "https://yucheng2007.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://yucheng2007.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/mark.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://yucheng2007.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+  This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button"
+    class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+  (function ($) {
+    const cookieBox = document.getElementById('js-cookie-box');
+    const cookieButton = document.getElementById('js-cookie-button');
+    if (!Cookies.get('cookie-box')) {
+      cookieBox.classList.remove('cookie-box-hide');
+      cookieButton.onclick = function () {
+        Cookies.set('cookie-box', true, {
+          expires:  2 
+    });
+    cookieBox.classList.add('cookie-box-hide');
+  };
+		}
+	}) (jQuery);
+</script>
+
+
+<style>
+  .cookie-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 9999;
+    padding: 1rem 2rem;
+    background: rgb(71, 71, 71);
+    transition: all .75s cubic-bezier(.19, 1, .22, 1);
+    color: #fdfdfd;
+  }
+
+  .cookie-box-hide {
+    display: none;
+  }
+</style>
+</body>
+
+</html>
