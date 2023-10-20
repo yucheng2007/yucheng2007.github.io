@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>JJ&#39;s Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="為什麼要使用Design Pattern？我認為是為了建立一個方便維護及擴充的軟體系統。">
+  
+  <meta name="author" content="JJ.Chang">
+  
+
+  
+  <meta name="theme-name" content="liva-hugo" />
+
+  <meta name="generator" content="Hugo 0.117.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-49V7315XN5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-49V7315XN5');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand" href="https://yucheng2007.github.io">
+        <span class="text-body">JJ's Blog</span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        
+        <div style="flex: 1;"></div>
+
+        <ul class="navbar-nav">
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/blog/">Blog</a>
+          </li>
+          
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/about/">About</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://yucheng2007.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2>揭開設計模式的秘辛：設計模式 第1¾版</h2>
+        <div class="mb-3 post-meta">
+          <span>By JJ.Chang</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2022-12-31</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          
+          <a href="/categories/%e9%96%b1%e8%ae%80%e7%ad%86%e8%a8%98" class="text-primary">閱讀筆記</a>
+          
+        </div>
+        
+        <img src="https://yucheng2007.github.io/images/post/book/book_047.jpg" class="img-fluid w-100 mb-4" alt="揭開設計模式的秘辛：設計模式 第1¾版">
+        
+        <hr class="my-4" style="border-color: lightgray; border-width: 2px; border-style: solid; font-weight: bold;">
+        <div class="content mb-5">
+          <h5 id="-揭開設計模式的秘辛設計模式-第1版">📖 揭開設計模式的秘辛：設計模式 第1¾版</h5>
+<p>《揭開設計模式的秘辛》作者John Vlissides，是軟體設計模式的創始GoF（Gang of Four）四位成員之一，我們現在在網路上學習的很多Design Pattern，都是出至於GoF的23個設計模式應用與延伸，是個大師級的人物。</p>
+<h6 id="-為什麼想讀這本書">▍ 為什麼想讀這本書?</h6>
+<p>如果是第一次聽到「Design Pattern」這名詞，那這本書就建議直接跳過了，這本書比較適合給專案中已經有在使用Design Pattern，並且思考如何進展到下一個階段，了解每個Pattern設計背後含意的人。</p>
+<p>本書在於思考的昇華，還有介紹兩個不在23個模式中的Design Pattern，在第二章節還有一個較大型的設計範例，讓讀者不會只圍繞一個Design Pattern學習，而是用全部的Design Pattern去思考。</p>
+<p>網路上對於Design Pattern的教學有很多，這裡想要分享的不是如何使用，而是著重在「對模式的十大誤解」與「有效率的模式編寫者的7個習慣」。</p>
+<h6 id="什麼是design-pattern">▍<strong><strong>什麼是Design Pattern？</strong></strong></h6>
+<p>就我個人使用的經驗，之前最常用到的不外乎是單例模式 (Singleton)與工廠方法模式 (Factory Method Pattern)，當然，Design Pattern有趣的地方就是，當你用對地方，他可以幫你解省非常多的時間。</p>
+<p>所以，Design Pattern並不是直接用來完成程式碼的編寫，而是描述在各種不同情況下，要怎麼解決問題的一種「方案」。</p>
+<p>如果你問為什麼要使用Design Pattern？<strong>我認為是為了建立一個方便維護及擴充的軟體系統</strong>。</p>
+<p>而在學習Design Pattern前，除了要對Coding有一定的基礎外，像UML的應用與Class diagram也要有基本的認識，這樣你才有辦法看懂別人在描述的各種模式架構。</p>
+<blockquote>
+<p>💡 Class diagram describes the structure of a system by showing the system&rsquo;s classes, their attributes, operations (or methods), and the relationships among objects.</p>
+</blockquote>
+<h6 id="對模式的十大誤解">▍對模式的十大誤解</h6>
+<p>書中第一章內容作者澄清對設計模式常見的十大誤解。</p>
+<ul>
+<li>
+<p><strong>誤解1：模式就是再一種場合下，對某個問題的一個解決方案。</strong></p>
+<p>作者認為除了解決方案之外還要需要三樣東西。</p>
+<ol>
+<li>再現 （Recurrence）：解決方案不僅能夠解決當下的問題，也能夠應用再其他的問題上。</li>
+<li>教學：學習如何解決方案，適應問題的變化。</li>
+<li>正名：一個用來代表模式的名稱。</li>
+</ol>
+</li>
+<li>
+<p><strong>誤解2：模式只是行話、規則、程式設計技巧、資料結構&hellip;..</strong></p>
+</li>
+<li>
+<p><strong>誤解3：看到冰山的一角，就等於看到了整座冰山。</strong></p>
+<p>避免以偏概全，不可以用少數例子就對模式下一個籠統的結論。</p>
+</li>
+<li>
+<p><strong>誤解4：模式需要工具或方法的支援才能生效。</strong></p>
+<p>模式的優點來自於對模式本身的應用，不需要任何形式的支援。</p>
+<p>模式的四個主要優點：</p>
+<ol>
+<li>設計模式提煉出專家的經驗和智慧，讓一般開發人員使用。</li>
+<li>設計模式的名稱組成一個詞彙表，有助於開發人員交流順暢。</li>
+<li>系統文件若記載了該系統所使用的模式，有助於人們更快理解系統。</li>
+<li>對系統進行改造變得更容易，無論系統原來的設計是否採用了模式。</li>
+</ol>
+</li>
+<li>
+<p><strong>誤解5：模式可以保證軟體的耐用、更高的生產率&hellip;.</strong></p>
+<p>模式是要開發人員軍火庫中其中一項武器。</p>
+</li>
+<li>
+<p><strong>誤解6：模式可以產生整體架構</strong></p>
+<p>模式與生產能力無關，使用者必須運用自己的創造力來填補各種模式之間的空白地帶。</p>
+</li>
+<li>
+<p><strong>誤解7：模式只用在物件導向設計或實作</strong></p>
+<p>模式是一種用來記錄和傳播專家經驗的工具，不會只有用在物件導向。</p>
+</li>
+<li>
+<p><strong>誤解8：沒有證據顯示模式對任何人有幫助</strong></p>
+<p>已經存在許多設計模式有益的結果。</p>
+</li>
+<li>
+<p><strong>誤解9：模式族群是一群由精英分子組成的小幫派</strong></p>
+<p>設計模式充滿多樣性，只要有心每個人都可以使用設計模式。</p>
+</li>
+<li>
+<p><strong>誤解10：模式族群是為自己服務的，甚至是不懷好意的。</strong></p>
+</li>
+</ul>
+<h6 id="有效率的模式編寫者的7個習慣">▍有效率的模式編寫者的7個習慣</h6>
+<p>作者認為這7個習慣是在多年編寫模式的過程中養成的，而且多半是無意識養成的。認真培養並遵循這些習慣，必定會對於自己的模式編寫能力有很大的提升。</p>
+<ul>
+<li><strong>習慣1：經常反思</strong></li>
+<li><strong>習慣2：堅持使用同一套結構</strong></li>
+<li><strong>習慣3：盡早且頻繁地涉及具體問題</strong></li>
+<li><strong>習慣4：保持模式間的區別和互補性</strong></li>
+<li><strong>習慣5：有效地呈現</strong></li>
+<li><strong>習慣6：不懈地重複</strong></li>
+<li><strong>習慣7：收集並吸收迴響</strong></li>
+</ul>
+<p>模式是在某種場合下，對某個問題的一個解決方案的一種<strong>結構化</strong>展現。作者希望我們在寫Code之餘，要能再多花點時間紀錄開發歷程，不管是透過Blog或是任何形式，將累積的經驗逐漸紀錄下來。透過不斷的回顧反思，會讓你在累積技術的道路上提煉出更很多的智慧寶藏。</p>
+<h6 id="-後記">▍ 後記</h6>
+<p>如果以初學Design Pattern，個人蠻推薦看《深入淺出－設計模式》，這本書可以讓初學者透過書上的實作慢慢地去理解，去想像Pattern的使用時機，以漸進式的方法讓讀者知道每個Pattern使用時機。</p>
+<p>而進階點可以參考《設計模式的解析與活用》，這本設計模式的解析與活用它會強調使用的時機，並且深入的解析Pattern的使用時機，還有帶領開發者們從Code的層面變成從Pattern的層面去設計。</p>
+<p>Design Pattern使用的好，可以節省一個團隊很多未來的麻煩(技術債!!!)，而模式的使用並不是絕對與唯一，模式背後的 OOP 原則如果就能夠精準且保有彈性的解決問題，未必要加入模式讓專案變得複雜。</p>
+<p>#閱讀筆記 #B047</p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-yucheng2007-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+>
+
+<script>
+  var indexURL = "https://yucheng2007.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://yucheng2007.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/mark.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://yucheng2007.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+  This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button"
+    class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+  (function ($) {
+    const cookieBox = document.getElementById('js-cookie-box');
+    const cookieButton = document.getElementById('js-cookie-button');
+    if (!Cookies.get('cookie-box')) {
+      cookieBox.classList.remove('cookie-box-hide');
+      cookieButton.onclick = function () {
+        Cookies.set('cookie-box', true, {
+          expires:  2 
+    });
+    cookieBox.classList.add('cookie-box-hide');
+  };
+		}
+	}) (jQuery);
+</script>
+
+
+<style>
+  .cookie-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 9999;
+    padding: 1rem 2rem;
+    background: rgb(71, 71, 71);
+    transition: all .75s cubic-bezier(.19, 1, .22, 1);
+    color: #fdfdfd;
+  }
+
+  .cookie-box-hide {
+    display: none;
+  }
+</style>
+</body>
+
+</html>
