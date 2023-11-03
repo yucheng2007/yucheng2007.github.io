@@ -123,23 +123,23 @@
         
         <hr class="my-4" style="border-color: lightgray; border-width: 2px; border-style: solid; font-weight: bold;">
         <div class="content mb-5">
-          <h5 id="原文題目">原文題目：</h5>
+          <h6 id="原文題目">原文題目</h6>
 <p>Given an array of integers <code>nums</code> and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>
 <p>You may assume that each input would have <strong><em>exactly</em> one solution</strong>, and you may not use the <em>same</em> element twice.</p>
 <p>You can return the answer in any order.</p>
-<h6 id="題目解釋與目的">題目解釋與目的：</h6>
+<h6 id="題目解釋與目的">題目解釋與目的</h6>
 <p>給定一個整數數組 <strong><code>nums</code></strong> 和一個整數 <strong><code>target</code></strong>，要求找出數組中兩個數字的索引，使它們的和等於目標值 <strong><code>target</code></strong>。假設每個輸入只有一個解，而且不能使用相同的元素兩次。需要返回這兩個數字的索引，按非降序排列。</p>
 <p>這個問題的目的是在給定數組中找到兩個數字，使它們的和等於目標值，並返回這兩個數字的索引。</p>
-<h6 id="限制條件">限制條件：</h6>
+<h6 id="限制條件">限制條件</h6>
 <ul>
 <li>陣列中只有一組解</li>
 <li>不能使用同一個元素兩次</li>
 </ul>
 <p>接下來我們會分別用C#和Python來解答，並提供每段程式碼的詳細註解。</p>
-<h6 id="c-解答">C# 解答：</h6>
+<h6 id="c-解答">C# 解答</h6>
 <script type="application/javascript" src="https://gist.github.com/yucheng2007/86a484442751fe2cfaffe404f4c957d6.js"></script>
 
-<h6 id="解釋">解釋：</h6>
+<h6 id="解釋">解釋</h6>
 <ol>
 <li>使用 <strong><code>Dictionary</code></strong> 來存儲數字及其對應的索引。</li>
 <li>遍歷數組，對於每個數字，計算與目標值的補數。</li>
@@ -147,10 +147,10 @@
 <li>如果不在字典中，將當前數字及其索引存入字典。</li>
 <li>如果沒有解，拋出異常。</li>
 </ol>
-<h6 id="python-解答">Python 解答：</h6>
+<h6 id="python-解答">Python 解答</h6>
 <script type="application/javascript" src="https://gist.github.com/yucheng2007/f2d368b7e7cf721fe71d5526c66e2f9f.js"></script>
 
-<h6 id="解釋-1">解釋：</h6>
+<h6 id="解釋-1">解釋</h6>
 <ol>
 <li>使用字典來存儲數字及其對應的索引。</li>
 <li>遍歷數組，對於每個數字，計算與目標值的補數。</li>
@@ -159,12 +159,12 @@
 <li>如果沒有解，拋出異常。</li>
 </ol>
 <p>接下來我們來總結一下這題的目的和解題技巧。</p>
-<h6 id="解題總結">解題總結：</h6>
+<h6 id="解題總結">解題總結</h6>
 <p>這個問題的目的是要在給定的數組中找到兩個數字，使它們的和等於目標值。使用哈希表可以將查找時間從O(n)降低到O(1)，提高了解題效率。該題展示了哈希表的優越性，特別適用於需要快速查找的情境。</p>
 <hr>
-<h6 id="補充說明">補充說明：</h6>
+<h6 id="補充說明">補充說明</h6>
 <p>哈希表（Hash Table）是一種常用的資料結構，用於儲存鍵值對（key-value pairs）。它通過將鍵（key）進行哈希函數運算，將結果映射到表中的一個位置，再在該位置進行資料的儲存或查詢。這樣可以在平均情況下以常量時間複雜度（O(1)）進行資料的查詢、插入和刪除操作。</p>
-<p><strong>哈希表的主要組成部分包括：</strong></p>
+<p><strong>哈希表的主要組成部分包括</strong></p>
 <ol>
 <li>
 <p>哈希函數（Hash Function）： 將鍵轉換為特定範圍的索引，通常是一個整數。這個轉換過程稱為哈希化。一個好的哈希函數可以最大程度地避免碰撞，即不同的鍵經過哈希函數映射後得到相同的索引。</p>
