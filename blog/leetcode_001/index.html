@@ -45,6 +45,17 @@
     gtag('config', 'G-49V7315XN5');
   </script>
 
+  <link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/monokai.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/django.min.js"></script>
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/vim.min.js"></script>
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/gradle.min.js"></script>
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
 </head><body>
 <!-- preloader start -->
 <div class="preloader">
@@ -123,58 +134,328 @@
         
         <hr class="my-4" style="border-color: lightgray; border-width: 2px; border-style: solid; font-weight: bold;">
         <div class="content mb-5">
-          <h6 id="原文題目">原文題目</h6>
-<p>Given an array of integers <code>nums</code> and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>
-<p>You may assume that each input would have <strong><em>exactly</em> one solution</strong>, and you may not use the <em>same</em> element twice.</p>
-<p>You can return the answer in any order.</p>
-<h6 id="題目解釋與目的">題目解釋與目的</h6>
-<p>給定一個整數數組 <strong><code>nums</code></strong> 和一個整數 <strong><code>target</code></strong>，要求找出數組中兩個數字的索引，使它們的和等於目標值 <strong><code>target</code></strong>。假設每個輸入只有一個解，而且不能使用相同的元素兩次。需要返回這兩個數字的索引，按非降序排列。</p>
-<p>這個問題的目的是在給定數組中找到兩個數字，使它們的和等於目標值，並返回這兩個數字的索引。</p>
-<h6 id="限制條件">限制條件</h6>
+          <h4 id="1-題目problem-statement">1. 題目（Problem Statement）</h4>
 <ul>
-<li>陣列中只有一組解</li>
-<li>不能使用同一個元素兩次</li>
+<li>
+<p><strong>英文：</strong></p>
+<p>Given an array of integers <strong><code>nums</code></strong> and an integer <strong><code>target</code></strong>, return the indices of the two numbers such that they add up to <strong><code>target</code></strong>.</p>
+<p>You may assume that each input would have exactly one solution, and you may not use the same element twice.</p>
+<p>You can return the answer in any order.</p>
+</li>
+<li>
+<p><strong>中文：</strong></p>
+<p>給定一個整數陣列 <strong><code>nums</code></strong> 和一個整數 <strong><code>target</code></strong>，返回兩個數字的索引，這兩個數字的和等於 <strong><code>target</code></strong>。</p>
+<p>你可以假設每個輸入都只有一個解，而且你不可以使用相同的元素兩次。</p>
+<p>你可以以任何順序返回答案。</p>
+</li>
 </ul>
-<p>接下來我們會分別用C#和Python來解答，並提供每段程式碼的詳細註解。</p>
-<h6 id="c-解答">C# 解答</h6>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/86a484442751fe2cfaffe404f4c957d6.js"></script>
-
-<h6 id="解釋">解釋</h6>
+<h4 id="2-題目說明與解決方案explanation-and-solution">2. 題目說明與解決方案（Explanation and Solution）</h4>
+<p>這個問題要求給定一個整數陣列 <strong><code>nums</code></strong> 和一個整數 <strong><code>target</code></strong>，找出陣列中兩個數字的索引，使得這兩個數字的和等於 <strong><code>target</code></strong>。你可以假設每個輸入只有一個解，並且不可以使用相同的元素兩次。最後，你需要返回這兩個數字的索引。</p>
+<p>這個問題的解決方案是使用哈希表（Dictionary 或 Python 的字典）來記錄每個數字和其對應的索引。我們遍歷整個陣列一次，對於每個元素，計算出目標值減去該元素的差值，我們稱之為 <strong><code>complement</code></strong>。然後，檢查這個 <strong><code>complement</code></strong> 是否已經存在於哈希表中。</p>
+<p>如果存在，則找到了答案，我們可以返回這兩個數字的索引，一個是 <strong><code>complement</code></strong> 的索引，另一個是目前元素的索引。這樣我們就能保證這兩個數的和等於目標值 <strong><code>target</code></strong>。</p>
+<p>如果遍歷完整個陣列都找不到答案，則拋出異常（C# 使用 ArgumentException，Python 使用 ValueError），表示找不到解。</p>
+<p>這個解法的時間複雜度是 O(N)，其中 N 為陣列的長度，因為我們只需遍歷一次陣列。空間複雜度也是 O(N)，用於存儲哈希表，其中 N 是陣列中不同數字的數量。這個方法能夠高效地找到兩個數字的索引，使其和等於目標值。</p>
+<h4 id="3-範例example">3. 範例（Example）</h4>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#309;font-weight:bold">Input</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span>nums = [2, 7, 11, 15]<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span>target = 9<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#309;font-weight:bold">Output</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#309;font-weight:bold">Result</span>:<span style="color:#bbb"> </span>[<span style="color:#f60">0</span>,<span style="color:#bbb"> </span><span style="color:#f60">1</span>]<span style="color:#bbb">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="4-限制條件constraints">4. 限制條件（Constraints）</h4>
+<ul>
+<li>整數陣列 <strong><code>nums</code></strong> 的長度介於 2 到 10^4 之間。</li>
+<li>每個元素的值介於 -10^9 到 10^9 之間。</li>
+<li>目標值 <strong><code>target</code></strong> 的值介於 -10^9 到 10^9 之間。</li>
+</ul>
+<h4 id="5-c-解法c-solution">5. C# 解法（C# Solution）</h4>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#069;font-weight:bold">using</span> <span style="color:#0cf;font-weight:bold">System</span>;
+</span></span><span style="display:flex;"><span><span style="color:#069;font-weight:bold">using</span> <span style="color:#0cf;font-weight:bold">System.Collections.Generic</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#069;font-weight:bold">namespace</span> <span style="color:#0cf;font-weight:bold">LeetCodeSolutions</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#069;font-weight:bold">public</span> <span style="color:#069;font-weight:bold">class</span> <span style="color:#0a8;font-weight:bold">Solution</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#069;font-weight:bold">public</span> <span style="color:#078;font-weight:bold">int</span>[] TwoSum(<span style="color:#078;font-weight:bold">int</span>[] nums, <span style="color:#078;font-weight:bold">int</span> target)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            Dictionary&lt;<span style="color:#078;font-weight:bold">int</span>, <span style="color:#078;font-weight:bold">int</span>&gt; numIndexMap = <span style="color:#069;font-weight:bold">new</span> Dictionary&lt;<span style="color:#078;font-weight:bold">int</span>, <span style="color:#078;font-weight:bold">int</span>&gt;();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#069;font-weight:bold">for</span> (<span style="color:#078;font-weight:bold">int</span> i = <span style="color:#f60">0</span>; i &lt; nums.Length; i++)
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                <span style="color:#078;font-weight:bold">int</span> complement = target - nums[i];
+</span></span><span style="display:flex;"><span>                <span style="color:#069;font-weight:bold">if</span> (numIndexMap.ContainsKey(complement))
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#069;font-weight:bold">return</span> <span style="color:#069;font-weight:bold">new</span> <span style="color:#078;font-weight:bold">int</span>[] { numIndexMap[complement], i };
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>                numIndexMap[nums[i]] = i;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#069;font-weight:bold">throw</span> <span style="color:#069;font-weight:bold">new</span> ArgumentException(<span style="color:#c30">&#34;No solution found.&#34;</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="6-c-程式碼說明c-code-explanation">6. C# 程式碼說明（C# Code Explanation）</h4>
 <ol>
-<li>使用 <strong><code>Dictionary</code></strong> 來存儲數字及其對應的索引。</li>
-<li>遍歷數組，對於每個數字，計算與目標值的補數。</li>
-<li>如果補數存在於字典中，返回補數的索引以及當前數字的索引，即為答案。</li>
-<li>如果不在字典中，將當前數字及其索引存入字典。</li>
-<li>如果沒有解，拋出異常。</li>
+<li>我們首先建立一個 Dictionary（哈希表） numIndexMap，用來儲存數字和其對應的索引。</li>
+<li>接著使用一個 for 迴圈遍歷整個陣列 nums。</li>
+<li>在每個迭代中，我們計算目標值 target 減去目前元素 nums[i] 的差值，稱為 complement。</li>
+<li>檢查 complement 是否已經存在於 numIndexMap 中，如果存在，表示找到了答案。</li>
+<li>如果找到答案，則返回一個包含 complement 在哈希表中的索引以及目前元素的索引的整數陣列。</li>
+<li>如果遍歷完整個陣列都找不到答案，則拋出 ArgumentException，表示找不到解。</li>
+<li>這個解法具有時間複雜度為 O(N)，其中 N 為陣列的長度，因為我們僅遍歷一次陣列。空間複雜度也是 O(N)，用於存儲哈希表，其中 N 是陣列中不同數字的數量。</li>
 </ol>
-<h6 id="python-解答">Python 解答</h6>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/f2d368b7e7cf721fe71d5526c66e2f9f.js"></script>
-
-<h6 id="解釋-1">解釋</h6>
+<p>這個 C# 解法使用哈希表（Dictionary）來記錄每個數字對應的索引。我們遍歷一次整個陣列，對於每個元素，計算目標值減去該元素的差值 <strong><code>complement</code></strong>。然後檢查這個 <strong><code>complement</code></strong> 是否已經存在於哈希表中，如果存在，就找到了答案，返回這兩個數字的索引。如果遍歷完整個陣列都找不到答案，則拋出異常。</p>
+<h4 id="7-c-單元測試c-unit-tests">7. C# 單元測試（C# Unit Tests）</h4>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#069;font-weight:bold">using</span> <span style="color:#0cf;font-weight:bold">Microsoft.VisualStudio.TestTools.UnitTesting</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#069;font-weight:bold">namespace</span> <span style="color:#0cf;font-weight:bold">Tests</span> 
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#309">  [TestClass]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#069;font-weight:bold">public</span> <span style="color:#069;font-weight:bold">class</span> <span style="color:#0a8;font-weight:bold">TwoSumTests</span> 
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span><span style="color:#309">    [TestMethod]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#069;font-weight:bold">public</span> <span style="color:#069;font-weight:bold">void</span> Test1() 
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>      <span style="color:#078;font-weight:bold">int</span>[] nums = {<span style="color:#f60">2</span>, <span style="color:#f60">7</span>, <span style="color:#f60">11</span>, <span style="color:#f60">15</span>};
+</span></span><span style="display:flex;"><span>      <span style="color:#078;font-weight:bold">int</span> target = <span style="color:#f60">9</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#078;font-weight:bold">int</span>[] expected = {<span style="color:#f60">0</span>, <span style="color:#f60">1</span>};
+</span></span><span style="display:flex;"><span>      <span style="color:#078;font-weight:bold">int</span>[] actual = TwoSum.Solution.TwoSum(nums, target);
+</span></span><span style="display:flex;"><span>      CollectionAssert.AreEqual(expected, actual);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span><span style="color:#309">
+</span></span></span><span style="display:flex;"><span><span style="color:#309">    [TestMethod]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#069;font-weight:bold">public</span> <span style="color:#069;font-weight:bold">void</span> Test2() 
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>      <span style="color:#078;font-weight:bold">int</span>[] nums = {<span style="color:#f60">3</span>, <span style="color:#f60">2</span>, <span style="color:#f60">4</span>};
+</span></span><span style="display:flex;"><span>      <span style="color:#078;font-weight:bold">int</span> target = <span style="color:#f60">6</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#078;font-weight:bold">int</span>[] expected = {<span style="color:#f60">1</span>, <span style="color:#f60">2</span>};
+</span></span><span style="display:flex;"><span>      <span style="color:#078;font-weight:bold">int</span>[] actual = TwoSum.Solution.TwoSum(nums, target);
+</span></span><span style="display:flex;"><span>      CollectionAssert.AreEqual(expected, actual);      
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span><span style="color:#309">
+</span></span></span><span style="display:flex;"><span><span style="color:#309">    [TestMethod]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#069;font-weight:bold">public</span> <span style="color:#069;font-weight:bold">void</span> Test3() 
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>      <span style="color:#078;font-weight:bold">int</span>[] nums = {<span style="color:#f60">3</span>, <span style="color:#f60">3</span>};
+</span></span><span style="display:flex;"><span>      <span style="color:#078;font-weight:bold">int</span> target = <span style="color:#f60">6</span>; 
+</span></span><span style="display:flex;"><span>      <span style="color:#078;font-weight:bold">int</span>[] expected = {<span style="color:#f60">0</span>, <span style="color:#f60">1</span>};
+</span></span><span style="display:flex;"><span>      <span style="color:#078;font-weight:bold">int</span>[] actual = TwoSum.Solution.TwoSum(nums, target);
+</span></span><span style="display:flex;"><span>      CollectionAssert.AreEqual(expected, actual);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="8-python-解法python-solution">8. Python 解法（Python Solution）</h4>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#069;font-weight:bold">class</span> <span style="color:#0a8;font-weight:bold">Solution</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">twoSum</span>(self, nums, target):
+</span></span><span style="display:flex;"><span>        num_index_map <span style="color:#555">=</span> {}
+</span></span><span style="display:flex;"><span>        <span style="color:#069;font-weight:bold">for</span> i, num <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">enumerate</span>(nums):
+</span></span><span style="display:flex;"><span>            complement <span style="color:#555">=</span> target <span style="color:#555">-</span> num
+</span></span><span style="display:flex;"><span>            <span style="color:#069;font-weight:bold">if</span> complement <span style="color:#000;font-weight:bold">in</span> num_index_map:
+</span></span><span style="display:flex;"><span>                <span style="color:#069;font-weight:bold">return</span> [num_index_map[complement], i]
+</span></span><span style="display:flex;"><span>            num_index_map[num] <span style="color:#555">=</span> i
+</span></span><span style="display:flex;"><span>        <span style="color:#069;font-weight:bold">raise</span> <span style="color:#c00;font-weight:bold">ValueError</span>(<span style="color:#c30">&#34;No solution found.&#34;</span>)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="9-python-程式碼說明python-code-explanation">9. Python 程式碼說明（Python Code Explanation）</h4>
 <ol>
-<li>使用字典來存儲數字及其對應的索引。</li>
-<li>遍歷數組，對於每個數字，計算與目標值的補數。</li>
-<li>如果補數存在於字典中，返回補數的索引以及當前數字的索引，即為答案。</li>
-<li>如果不在字典中，將當前數字及其索引存入字典。</li>
-<li>如果沒有解，拋出異常。</li>
+<li>我們使用一個 Python 字典（Dictionary） num_index_map 來記錄數字和其對應的索引。</li>
+<li>使用 enumerate 函數來獲取每個數字的索引和值。</li>
+<li>在每個迭代中，計算目標值 target 減去目前元素 nums[i] 的差值，稱為 complement。</li>
+<li>檢查 complement 是否已經存在於 num_index_map 中，如果存在，表示找到了答案。</li>
+<li>如果找到答案，則返回一個包含 complement 在字典中的索引以及目前元素的索引的整數陣列。</li>
+<li>如果遍歷完整個陣列都找不到答案，則拋出 ValueError，表示找不到解。</li>
+<li>這個解法具有時間複雜度為 O(N)，其中 N 為陣列的長度，因為我們僅遍歷一次陣列。空間複雜度也是 O(N)，用於存儲字典，其中 N 是陣列中不同數字的數量。</li>
 </ol>
-<p>接下來我們來總結一下這題的目的和解題技巧。</p>
-<h6 id="解題總結">解題總結</h6>
-<p>這個問題的目的是要在給定的數組中找到兩個數字，使它們的和等於目標值。使用哈希表可以將查找時間從O(n)降低到O(1)，提高了解題效率。該題展示了哈希表的優越性，特別適用於需要快速查找的情境。</p>
-<hr>
-<h6 id="補充說明">補充說明</h6>
-<p>哈希表（Hash Table）是一種常用的資料結構，用於儲存鍵值對（key-value pairs）。它通過將鍵（key）進行哈希函數運算，將結果映射到表中的一個位置，再在該位置進行資料的儲存或查詢。這樣可以在平均情況下以常量時間複雜度（O(1)）進行資料的查詢、插入和刪除操作。</p>
-<p><strong>哈希表的主要組成部分包括</strong></p>
+<p>這個 Python 解法使用哈希表（Dictionary）來記錄每個數字對應的索引。我們遍歷一次整個陣列，對於每個元素，計算目標值減去該元素的差值 <strong><code>complement</code></strong>。然後檢查這個 <strong><code>complement</code></strong> 是否已經存在於哈希表中，如果存在，就找到了答案，返回這兩個數字的索引。如果遍歷完整個陣列都找不到答案，則拋出異常。</p>
+<h4 id="10-python-單元測試python-unit-tests">10. Python 單元測試（Python Unit Tests）</h4>
+<div class="highlight"><div style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">unittest</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#069;font-weight:bold">class</span> <span style="color:#0a8;font-weight:bold">TestTwoSum</span>(unittest<span style="color:#555">.</span>TestCase):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">test_case_1</span>(self):
+</span></span><span style="display:flex;"><span>	  nums <span style="color:#555">=</span> [<span style="color:#f60">2</span>, <span style="color:#f60">7</span>, <span style="color:#f60">11</span>, <span style="color:#f60">15</span>]
+</span></span><span style="display:flex;"><span>    target <span style="color:#555">=</span> <span style="color:#f60">9</span>
+</span></span><span style="display:flex;"><span>    expected <span style="color:#555">=</span> [<span style="color:#f60">0</span>, <span style="color:#f60">1</span>]
+</span></span><span style="display:flex;"><span>    actual <span style="color:#555">=</span> Solution()<span style="color:#555">.</span>twoSum(nums, target)
+</span></span><span style="display:flex;"><span>    self<span style="color:#555">.</span>assertEqual(expected, actual)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">test_case_2</span>(self):
+</span></span><span style="display:flex;"><span>    nums <span style="color:#555">=</span> [<span style="color:#f60">3</span>, <span style="color:#f60">2</span>, <span style="color:#f60">4</span>] 
+</span></span><span style="display:flex;"><span>    target <span style="color:#555">=</span> <span style="color:#f60">6</span>
+</span></span><span style="display:flex;"><span>    expected <span style="color:#555">=</span> [<span style="color:#f60">1</span>, <span style="color:#f60">2</span>]
+</span></span><span style="display:flex;"><span>    actual <span style="color:#555">=</span> Solution()<span style="color:#555">.</span>twoSum(nums, target)
+</span></span><span style="display:flex;"><span>    self<span style="color:#555">.</span>assertEqual(expected, actual)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">test_case_3</span>(self):
+</span></span><span style="display:flex;"><span>    nums <span style="color:#555">=</span> [<span style="color:#f60">3</span>, <span style="color:#f60">3</span>]
+</span></span><span style="display:flex;"><span>    target <span style="color:#555">=</span> <span style="color:#f60">6</span>
+</span></span><span style="display:flex;"><span>    expected <span style="color:#555">=</span> [<span style="color:#f60">0</span>, <span style="color:#f60">1</span>]
+</span></span><span style="display:flex;"><span>    actual <span style="color:#555">=</span> Solution()<span style="color:#555">.</span>twoSum(nums, target) 
+</span></span><span style="display:flex;"><span>    self<span style="color:#555">.</span>assertEqual(expected, actual)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#069;font-weight:bold">if</span> __name__ <span style="color:#555">==</span> <span style="color:#c30">&#39;__main__&#39;</span>:
+</span></span><span style="display:flex;"><span>  unittest<span style="color:#555">.</span>main()
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="11-總結summary">11. 總結（Summary）</h4>
+<p>這個題目要求找到一對數字，它們的和等於目標值 <strong><code>target</code></strong>。使用雙重迴圈會過慢，改用雜湊表儲存數字和索引可以降低時間複雜度到 O(N)，所以我們使用哈希表（dictionary）來加速查找，降低時間複雜度。</p>
+<ul>
+<li>時間複雜度：O(n)，其中 n 是陣列 <strong><code>nums</code></strong> 的長度。</li>
+<li>空間複雜度：O(n)，我們使用一個哈希表（dictionary）來儲存數字與它們的索引，最壞情況下需要儲存所有數字。</li>
+</ul>
+<p>解題技巧在於善用雜湊表快速查找是否存在補數，避免使用兩層迴圈。時間複雜度從 O(N^2) 降到 O(N)，空間複雜度為 O(N)。</p>
+<p>這是一道很典型的使用雜湊表優化時間複雜度的題目，適合用來練習基礎算法技巧。</p>
+<h4 id="補充說明"><strong>補充說明</strong></h4>
+<p>哈希表（Hash Table）是一種非常高效的資料結構，可以在 O(1) 的時間複雜度內完成插入、查詢和刪除操作。</p>
+<p>哈希表的基本原理是:</p>
 <ol>
-<li>
-<p>哈希函數（Hash Function）： 將鍵轉換為特定範圍的索引，通常是一個整數。這個轉換過程稱為哈希化。一個好的哈希函數可以最大程度地避免碰撞，即不同的鍵經過哈希函數映射後得到相同的索引。</p>
-</li>
-<li>
-<p>哈希表（Hash Table）： 是由多個哈希桶（buckets）組成的資料結構，每個哈希桶存儲多個鍵值對。哈希桶可以是陣列、連結列表或其他資料結構。</p>
-</li>
+<li>使用哈希函数（Hash Function）將鍵(Key)映射到表中一個位置。這個位置就叫做該鍵的哈希值（Hash Value）。</li>
+<li>根据哈希值將資料儲存在表的對應位置。不同的鍵可能會經哈希函数映射到同一個位置,這種情況就叫做衝突（Collision）。衝突的解決方法有開放定址法和鏈地址法。</li>
+<li>查詢時根據鍵再次計算哈希值,從表中對應位置獲取資料。</li>
 </ol>
-<p>碰撞解決方法（Collision Resolution）： 因為哈希函數可能產生相同的索引（碰撞），所以需要一種方法來處理碰撞。常用的碰撞解決方法有鏈接法（使用連結列表解決碰撞）和開放地址法（在發生碰撞時尋找下一個空位置）。</p>
-<p>哈希表的優點是能夠快速進行查詢、插入和刪除操作，具有良好的平均時間複雜度。然而，在某些情況下可能會有較差的最壞情況時間複雜度，特別是當哈希函數導致大量碰撞時。選擇適合的哈希函數和碰撞解決方法對於保證哈希表效率至關重要。</p>
+<p><strong>哈希表的優點是：</strong></p>
+<ul>
+<li>查詢速度極快,平均可在 O(1) 時間內完成。</li>
+<li>可以快速插入和刪除資料。</li>
+<li>存儲空間較陣列更加靈活。</li>
+<li>可以快速判斷某個鍵是否存在。</li>
+<li>支持不同資料類型的鍵。</li>
+</ul>
+<p><strong>哈希表的缺點是：</strong></p>
+<ul>
+<li>無法獲取所有資料,只能通過鍵值查找。</li>
+<li>需要額外處理哈希碰撞。</li>
+<li>存儲空間較陣列稍大。</li>
+</ul>
 
         </div>
 
