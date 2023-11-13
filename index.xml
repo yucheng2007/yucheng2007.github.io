@@ -6,7 +6,17 @@
     <description>Recent content on JJ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 03 Nov 2023 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Nov 2023 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode #2 Add Two Numbers</title>
+      <link>https://yucheng2007.github.io/blog/leetcode_002/</link>
+      <pubDate>Mon, 13 Nov 2023 07:00:00 +0800</pubDate>
+      
+      <guid>https://yucheng2007.github.io/blog/leetcode_002/</guid>
+      <description>1. 題目（Problem Statement） 英文：
+You are given two non-empty linked lists representing two non-negative integers.</description>
+    </item>
+    
     <item>
       <title>教養的秘密：無效管教Out，科學育兒 In，兒童發展專家王宏哲的新世代教養術</title>
       <link>https://yucheng2007.github.io/blog/readingnotes_071/</link>
