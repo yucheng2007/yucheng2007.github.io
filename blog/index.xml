@@ -8,6 +8,16 @@
     <language>zh-tw</language>
     <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate><atom:link href="https://yucheng2007.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>投資金律：建立獲利投資組合的四大關鍵和十四個關卡</title>
+      <link>https://yucheng2007.github.io/blog/readingnotes_072/</link>
+      <pubDate>Wed, 15 Nov 2023 07:00:00 +0800</pubDate>
+      
+      <guid>https://yucheng2007.github.io/blog/readingnotes_072/</guid>
+      <description>📖 投資金律：建立獲利投資組合的四大關鍵和十四個關卡 《投資金律》這本書的英文書名為《The Four Pillars of Investing》指的是「理論」、「歷史」、「心理」與「產業」四大面向。作者威廉．伯恩斯坦（William Bernstein）本身是一個醫學博士，和投資理財毫不相干，但是他根據自己理財經驗，徹底的學習，進而慢慢體會投資成功的真諦。
+💡 投資也是一門科學，必須透過大量的基礎研究才能獲得資訊。 — William Bernstein</description>
+    </item>
+    
+    <item>
       <title>LeetCode #2 Add Two Numbers</title>
       <link>https://yucheng2007.github.io/blog/leetcode_002/</link>
       <pubDate>Mon, 13 Nov 2023 07:00:00 +0800</pubDate>
@@ -87,7 +97,7 @@ Given an array of integers nums and an integer target, return the indices of the
       <description>會想分享這篇Markdown語法，主要是先前使用的Trello跟目前使用的Notion都是用此語法。
 而最近在嘗試自己架站(Hugo+Github)，Hugo主要是用GO語言實現的靜態網站（Static Site Generator），利用Markdown將內容跟樣式外觀完整分開，再利用生成的靜態網頁直接發佈到Server上。
 網路上對於Markdown的教學很多，譬如「Markdown文件」，這裡有完整的語法介紹。而本文只著重在Notion中我自己最常用的十種Markdown元素跟大家介紹分享：
-H1、H2、H3 標題（Headings） 主要分為一級標題（H1）、二級標題（H2）及三級標題（H3） 在Notion上也可以透過打：「/h1 + Enter」、「/h2 + Enter」、「/h3 + Enter」呼叫對應的標題階層。 粗體（Bold）、斜體（Italic）、底線（Underline） 主要是用於突顯重要文字或給予特殊意義時使用，除了用下面Markdown的語法，這三個算是個人最常直接用快捷鍵達成。</description>
+H1、H2、H3 標題（Headings） 主要分為一級標題（H1）、二級標題（H2）及三級標題（H3） 在Notion上也可以透過打：「/h1 + Enter」、「/h2 + Enter」、「/h3 + Enter」呼叫對應的標題階層。 1# 一級標題 2## 二級標題 3### 三級標題 粗體（Bold）、斜體（Italic）、底線（Underline） 主要是用於突顯重要文字或給予特殊意義時使用，除了用下面Markdown的語法，這三個算是個人最常直接用快捷鍵達成。</description>
     </item>
     
     <item>
@@ -100,7 +110,8 @@ H1、H2、H3 標題（Headings） 主要分為一級標題（H1）、二級標�
 如果想要在Notepad++上做到一樣的效果要如果做呢？
 首先，打開Notepad++，點選「外掛」→「管理外掛模組」搜尋「PythonScript」安裝。
 接者，點選「New Script」，命名為「CSVtoTable.py」，將下面的Python Source Code貼上，存檔。
-CSVtoTable.py 載入需要分拆的數據，點選「Scripts」，執行剛剛存檔的「CSVtoTable」，即會開一個新檔，同時會將欄位都垂直對齊逗號分隔。</description>
+CSVtoTable.py
+1import csv 2 3inputlines = editor.</description>
     </item>
     
     <item>

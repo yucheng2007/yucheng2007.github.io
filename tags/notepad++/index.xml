@@ -17,7 +17,8 @@
 如果想要在Notepad++上做到一樣的效果要如果做呢？
 首先，打開Notepad++，點選「外掛」→「管理外掛模組」搜尋「PythonScript」安裝。
 接者，點選「New Script」，命名為「CSVtoTable.py」，將下面的Python Source Code貼上，存檔。
-CSVtoTable.py 載入需要分拆的數據，點選「Scripts」，執行剛剛存檔的「CSVtoTable」，即會開一個新檔，同時會將欄位都垂直對齊逗號分隔。</description>
+CSVtoTable.py
+1import csv 2 3inputlines = editor.</description>
     </item>
     
   </channel>

@@ -135,54 +135,55 @@
 <li>在Notion上也可以透過打：「<strong><code>/h1 + Enter</code></strong>」、「<strong><code>/h2 + Enter</code></strong>」、「<strong><code>/h3 + Enter</code></strong>」呼叫對應的標題階層。</li>
 </ul>
 <p><img src="/images/post/tech/tech_002_01.png" alt="Notion"></p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/3d9f71f54d34e844eceff95c62248f97.js"></script>
-
-<ol start="2">
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#030;font-weight:bold"># 一級標題
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#030;font-weight:bold"></span><span style="color:#030;font-weight:bold">## 二級標題
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#030;font-weight:bold">### 三級標題
+</span></span></span></code></pre></div><ol start="2">
 <li>
 <h5 id="粗體bold斜體italic底線underline">粗體（Bold）、斜體（Italic）、底線（Underline）</h5>
 </li>
 </ol>
 <p>主要是用於突顯重要文字或給予特殊意義時使用，除了用下面Markdown的語法，這三個算是個人最常直接用快捷鍵達成。</p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/5ed043533499ac6189eb108f44da7ed4.js"></script>
-
-<ol start="3">
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>**粗體文字** <span style="color:#09f;font-style:italic">&lt;!-- 快捷鍵：Ctrl + B --&gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="font-style:italic">*斜體文字*</span> <span style="color:#09f;font-style:italic">&lt;!-- 快捷鍵：Ctrl + I --&gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="font-weight:bold">__底線文字__</span> <span style="color:#09f;font-style:italic">&lt;!-- 快捷鍵：Ctrl + U --&gt;</span>
+</span></span></code></pre></div><ol start="3">
 <li>
 <h5 id="列表清單lists">列表清單（Lists）</h5>
 <p>列出清單項目，Markdown支援有序清單（Ordered List）和無序清單（Unordered List）。</p>
 <p>無序清單支援使用星號（*）、加號（+）或是減號（-）作為清單標記；而有序清單需要打「<strong><code>1. + 空格</code></strong>」這樣的指令來建立。</p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/d8abf1e35199d6a58e98bff26d2327e.js"></script>
-
 </li>
 <li>
 <h5 id="待辦事項to-do">待辦事項（To-do）</h5>
 <p>標記待辦事項，勾選已完成事項。待辦事項是相當實用的功能，方便記錄各種事項，只要在每行最前面加上「<strong><code>- [ ]</code></strong>」。</p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/ad7bdf605eccd31f181b07d41ae9a5fb.js"></script>
-
-</li>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#069;font-weight:bold">- [ ]</span> 這是未完成事項
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#069;font-weight:bold">- [x]</span> 這是已完成事項
+</span></span></code></pre></div></li>
 <li>
 <h5 id="插入連結links自動連結auto-links">插入連結（Links）、自動連結（Auto Links）</h5>
 <p>插入超連結。使用 Markdown「<strong><code>[連結文字](網址)</code></strong>」建立超連結（比插入圖片少了一個驚嘆號）。</p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/97e076886755c4670928d192906c4576.js"></script>
-
-</li>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>[<span style="color:#309;font-weight:bold">顯示文字</span>](<span style="color:#309">URL</span>) <span style="color:#09f;font-style:italic">&lt;!--</span> <span style="font-weight:bold">**插入連結**</span><span style="color:#09f;font-style:italic"> --&gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>&lt;<span style="color:#309;font-weight:bold">URL</span>&gt; <span style="color:#09f;font-style:italic">&lt;!--</span> <span style="font-weight:bold">**自動連結**</span><span style="color:#09f;font-style:italic"> --&gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>[<span style="color:#309;font-weight:bold">Google</span>](<span style="color:#309">https://www.google.com</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>&lt;<span style="color:#309;font-weight:bold">https:</span><span style="color:#a00;background-color:#faa">//</span><span style="color:#309">www</span><span style="color:#a00;background-color:#faa">.</span><span style="color:#309">google</span><span style="color:#a00;background-color:#faa">.</span><span style="color:#309">com</span>&gt;
+</span></span></code></pre></div></li>
 <li>
 <h5 id="插入圖片insert-image">插入圖片（Insert Image）</h5>
 <p>Markdown 要插入圖片，須使用「<strong><code>![圖片說明文字](圖片網址)</code></strong>」語法，現在大部分 Markdown 軟體，都已支援直接貼上，手 Key 指令的機會已少得多，但在自己寫HTML時還是要知道語法會比較好。</p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/2d35cce4396c203aa53c0f65e2746946.js"></script>
-
-</li>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>**![圖片說明文字](圖片網址)**
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>![<span style="color:#309;font-weight:bold">No tion Logo</span>](<span style="color:#309">https://www.notion.so/images/notion-logo-no-framer.png</span>)
+</span></span></code></pre></div></li>
 <li>
 <h5 id="行分隔符horizontal-line">行分隔符（Horizontal Line）</h5>
 <p>插入水平分隔線。</p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/e20eeb20759ca7c159d08aee8a356050.js"></script>
-
-</li>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>---
+</span></span></code></pre></div></li>
 <li>
 <h5 id="引用blockquote">引用（Blockquote）</h5>
 <p>引用他人的話或重要資訊。在純Markdwon上使透過用「<strong><code>&gt;+空格</code></strong>」來達成，但在Notion時如果打「<strong><code>&gt;+空格</code></strong>」會變成Toggle List，所以在Notion個人會更推薦用<a href="https://www.notion.so/Callout-1163474c7cbb41fa9e1b41ec01c6fcd6?pvs=21">Callout 區塊</a>替代引言，理由highlight——因為它更加美觀、突顯。Callout 無法透過快捷鍵建立，只能使用指令「<strong><code>/callout</code></strong>」呼叫。</p>
-<script type="application/javascript" src="https://gist.github.com/yucheng2007/3068b7b5c173c4646ead7335c6ae844d.js"></script>
-
-</li>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#069;font-weight:bold">&gt; </span><span style="font-style:italic">引用文字 &lt;!-- Markdwon --&gt;
+</span></span></span></code></pre></div></li>
 <li>
 <h5 id="行內程式碼inline-code">行內程式碼（Inline Code）</h5>
 <p>要標記一小段行內程式碼，可以用反引號把它包起來。Markdown 語法為「<strong><code>程式碼</code></strong>」，使用 Notion 的快捷鍵即反白文字後「<strong><code>cmd + e</code></strong>」。</p>
