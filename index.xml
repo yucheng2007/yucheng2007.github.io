@@ -6,7 +6,18 @@
     <description>Recent content on JJ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 31 Dec 2023 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jan 2024 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>深入了解半導體設備軟體開發：關鍵技術和趨勢分析</title>
+      <link>https://yucheng2007.github.io/blog/technotes_004/</link>
+      <pubDate>Wed, 10 Jan 2024 07:00:00 +0800</pubDate>
+      
+      <guid>https://yucheng2007.github.io/blog/technotes_004/</guid>
+      <description>半導體設備的概述 自己本身是從事設備業軟體開發許久，一路從面板（Panel）、太陽能（Solar Energy）、LED（Light Emitting Diode）、OLED（Organic Light Emitting Diode）到半導體（Semiconductor）設備等，在這產業算算也有10年以上的時間，覺得應該要寫一篇關於設備業軟體開發的介紹。
+剛好自己從事的工作跟第三代半導體有相關，其中，第三代半導體技術涉及到更高效、更快速的半導體材料和製程技術。相比於傳統的矽基半導體，第三代半導體（如氮化鎵、碳化矽等）具有更高的電子遷移率、較高的工作溫度和更好的電子特性。這些特點使得第三代半導體在高頻、高功率和高溫應用中具有巨大的潛力，如5G通訊、電力電子、雷射二極體等。
+為了實現這些先進半導體材料的製造，需要專門的製程設備和技術，其中MOCVD是一個核心技術。</description>
+    </item>
+    
     <item>
       <title>2023 Retrospective</title>
       <link>https://yucheng2007.github.io/blog/life_004/</link>
