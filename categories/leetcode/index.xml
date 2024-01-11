@@ -6,7 +6,17 @@
     <description>Recent content in LeetCode on JJ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 13 Nov 2023 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Jan 2024 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode #3 Longest Substring Without Repeating Characters</title>
+      <link>https://yucheng2007.github.io/blog/leetcode_003/</link>
+      <pubDate>Thu, 11 Jan 2024 07:00:00 +0800</pubDate>
+      
+      <guid>https://yucheng2007.github.io/blog/leetcode_003/</guid>
+      <description>1. 題目（Problem Statement） 英文：
+Given a string s, find the length of the longest substring without repeating characters.</description>
+    </item>
+    
     <item>
       <title>LeetCode #2 Add Two Numbers</title>
       <link>https://yucheng2007.github.io/blog/leetcode_002/</link>

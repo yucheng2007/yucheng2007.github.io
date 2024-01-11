@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>JJ&#39;s Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="Given a string s, find the length of the longest substring without repeating characters.">
+  
+  <meta name="author" content="JJ.Chang">
+  
+
+  
+  <meta name="theme-name" content="liva-hugo" />
+
+  <meta name="generator" content="Hugo 0.117.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-49V7315XN5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-49V7315XN5');
+  </script>
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand" href="https://yucheng2007.github.io">
+        <span class="text-body">JJ's Blog</span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        
+        <div style="flex: 1;"></div>
+
+        <ul class="navbar-nav">
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/blog/">Blog</a>
+          </li>
+          
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/about/">About</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://yucheng2007.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2>LeetCode #3 Longest Substring Without Repeating Characters</h2>
+        <div class="mb-3 post-meta">
+          <span>By JJ.Chang</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2024-01-11</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          
+          <a href="/categories/leetcode" class="text-primary">Leet code</a>
+          
+        </div>
+        
+        <hr class="my-4" style="border-color: lightgray; border-width: 2px; border-style: solid; font-weight: bold;">
+        <div class="content mb-5">
+          <h4 id="1-題目problem-statement">1. 題目（Problem Statement）</h4>
+<ul>
+<li>
+<p><strong>英文</strong>：</p>
+<p>Given a string <strong><code>s</code></strong>, find the length of the longest substring without repeating characters.</p>
+</li>
+<li>
+<p><strong>中文</strong>：</p>
+<p>給定一個字符串 <strong><code>s</code></strong>，找到最長的不重複字符的子字符串的長度。</p>
+</li>
+</ul>
+<h4 id="2-題目說明與解決方案explanation-and-solution">2. 題目說明與解決方案（Explanation and Solution）</h4>
+<p>我們需要找出一個字符串中不含重複字符的最長子串的長度，<strong>不重複區間的定義</strong>，就是<strong>區間內的每個字元</strong>都<strong>不</strong>相同。</p>
+<p>例如，對於字符串 &ldquo;abcabcbb&rdquo;，最長的不含重複字符的子串是 &ldquo;abc&rdquo;，其長度為 3。</p>
+<p>我們可以使用滑動窗口的方法。使用兩個指標，一個指向子串的開始，另一個不斷向右移動，每次擴展一個字符。使用哈希集合來記錄當前子串中的字符，當發現重複字符時，移動左指標，直到消除重複為止。</p>
+<h4 id="3-範例example">3. 範例（Example）</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#309;font-weight:bold">Example 1</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#bbb">	</span><span style="color:#309;font-weight:bold">Input</span>:<span style="color:#bbb"> </span>s = &#34;abcabcbb&#34;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#bbb">	</span><span style="color:#309;font-weight:bold">Output</span>:<span style="color:#bbb"> </span><span style="color:#f60">3</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span><span style="color:#bbb">	</span><span style="color:#309;font-weight:bold">Explanation</span>:<span style="color:#bbb"> </span>The answer is &#34;abc&#34;, with the length of 3.<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span><span style="color:#bbb"></span><span style="color:#0cf;font-weight:bold">---</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span><span style="color:#bbb"></span><span style="color:#309;font-weight:bold">Example 2</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span><span style="color:#bbb">	</span><span style="color:#309;font-weight:bold">Input</span>:<span style="color:#bbb"> </span>s = &#34;bbbbb&#34;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span><span style="color:#bbb">	</span><span style="color:#309;font-weight:bold">Output</span>:<span style="color:#bbb"> </span><span style="color:#f60">1</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span><span style="color:#bbb">	</span><span style="color:#309;font-weight:bold">Explanation</span>:<span style="color:#bbb"> </span>The answer is &#34;b&#34;, with the length of 1.<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span><span style="color:#bbb"></span><span style="color:#0cf;font-weight:bold">---</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span><span style="color:#bbb"></span><span style="color:#309;font-weight:bold">Example 3</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span><span style="color:#bbb">	</span><span style="color:#309;font-weight:bold">Input</span>:<span style="color:#bbb"> </span>s = &#34;pwwkew&#34;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span><span style="color:#bbb">	</span><span style="color:#309;font-weight:bold">Output</span>:<span style="color:#bbb"> </span><span style="color:#f60">3</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span><span style="color:#bbb">	</span><span style="color:#309;font-weight:bold">Explanation</span>:<span style="color:#bbb"> </span>The answer is &#34;wke&#34;, with the length of 3.<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span><span style="color:#bbb">	</span>Notice that the answer must be a substring, &#34;pwke&#34; is a subsequence and not a substring.<span style="color:#bbb">
+</span></span></span></code></pre></div><p>Example 3 最長的不重複子串是 &ldquo;wke&rdquo;，長度為 3。答案必須是子串，而 &ldquo;pwke&rdquo; 是一個子序列而不是子串。</p>
+<h4 id="4-限制條件constraints">4. 限制條件（Constraints）</h4>
+<ul>
+<li>0 &lt;= <strong><code>s.length</code></strong> &lt;= 5 * 10^4</li>
+<li><strong><code>s</code></strong> 由英文字母、數字、符號和空格組成</li>
+</ul>
+<h4 id="5-c-解法c-solution">5. C# 解法（C# Solution）</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#069;font-weight:bold">namespace</span> <span style="color:#0cf;font-weight:bold">UnitTestDay3_LongestSubstring</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>{
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>    <span style="color:#069;font-weight:bold">public</span> <span style="color:#069;font-weight:bold">class</span> <span style="color:#0a8;font-weight:bold">Solution</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>    {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>        <span style="color:#069;font-weight:bold">public</span> <span style="color:#078;font-weight:bold">int</span> LengthOfLongestSubstring( <span style="color:#078;font-weight:bold">string</span> s )
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>        {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>            <span style="color:#078;font-weight:bold">int</span> n = s.Length;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>            HashSet&lt;<span style="color:#078;font-weight:bold">char</span>&gt; <span style="color:#069;font-weight:bold">set</span> = <span style="color:#069;font-weight:bold">new</span> HashSet&lt;<span style="color:#078;font-weight:bold">char</span>&gt;();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>            <span style="color:#078;font-weight:bold">int</span> maxLength = <span style="color:#f60">0</span>, left = <span style="color:#f60">0</span>, right = <span style="color:#f60">0</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>            <span style="color:#069;font-weight:bold">while</span> (right &lt; n)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>            {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>                <span style="color:#069;font-weight:bold">if</span> (!<span style="color:#069;font-weight:bold">set</span>.Contains( s[right] ))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>                {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>                    <span style="color:#069;font-weight:bold">set</span>.Add( s[right] );
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>                    maxLength = Math.Max( maxLength, right - left + <span style="color:#f60">1</span> );
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>                    right++;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>                }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>                <span style="color:#069;font-weight:bold">else</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>                {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>                    <span style="color:#069;font-weight:bold">set</span>.Remove( s[left] );
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>                    left++;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>                }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span>            }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span>            <span style="color:#069;font-weight:bold">return</span> maxLength;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span>        }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span>    }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span>}
+</span></span></code></pre></div><h4 id="6-c-程式碼說明c-code-explanation">6. C# 程式碼說明（C# Code Explanation）</h4>
+<ul>
+<li>我們使用<strong>滑動窗口</strong>的方法，兩個指標 <strong><code>left</code></strong> 和 <strong><code>right</code></strong> 分別表示子串的開始和結束。</li>
+<li><strong><code>HashSet</code></strong> 用於儲存當前子串中的字符，以判斷是否有重複。</li>
+<li>當發現重複字符時，移動左指標 <strong><code>left</code></strong>，直到消除重複。</li>
+<li>每次向右擴展子串，更新最長子串的長度。</li>
+</ul>
+<hr>
+<p><img src="/images/post/leetcode/leetCode_003_01.png" alt="leetCode03"></p>
+<p>以下是程式碼的詳細解釋：</p>
+<ol>
+<li>
+<p>初始化變數：</p>
+<ul>
+<li><strong><code>n</code></strong>：字串**<code>s</code>**的長度。</li>
+<li><strong><code>set</code></strong>：用來存儲目前子字串中獨一無二字元的HashSet。</li>
+<li><strong><code>maxLength</code></strong>：不含有重複字元的子字串的最大長度。</li>
+<li><strong><code>left</code></strong> 和 <strong><code>right</code></strong>：定義目前子字串的兩個指標。</li>
+</ul>
+</li>
+<li>
+<p>透過滑動窗口的方式遍歷字串：</p>
+<ul>
+<li>
+<p>如果 <strong><code>right</code></strong> 指標所指的字元不在HashSet中：</p>
+<ol>
+<li>把該字元加入HashSet。</li>
+<li>如果目前子字串的長度大於之前的最大長度，則更新 <strong><code>maxLength</code></strong>。</li>
+<li>把 <strong><code>right</code></strong> 指標移到下一個位置。</li>
+</ol>
+</li>
+<li>
+<p>如果 <strong><code>right</code></strong> 指標所指的字元已經在HashSet中：</p>
+<ol>
+<li>把 <strong><code>left</code></strong> 指標所指的字元從HashSet中移除。</li>
+<li>把 <strong><code>left</code></strong> 指標移到下一個位置。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>重複上述過程，直到 <strong><code>right</code></strong> 指標到達字串的結尾。</p>
+</li>
+<li>
+<p>返回找到的最大長度。</p>
+</li>
+</ol>
+<h4 id="7-c-單元測試c-unit-tests">7. C# 單元測試（C# Unit Tests）</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#069;font-weight:bold">namespace</span> <span style="color:#0cf;font-weight:bold">UnitTestDay3_LongestSubstring.Tests</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>{
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#309">    [TestClass()]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>    <span style="color:#069;font-weight:bold">public</span> <span style="color:#069;font-weight:bold">class</span> <span style="color:#0a8;font-weight:bold">SolutionTests</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>    {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>        <span style="color:#069;font-weight:bold">private</span> Solution UT = <span style="color:#069;font-weight:bold">new</span> Solution();
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span><span style="color:#309">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span><span style="color:#309">        [TestMethod]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>        <span style="color:#069;font-weight:bold">public</span> <span style="color:#069;font-weight:bold">void</span> Test1()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>        {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>            <span style="color:#078;font-weight:bold">int</span> result = UT.LengthOfLongestSubstring( <span style="color:#c30">&#34;abcabcbb&#34;</span> );
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>            Assert.AreEqual( <span style="color:#f60">3</span>, result );
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>        }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span><span style="color:#309">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span><span style="color:#309">        [TestMethod]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>        <span style="color:#069;font-weight:bold">public</span> <span style="color:#069;font-weight:bold">void</span> Test2()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>        {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>            <span style="color:#078;font-weight:bold">int</span> result = UT.LengthOfLongestSubstring( <span style="color:#c30">&#34;bbbbb&#34;</span> );
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>            Assert.AreEqual( <span style="color:#f60">1</span>, result );
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>        }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span><span style="color:#309">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span><span style="color:#309">        [TestMethod]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>        <span style="color:#069;font-weight:bold">public</span> <span style="color:#069;font-weight:bold">void</span> Test3()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span>        {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span>            <span style="color:#078;font-weight:bold">int</span> result = UT.LengthOfLongestSubstring( <span style="color:#c30">&#34;pwwkew&#34;</span> );
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span>            Assert.AreEqual( <span style="color:#f60">3</span>, result );
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span>        }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span>    }
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span>}
+</span></span></code></pre></div><h4 id="8-python-解法python-solution">8. Python 解法（Python Solution）</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#069;font-weight:bold">class</span> <span style="color:#0a8;font-weight:bold">Solution</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>    <span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">length_of_longest_substring</span>(self, s: <span style="color:#366">str</span>) <span style="color:#555">-&gt;</span> <span style="color:#366">int</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>        n <span style="color:#555">=</span> <span style="color:#366">len</span>(s)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>        max_length <span style="color:#555">=</span> <span style="color:#f60">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>        left, right <span style="color:#555">=</span> <span style="color:#f60">0</span>, <span style="color:#f60">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>        char_set <span style="color:#555">=</span> <span style="color:#366">set</span>()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>        <span style="color:#069;font-weight:bold">while</span> right <span style="color:#555">&lt;</span> n:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>            <span style="color:#069;font-weight:bold">if</span> s[right] <span style="color:#000;font-weight:bold">not</span> <span style="color:#000;font-weight:bold">in</span> char_set:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>                char_set<span style="color:#555">.</span>add(s[right])
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>                max_length <span style="color:#555">=</span> <span style="color:#366">max</span>(max_length, right <span style="color:#555">-</span> left <span style="color:#555">+</span> <span style="color:#f60">1</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>                right <span style="color:#555">+=</span> <span style="color:#f60">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>            <span style="color:#069;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>                char_set<span style="color:#555">.</span>remove(s[left])
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>                left <span style="color:#555">+=</span> <span style="color:#f60">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>        <span style="color:#069;font-weight:bold">return</span> max_length
+</span></span></code></pre></div><h4 id="9-python-程式碼說明python-code-explanation">9. Python 程式碼說明（Python Code Explanation）</h4>
+<ul>
+<li>使用滑動窗口的概念，兩個指針 <strong><code>left</code></strong> 和 <strong><code>right</code></strong> 指示子字串的範圍。</li>
+<li>使用 <strong><code>set</code></strong> 來儲存子字串中的字元，以檢查重複。</li>
+<li>在遍歷過程中，不斷更新最長子字串的長度。</li>
+</ul>
+<h4 id="10-python-單元測試python-unit-tests">10. Python 單元測試（Python Unit Tests）</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">unittest</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#069;font-weight:bold">class</span> <span style="color:#0a8;font-weight:bold">SolutionTests</span>(unittest<span style="color:#555">.</span>TestCase):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>    <span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">test_length_of_longest_substring_case1</span>(self):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>        solution <span style="color:#555">=</span> Solution()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>        s <span style="color:#555">=</span> <span style="color:#c30">&#34;abcabcbb&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>        expected <span style="color:#555">=</span> <span style="color:#f60">3</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>        result <span style="color:#555">=</span> solution<span style="color:#555">.</span>length_of_longest_substring(s)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>        self<span style="color:#555">.</span>assertEqual(expected, result)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>    <span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">test_length_of_longest_substring_case2</span>(self):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>        solution <span style="color:#555">=</span> Solution()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>        s <span style="color:#555">=</span> <span style="color:#c30">&#34;bbbbb&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>        expected <span style="color:#555">=</span> <span style="color:#f60">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>        result <span style="color:#555">=</span> solution<span style="color:#555">.</span>length_of_longest_substring(s)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>        self<span style="color:#555">.</span>assertEqual(expected, result)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>    <span style="color:#069;font-weight:bold">def</span> <span style="color:#c0f">test_length_of_longest_substring_case3</span>(self):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>        solution <span style="color:#555">=</span> Solution()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>        s <span style="color:#555">=</span> <span style="color:#c30">&#34;pwwkew&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span>        expected <span style="color:#555">=</span> <span style="color:#f60">3</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span>        result <span style="color:#555">=</span> solution<span style="color:#555">.</span>length_of_longest_substring(s)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span>        self<span style="color:#555">.</span>assertEqual(expected, result)
+</span></span></code></pre></div><h4 id="11-總結summary">11. 總結（Summary）</h4>
+<p>這個題目要求找出一個字串中不包含重複字元的最長子字串的長度。解決方案使用了<strong>滑動窗口</strong>的概念，使用兩個指針來表示子字串的範圍，並使用 <strong><code>HashSet</code></strong> 或 <strong><code>set</code></strong> 來檢查重複。</p>
+<p>這個演算法的時間複雜度是O(n)，其中 n 是字串 <strong><code>s</code></strong> 的長度，因為每個字元最多被處理兩次（一次由 <strong><code>right</code></strong> 指標，一次由 <strong><code>left</code></strong> 指標）。空間複雜度為O(min(n, m))，其中m是字元的種類數目（獨一無二的數量）。在最壞的情況下，當所有字元都是唯一的時候，空間複雜度是O(n)。</p>
+<hr>
+<p><em>Reference</em>：<a href="https://asyncq.com/longest-substring-without-repeating-characters-leetcode-3-java-solution">Longest Substring Without Repeating Characters — Leetcode #3</a></p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-yucheng2007-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+>
+
+<script>
+  var indexURL = "https://yucheng2007.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://yucheng2007.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/mark.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://yucheng2007.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+  This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button"
+    class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+  (function ($) {
+    const cookieBox = document.getElementById('js-cookie-box');
+    const cookieButton = document.getElementById('js-cookie-button');
+    if (!Cookies.get('cookie-box')) {
+      cookieBox.classList.remove('cookie-box-hide');
+      cookieButton.onclick = function () {
+        Cookies.set('cookie-box', true, {
+          expires:  2 
+    });
+    cookieBox.classList.add('cookie-box-hide');
+  };
+		}
+	}) (jQuery);
+</script>
+
+
+<style>
+  .cookie-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 9999;
+    padding: 1rem 2rem;
+    background: rgb(71, 71, 71);
+    transition: all .75s cubic-bezier(.19, 1, .22, 1);
+    color: #fdfdfd;
+  }
+
+  .cookie-box-hide {
+    display: none;
+  }
+</style>
+</body>
+
+</html>
