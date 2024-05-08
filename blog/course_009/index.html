@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>JJ&#39;s Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="SEMI E187設備資安標準導入指南策略產業如何從設備入廠、配置、生產與維護期間的防護，提供企業落實半導體設備資安標準規範的實務方法。">
+  
+  <meta name="author" content="JJ.Chang">
+  
+
+  
+  <meta name="theme-name" content="liva-hugo" />
+
+  <meta name="generator" content="Hugo 0.117.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-49V7315XN5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-49V7315XN5');
+  </script>
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand" href="https://yucheng2007.github.io">
+        <span class="text-body">JJ's Blog</span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        
+        <div style="flex: 1;"></div>
+
+        <ul class="navbar-nav">
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/blog/">Blog</a>
+          </li>
+          
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/about/">About</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://yucheng2007.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2>Introduction to SEMI E187-Specification for Cyber Security of Fab Equipment</h2>
+        <div class="mb-3 post-meta">
+          <span>By JJ.Chang</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2024-05-08</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          
+          <a href="/categories/course" class="text-primary">Course</a>
+          
+        </div>
+        
+        <img src="https://yucheng2007.github.io/images/post/course/course_009_04.png" class="img-fluid w-100 mb-4" alt="Introduction to SEMI E187-Specification for Cyber Security of Fab Equipment">
+        
+        <hr class="my-4" style="border-color: lightgray; border-width: 2px; border-style: solid; font-weight: bold;">
+        <div class="content mb-5">
+          <h6 id="想分享這門課的原因">▍想分享這門課的原因？</h6>
+<p>近年資安威脅無所不在，常聽到很多半導體大廠遭到駭客攻擊，為更有效提升產業供應鏈安全，催生出台灣首個半導體晶圓設備資安標準 SEMI E187 - Specification for Cybersecurity of Fab Equipment（以下簡稱SEMI E187)，同時也是少數由台灣主導制定的全球性產業標準之一。</p>
+<p>這堂課程雖然很短，但就SEM E187的規範通盤的介紹與說明，也是讓第一次聽到的我可以更新自己的產業知識：</p>
+<ol>
+<li><strong>強化安全意識</strong>：學習SEM E187規範能夠提升人們對半導體設備網路安全的認識，進而提高安全意識，對於公司和個人的資料安全至關重要。</li>
+<li><strong>分享最新知識</strong>：這門課程介紹了SEM E187規範的框架、範圍和四大主要方面，使參與者能夠全面了解半導體設備網路安全標準。分享這門課程可以幫助他人了解最新的資訊和知識，並與同行進行交流，促進共同學習和進步。</li>
+</ol>
+<p><img src="/images/post/course/course_009_01.png" alt="course_009_01"></p>
+<h6 id="從這門課中獲得的收穫">▍從這門課中獲得的收穫</h6>
+<ol>
+<li>
+<p><strong>全面了解SEM E187規範</strong>：通過課程學習，參與者可以深入了解SEM E187規範的框架（Framework ）、範圍（Scope ）和應用（Four Aspects and Application ），掌握半導體設備網路安全的相關知識。</p>
+<p><img src="/images/post/course/course_009_02.png" alt="course_009_02"></p>
+</li>
+<li>
+<p><strong>實際應用能力提升</strong>：課程中介紹了SEM E187規範的實際應用，包括安全通訊流程、弱點掃描、Log儲存機制等，參與者可以學習到如何在實際工作中應用這些知識，提升自己的技能和能力。</p>
+</li>
+<li>
+<p><strong>如何執行SEMI E1871作業流程</strong></p>
+<ol>
+<li>廠商要提供OS超過12個月以上的安全更新，並且同步提供如何更新&amp;驗證機制提供給半導體廠。</li>
+<li>提供加密的通訊流程，設備廠商要提供安全的網路設定。</li>
+<li>設備上線之前，就必須要同時進行弱點掃描動作，並且檢附弱點掃描與惡意程式掃描結果。並提供報告給客戶如何強化該設備的網路安全指引。</li>
+<li>設備要能夠規劃Log儲存的機制，讓Log至少要能保存12個月以上的紀錄，並且具備Log匯出的功能，讓使用者可以匯出到外部平台分析與保存。</li>
+</ol>
+</li>
+<li>
+<p><strong>跟隨行業趨勢</strong>：SEM E187規範已經成為半導體行業的標準之一。如課程最後有提到台積電在去年就將SEMI E187訂為標準規範，要求設備商都必須要遵守，也做為業界得標竿。</p>
+<p><img src="/images/post/course/course_009_03.png" alt="course_009_03"></p>
+</li>
+</ol>
+<h6 id="後記">▍後記</h6>
+<p>總結一下，上完這堂課對SEM E187規範有最基礎的認知，對於設備開發商來說，至少聽到SEM E187要有一定得認知，才不會被客戶覺得不專業沒sense XD</p>
+<p>回到自己的工作領域，SEM E187有提到在作業系統(OS)的維護週期與安全性更新有一定的要求，這也就反應在系統設計初期，除了要選用工業電腦(IPC)外，也要知道與供應商(ex. 研華)討論產品生命週期等相關議題。
+而在Secure protocols 這部分，課堂中點到了一個很重要的觀點，多半設備商在開發初期都會以明碼(未加密)作為初期設計的架構。</p>
+<p>套用到通訊資安協定上，使用未加密的通訊協定，容易讓駭客竊取資料，雖然說半導體廠多半是封閉的環境，但為避免有心人操作，設備商在開發階段就要將資安控管機制加入，尤其是一些高階製程的recipe，都極具機密性，這塊更不能掉以輕心。</p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-yucheng2007-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+>
+
+<script>
+  var indexURL = "https://yucheng2007.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://yucheng2007.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/mark.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://yucheng2007.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+  This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button"
+    class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+  (function ($) {
+    const cookieBox = document.getElementById('js-cookie-box');
+    const cookieButton = document.getElementById('js-cookie-button');
+    if (!Cookies.get('cookie-box')) {
+      cookieBox.classList.remove('cookie-box-hide');
+      cookieButton.onclick = function () {
+        Cookies.set('cookie-box', true, {
+          expires:  2 
+    });
+    cookieBox.classList.add('cookie-box-hide');
+  };
+		}
+	}) (jQuery);
+</script>
+
+
+<style>
+  .cookie-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 9999;
+    padding: 1rem 2rem;
+    background: rgb(71, 71, 71);
+    transition: all .75s cubic-bezier(.19, 1, .22, 1);
+    color: #fdfdfd;
+  }
+
+  .cookie-box-hide {
+    display: none;
+  }
+</style>
+</body>
+
+</html>
