@@ -6,7 +6,20 @@
     <description>Recent content in 軟體開發筆記 on JJ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 10 Jan 2024 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/categories/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jun 2024 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/categories/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>利用ChatGPT生成Mermaid圖表語法並在Notion中使用</title>
+      <link>https://yucheng2007.github.io/blog/technotes_005/</link>
+      <pubDate>Sun, 16 Jun 2024 07:00:00 +0800</pubDate>
+      
+      <guid>https://yucheng2007.github.io/blog/technotes_005/</guid>
+      <description>利用ChatGPT生成Mermaid圖表語法並在Notion中使用 先前我個人都是利用一些網路上免費的資源，如Draw.io（教學）或是yEd（教學）繪製流程圖，另外，也有一款是透過寫程式的方式畫流程圖，對於規劃程式交握程序時，覺得相當便利的WebSequenceDiagrams，這幾套免費的線上軟體，基本上已經可以滿足多數軟體工程師工作上的需求。
+而這次要介紹的Mermaid，我自己會知道也是一次無意間要畫流程圖，想說既然都有使用Notion的習慣，那當然會希望能夠找到一套結合Notion，又能滿足用程式撰寫流程圖需求的工具。
+1. Mermaid簡介與優勢 Mermaid是一種基於Markdown的圖表語法工具，它使得開發者可以通過簡單的文本描述來生成複雜的圖表。這對於需要快速製作流程圖、甘特圖、序列圖等圖表的軟體工程師來說尤其實用。
+使用Mermaid的優勢在於它的易用性和靈活性：不需要複雜的圖形設計工具，只需幾行代碼即可生成清晰、專業的圖表。此外，Mermaid與多種編輯器和平台兼容，如Notion、GitHub、VSCode等，這使得它在協作環境中非常便捷。
+當然，個人覺得Mermaid最好用的地方在於它的線上資源相當豐富，官方網站的資料已經可以解決多數人80%的應用需求，像是Flowcharts、Sequence diagrams、Class diagrams甚至是Gantt diagrams他都有支援，是不是相當有趣。</description>
+    </item>
+    
     <item>
       <title>深入了解半導體設備軟體開發：關鍵技術和趨勢分析</title>
       <link>https://yucheng2007.github.io/blog/technotes_004/</link>

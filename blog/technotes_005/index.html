@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>JJ&#39;s Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="Mermaid是一種基於Markdown的圖表語法工具，它使得開發者可以通過簡單的文本描述來生成複雜的圖表。">
+  
+  <meta name="author" content="JJ.Chang">
+  
+
+  
+  <meta name="theme-name" content="liva-hugo" />
+
+  <meta name="generator" content="Hugo 0.117.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-49V7315XN5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-49V7315XN5');
+  </script>
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand" href="https://yucheng2007.github.io">
+        <span class="text-body">JJ's Blog</span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        
+        <div style="flex: 1;"></div>
+
+        <ul class="navbar-nav">
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/blog/">Blog</a>
+          </li>
+          
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/about/">About</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://yucheng2007.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2>利用ChatGPT生成Mermaid圖表語法並在Notion中使用</h2>
+        <div class="mb-3 post-meta">
+          <span>By JJ.Chang</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2024-06-16</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          
+          <a href="/categories/%e8%bb%9f%e9%ab%94%e9%96%8b%e7%99%bc%e7%ad%86%e8%a8%98" class="text-primary">軟體開發筆記</a>
+          
+        </div>
+        
+        <img src="https://yucheng2007.github.io/images/post/tech/tech_005_07.png" class="img-fluid w-100 mb-4" alt="利用ChatGPT生成Mermaid圖表語法並在Notion中使用">
+        
+        <hr class="my-4" style="border-color: lightgray; border-width: 2px; border-style: solid; font-weight: bold;">
+        <div class="content mb-5">
+          <h6 id="利用chatgpt生成mermaid圖表語法並在notion中使用">利用ChatGPT生成Mermaid圖表語法並在Notion中使用</h6>
+<p>先前我個人都是利用一些網路上免費的資源，如<a href="https://app.diagrams.net/">Draw.io</a>（<a href="https://medium.com/jimmy-wang/%E6%B5%81%E7%A8%8B%E5%9C%96%E6%9C%80%E4%BD%B3%E5%B7%A5%E5%85%B7-for-free-draw-io%E6%9C%80%E4%BD%B3%E5%AF%A6%E4%BD%9C%E7%9A%84%EF%BC%95%E5%80%8B%E5%B0%8F%E6%8A%80%E5%B7%A7-82955e410e47">教學</a>）或是<a href="https://www.yworks.com/products/yed">yEd</a>（<a href="https://htlin222.medium.com/yed%E4%BB%8B%E7%B4%B9-%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B-7cbd35b0bb0f">教學</a>）繪製流程圖，另外，也有一款是透過<strong>寫程式</strong>的方式畫流程圖，對於規劃程式交握程序時，覺得相當便利的<a href="https://www.websequencediagrams.com/#">WebSequenceDiagrams</a>，這幾套免費的線上軟體，基本上已經可以滿足多數軟體工程師工作上的需求。</p>
+<p>而這次要介紹的Mermaid，我自己會知道也是一次無意間要畫流程圖，想說既然都有使用Notion的習慣，那當然會希望能夠找到一套結合Notion，又能滿足<strong>用程式撰寫流程圖</strong>需求的工具。</p>
+<p><img src="/images/post/tech/tech_005_01.png" alt="tech_005_01"></p>
+<p><img src="/images/post/tech/tech_005_02.png" alt="tech_005_02"></p>
+<p><img src="/images/post/tech/tech_005_03.png" alt="tech_005_03"></p>
+<h4 id="1-mermaid簡介與優勢">1. Mermaid簡介與優勢</h4>
+<p>Mermaid是一種基於Markdown的圖表語法工具，它使得開發者可以通過簡單的文本描述來生成複雜的圖表。這對於需要快速製作流程圖、甘特圖、序列圖等圖表的軟體工程師來說尤其實用。</p>
+<p>使用Mermaid的優勢在於它的易用性和靈活性：<strong>不需要複雜的圖形設計工具，只需幾行代碼即可生成清晰、專業的圖表</strong>。此外，Mermaid與多種編輯器和平台兼容，如Notion、GitHub、VSCode等，這使得它在協作環境中非常便捷。</p>
+<p><img src="/images/post/tech/tech_005_04.png" alt="tech_005_04"></p>
+<p>當然，個人覺得Mermaid最好用的地方在於它的線上資源相當豐富，官方網站的資料已經可以解決多數人80%的應用需求，像是Flowcharts、Sequence diagrams、Class diagrams甚至是Gantt diagrams他都有支援，是不是相當有趣。</p>
+<p>這裡也建議第一次用的初學者，可以先大該view一下官網的documents，先知道Mermaid支援那些diagram，有一些簡單的syntax基礎概念就可以了。因為後面的進階工作就交給ChatGPT 就可以了 XD</p>
+<p><img src="/images/post/tech/tech_005_07.png" alt="tech_005_07"></p>
+<h4 id="2-chatgpt與mermaid的結合應用">2. ChatGPT與Mermaid的結合應用</h4>
+<p>ChatGPT相信大家現在對它應該都不陌生了，它是一個強大的自然語言處理模型，能夠理解並生成人類語言。利用ChatGPT，我們可以將文字描述轉換為Mermaid語法，極大地簡化了圖表創建過程。</p>
+<p>例如，你可以向ChatGPT描述一個簡單的流程：「一個用戶註冊流程，包含輸入用戶名、驗證電子郵件、創建密碼」——然後ChatGPT會生成對應的Mermaid語法：</p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD;
+    A[輸入用戶名] --&gt; B[驗證電子郵件] --&gt; C[創建密碼]
+</code></pre><p>這樣，開發者只需關注問題邏輯的描述，而不需要深入學習Mermaid語法，大大提高了工作效率。</p>
+<h4 id="3-在notion中使用mermaid圖表">3. 在Notion中使用Mermaid圖表</h4>
+<p>Notion大家應該都不陌生，它是一個強大的筆記和項目管理工具，支持多種內容格式。Notion支援將Mermaid圖表嵌入，可以使你的筆記更加直觀和可視化。以下快速介紹在Notion中嵌入Code的具體步驟：</p>
+<ol>
+<li><strong>插入代碼塊</strong>：在Notion中，選擇插入一個新的代碼塊。</li>
+<li><strong>選擇Mermaid語法</strong>：在代碼塊中選擇Mermaid作為語法類型。</li>
+<li><strong>粘貼Mermaid代碼</strong>：將由ChatGPT生成的Mermaid語法粘貼到代碼塊中，Notion將自動渲染為對應的圖表。</li>
+</ol>
+<p><img src="/images/post/tech/tech_005_06.png" alt="tech_005_06"></p>
+<p>像上面這樣就可以輕鬆地在Notion中添加流程圖、甘特圖等，並且可以隨時編輯和更新，保持內容的動態和一致（Notion教學只是帶過，網路上有相當多的教學資源可以查詢）。</p>
+<h4 id="4-結論--新手建議">4. 結論 &amp; 新手建議</h4>
+<p>利用ChatGPT生成Mermaid圖表語法並在Notion中使用，對於希望提高工作效率和協作效率的軟體工程師來說，是一個極佳的工具組合。</p>
+<p>對於新手，我建議先熟悉基本的Mermaid語法，理解其生成圖表的基本邏輯。你可以參考Mermaid官方網站上的範例和語法說明，快速掌握基礎知識。然後，嘗試用ChatGPT來生成一些簡單的圖表語法，逐步加深對這種結合應用的理解和掌握。</p>
+<p>最後，不得不提一下，拜ChatGPT的問世，大大縮短了工程師<strong>學習任何語法的時間</strong>，更進階的說，只要你的prompt下的好，你會發現不僅提高了工作效率，還可以輕鬆地把複雜的圖表生成過程變得簡單且有趣。</p>
+<p>對如何下正確的prompt有興趣的人，建議可以去參考這篇課程《<a href="https://yucheng2007.github.io/blog/course_007/">瞭解原理 + 優質詠唱 = AI 時代人人必學的 ChatGPT 駕馭術</a>》，這堂課從認識AI到如何用正確的方式跟AI溝通，對於初學者來說是相當的淺顯易懂。</p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-yucheng2007-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+>
+
+<script>
+  var indexURL = "https://yucheng2007.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://yucheng2007.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/mark.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://yucheng2007.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+  This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button"
+    class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+  (function ($) {
+    const cookieBox = document.getElementById('js-cookie-box');
+    const cookieButton = document.getElementById('js-cookie-button');
+    if (!Cookies.get('cookie-box')) {
+      cookieBox.classList.remove('cookie-box-hide');
+      cookieButton.onclick = function () {
+        Cookies.set('cookie-box', true, {
+          expires:  2 
+    });
+    cookieBox.classList.add('cookie-box-hide');
+  };
+		}
+	}) (jQuery);
+</script>
+
+
+<style>
+  .cookie-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 9999;
+    padding: 1rem 2rem;
+    background: rgb(71, 71, 71);
+    transition: all .75s cubic-bezier(.19, 1, .22, 1);
+    color: #fdfdfd;
+  }
+
+  .cookie-box-hide {
+    display: none;
+  }
+</style>
+</body>
+
+</html>
