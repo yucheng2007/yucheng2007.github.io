@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>JJ&#39;s Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="在區塊鏈中，每個區塊都包含了一個雜湊值，以及前一個區塊的雜湊值，形成一個鏈條。">
+  
+  <meta name="author" content="JJ.Chang">
+  
+
+  
+  <meta name="theme-name" content="liva-hugo" />
+
+  <meta name="generator" content="Hugo 0.117.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-49V7315XN5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-49V7315XN5');
+  </script>
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand" href="https://yucheng2007.github.io">
+        <span class="text-body">JJ's Blog</span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        
+        <div style="flex: 1;"></div>
+
+        <ul class="navbar-nav">
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/blog/">Blog</a>
+          </li>
+          
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/about/">About</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://yucheng2007.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2>區塊鏈基礎概念：去中心化與防偽機制</h2>
+        <div class="mb-3 post-meta">
+          <span>By JJ.Chang</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2024-07-24</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          
+          <a href="/categories/course" class="text-primary">Course</a>
+          
+        </div>
+        
+        <img src="https://yucheng2007.github.io/images/post/course/course_011_01.png" class="img-fluid w-100 mb-4" alt="區塊鏈基礎概念：去中心化與防偽機制">
+        
+        <hr class="my-4" style="border-color: lightgray; border-width: 2px; border-style: solid; font-weight: bold;">
+        <div class="content mb-5">
+          <h4 id="想分享這門課的原因">▍想分享這門課的原因？</h4>
+<p>課程一開始就從目前最夯的虛擬貨幣（比特幣）的實際案例出發，帶入到區塊鏈的基礎概念。</p>
+<p>開頭舉了一個讓我印象深刻的案例，講的是虛擬貨幣對於委內瑞拉這個國家來說，是如何拯救了一個家庭。</p>
+<p><img src="/images/post/course/course_011_02.png" alt="Course_11_02"></p>
+<p>委內瑞拉是一個位於中南美洲的國家，長期處於經濟動盪不安，或許你無法想像在2018年委內瑞拉一杯咖啡要價新台幣$75元，到了2019年直接飆升到新台幣$28萬元（沒錯！他們的通膨就是這麼扯），可以參考這篇「<a href="https://technews.tw/2024/01/12/a-country-with-uncontrolled-inflation/">不是窮人就是移民 一國通膨失控的下場</a>」。</p>
+<p>如果你是離不開委國的國民，這時或許你也會開始思考，怎麼不讓辛苦賺取的錢，因為經濟政局的動盪被蒸發掉？</p>
+<p>而比特幣的出現，正好解決了他們的問題，它不受外匯管制又能夠在全球市場流通，是一種完全突破地理限制的虛擬貨幣。這類的狀況，在很多相對封閉或制度不完善的國家，比特幣的興起它去中心化的特色，對於個人或企業來說，都起了很大的作用。</p>
+<h4 id="從這門課中獲得的收穫">▍從這門課中獲得的收穫？</h4>
+<p>這門課沒有艱深的技術理論，而是透過講述區塊鏈的原理與應用，以總經觀點來闡述未來趨勢與產業發展。</p>
+<p>而比較特別的是，這堂課有別於先前上過的區塊鏈課程，除介紹最基本的去中心化，也有帶到防偽機制原理與應用，整堂課淺顯易懂，上起來沒很大的壓力，相當適合區塊鏈入門新手。</p>
+<p>說到去中心化，要先了解什麼是去中心化？它是好事還是壞事？</p>
+<p>先來說說我們目前常用的<strong>實體支付</strong>與<strong>數位支付</strong>兩種方式，關於實體支付，它保有隱私、互動不受限制；而數位支付，你的個人資訊會暴露在網路上，相對較沒隱私，但也不受距離限制。</p>
+<p>數位的去中心化，則移除了中間人（隱私）並且互動形式也不受限制。簡單來說，如果一般個人或企業（被管理者）不想被監管，他們會更傾向於使用去中心化的服務。放眼國際，像中國、北韓、伊朗甚至委內瑞拉等國家，為了繞開國際強權，避開美國發動的國際制裁，去中心化便成為一個非常吸引人的選擇。</p>
+<p><img src="/images/post/course/course_011_03.png" alt="Course_11_03"></p>
+<p>首先，<strong>Hash</strong>（雜湊）是區塊鏈技術的基石。每一筆交易或資料都會通過Hash函數生成唯一的雜湊值，如同資料的數字指紋。這個過程確保了資料的唯一性和不可篡改性。</p>
+<p><strong>在區塊鏈中，每個區塊都包含了一個雜湊值，以及前一個區塊的雜湊值，形成一個鏈條</strong>。這意味著如果任何區塊中的資料被修改，這些變動會改變該區塊的雜湊值，並且連鎖影響到後續所有區塊。這種設計使得篡改資料變得極為困難。</p>
+<p>接下來，我們來看看<strong>挖礦（Mining）<strong>的過程。挖礦是用來生成新的區塊並驗證交易的過程。礦工們競相解決一個數學難題，即找到一個特定條件下的</strong>隨機數（Nonce）</strong>，使得新的雜湊值符合特定格式（如以0000開頭）。</p>
+<p><img src="/images/post/course/course_011_04.png" alt="Course_11_04"></p>
+<p>這個過程需要大量的計算資源和時間，一旦找到正確的Nonce，這個新的區塊就被添加到區塊鏈中，並且網絡中的所有參與者都能夠驗證這個區塊的合法性。這種機制保證了區塊鏈的透明性和安全性，防止任何單一個體或組織控制整個區塊鏈。</p>
+<p>最後，我們來看<strong>區塊鏈的共識機制</strong>。共識機制確保了區塊鏈網絡中的多數參與者對交易資料達成一致。常見的共識機制有工作量證明（PoW）和權益證明（PoS）等。</p>
+<p>在工作量證明中，攻擊者需要控制網絡中超過三分之一的計算資源才能成功篡改資料，這在現實中幾乎是不可能的。此外，相較於攻擊一個中心化的伺服器，攻擊分佈在全球的數千台計算機的區塊鏈網絡難度更高，成本也更大。</p>
+<p>這些機制共同作用，形成了區塊鏈的防偽系統，確保了資料的真實性和完整性。區塊鏈技術的這些特性，使其在金融、供應鏈管理、醫療等多個領域都有廣泛的應用前景。</p>
+<p>對區塊鏈有興趣的也可以參考這個網站 <a href="https://andersbrownworth.com/blockchain/">Blockchain Demo</a> 的示範影片。</p>
+<h4 id="後記">▍後記</h4>
+<p>這堂課是在Hahow平台上的，算是用另一種方式快速認識與複習區塊鏈的基礎知識。</p>
+<p>雖然上網可以找到很多關於區塊鏈的資訊，但透過有系統性的學習，可以更有脈絡地掌握整個區塊鏈的基礎知識。</p>
+<p>上完課後，將內容消化並彙整記錄也幫助自己更深入理解和應用這些知識。</p>
+<p><strong>延伸參考：</strong></p>
+<ol>
+<li>
+<p><a href="https://academy.binance.com/zt/articles/what-is-crypto-mining-and-how-does-it-work">什麼是加密貨幣挖礦？它的運作原理為何？</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/dapp-pocket/%E5%8D%80%E5%A1%8A%E9%8F%88-%E6%98%AF%E4%BB%80%E9%BA%BC-%E5%8D%80%E5%A1%8A%E9%8F%88-5-%E5%88%86%E9%90%98%E5%B0%8F%E6%95%99%E5%AE%A4-%E7%AC%AC%E4%B8%80%E8%AC%9B-81f4f6163eaf">【區塊鏈小教室】第一講：區塊鏈是什麼？</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/dapp-pocket/%E7%99%BD%E8%A9%B1%E8%81%8A%E5%8D%80%E5%A1%8A%E9%8F%88%E6%8A%80%E8%A1%93-%E5%AF%86%E7%A2%BC%E5%AD%B8-%E9%9B%9C%E6%B9%8A%E5%87%BD%E6%95%B8-%E5%8D%80%E5%A1%8A%E9%8F%885%E5%88%86%E9%90%98%E5%B0%8F%E6%95%99%E5%AE%A4-%E7%AC%AC%E4%BA%8C%E8%AC%9B-bcc0b20b5011">【區塊鏈小教室】第二講：密碼學 &amp;雜湊函數</a></p>
+</li>
+</ol>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-yucheng2007-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+>
+
+<script>
+  var indexURL = "https://yucheng2007.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://yucheng2007.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/mark.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://yucheng2007.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+  This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button"
+    class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+  (function ($) {
+    const cookieBox = document.getElementById('js-cookie-box');
+    const cookieButton = document.getElementById('js-cookie-button');
+    if (!Cookies.get('cookie-box')) {
+      cookieBox.classList.remove('cookie-box-hide');
+      cookieButton.onclick = function () {
+        Cookies.set('cookie-box', true, {
+          expires:  2 
+    });
+    cookieBox.classList.add('cookie-box-hide');
+  };
+		}
+	}) (jQuery);
+</script>
+
+
+<style>
+  .cookie-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 9999;
+    padding: 1rem 2rem;
+    background: rgb(71, 71, 71);
+    transition: all .75s cubic-bezier(.19, 1, .22, 1);
+    color: #fdfdfd;
+  }
+
+  .cookie-box-hide {
+    display: none;
+  }
+</style>
+</body>
+
+</html>
