@@ -8,6 +8,16 @@
     <language>zh-tw</language>
     <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate><atom:link href="https://yucheng2007.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>LeetCode #4 Median of Two Sorted Arrays</title>
+      <link>https://yucheng2007.github.io/blog/leetcode_004/</link>
+      <pubDate>Wed, 31 Jul 2024 07:00:00 +0800</pubDate>
+      
+      <guid>https://yucheng2007.github.io/blog/leetcode_004/</guid>
+      <description>1. 題目（Problem Statement） 英文：
+Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.</description>
+    </item>
+    
+    <item>
       <title>區塊鏈基礎概念：去中心化與防偽機制</title>
       <link>https://yucheng2007.github.io/blog/course_011/</link>
       <pubDate>Wed, 24 Jul 2024 07:00:00 +0800</pubDate>
