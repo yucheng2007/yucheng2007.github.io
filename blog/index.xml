@@ -8,6 +8,17 @@
     <language>zh-tw</language>
     <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate><atom:link href="https://yucheng2007.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2024 Year in Review </title>
+      <link>https://yucheng2007.github.io/blog/life_007/</link>
+      <pubDate>Tue, 31 Dec 2024 07:00:00 +0800</pubDate>
+      
+      <guid>https://yucheng2007.github.io/blog/life_007/</guid>
+      <description>2024 Year in Review 回顧 2024，無論過程順不順利，計畫是否如預期完成，我們都很努力走過了 2024。
+今年最大的挑戰是「轉念與探索」。在工作上，從年初的人事變動到年底漸入佳境，過程雖然艱辛，但收穫也很多，很感謝這一路走來的夥伴們。
+在探索上，2024 是與 AI 共處的一年。AI 的崛起讓跨領域學習變得更容易，也大大提升了個人的工作效率。整體而言，今年朝著正確的道路努力前行，透過回顧反思今年做得好與不好的地方。</description>
+    </item>
+    
+    <item>
       <title>華頓商學院最受歡迎的談判課：上完這堂課，世界都會聽你的</title>
       <link>https://yucheng2007.github.io/blog/readingnotes_107/</link>
       <pubDate>Sat, 28 Dec 2024 07:00:00 +0800</pubDate>
@@ -527,7 +538,7 @@ Given a string s, find the length of the longest substring without repeating cha
     </item>
     
     <item>
-      <title>2023 Retrospective</title>
+      <title>2023 Year in Review </title>
       <link>https://yucheng2007.github.io/blog/life_004/</link>
       <pubDate>Sun, 31 Dec 2023 07:00:00 +0800</pubDate>
       
@@ -1056,7 +1067,7 @@ CSVtoTable.py
     </item>
     
     <item>
-      <title>2022 Retrospective</title>
+      <title>2022 Year in Review </title>
       <link>https://yucheng2007.github.io/blog/life_003/</link>
       <pubDate>Sat, 31 Dec 2022 07:00:00 +0800</pubDate>
       
