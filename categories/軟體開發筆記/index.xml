@@ -6,7 +6,16 @@
     <description>Recent content in 軟體開發筆記 on JJ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 16 Jun 2024 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/categories/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jan 2025 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/categories/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JSON Crack：JSON 數據結構閱讀的好幫手</title>
+      <link>https://yucheng2007.github.io/blog/technotes_006/</link>
+      <pubDate>Sun, 05 Jan 2025 07:00:00 +0800</pubDate>
+      
+      <guid>https://yucheng2007.github.io/blog/technotes_006/</guid>
+      <description>JSON Crack：JSON 數據結構閱讀的好幫手 JSON（JavaScript Object Notation）是我們在開發時，常會用到資料交換的主流格式，無論是 API 回應、設定檔案，還是資料儲存，JSON 無處不在。而當 JSON 資料變得複雜且層級深時，往往我們就會需要花費大量時間手動解析，甚至可能因為結構過於繁瑣而出錯。</description>
+    </item>
+    
     <item>
       <title>利用ChatGPT生成Mermaid圖表語法並在Notion中使用</title>
       <link>https://yucheng2007.github.io/blog/technotes_005/</link>
