@@ -165,7 +165,7 @@
 <p><strong>DeepSeekMoE</strong></p>
 <p>再來是前饋神經網路導入他們設計的 DeepSeekMoE，其核心在於每次僅激活部分專家（如370億參數），從而大幅降低運算成本並提升效能。</p>
 <p>據 DeepSeek 稱可以節省 42.5% 的訓練成本，因為使用專家系統，由路由專家 Routed Expert 和 Shared Expert 共享專家來提高專家專業化的潛力。簡單來說專家系統的安排，模型每次都可以更準確的知識獲取；以及隔離一些共享專家，以減輕路由專家之間的冗餘知識，也就是雜訊。</p>
-<p><img src="/images/post/tech/tech_007_05.png" alt="tech_007_05"></p>
+<p><img src="/images/post/tech/tech_007_07.png" alt="tech_007_07"></p>
 </li>
 <li>
 <p><strong>輔助損失自由負載平衡（Auxiliary-Loss-Free Load Balancing）</strong></p>
@@ -176,7 +176,7 @@
 <p>DeepSeek V3 採用了多 token 預測訓練目標，為每個深度的每個標記的預測保留完整的 causal chain，旨在提升生成效率和解碼速度。而 DeepSeek V2 沒有使用 MTP ，MTP 讓 DeepSeek V3 的解碼速度提高了 1.8 倍。</p>
 <p>DeepSeek-V3 也使用了多 token 預測，能同時預測多個 token，不僅提高模型訓練效率，也可提升 token 產生的速度，模型每秒產生 60 個 token，速度是前一代模型的 3 倍。</p>
 <p>另外在訓練階段，DeepSeek 使用了多種硬體和演算法的最佳化，包括 FP8 混合精度訓練框架，以及用於管道化平行的 DualPipe 演算法，來降低模型訓練的成本。</p>
-<p><img src="/images/post/tech/tech_007_06.png" alt="tech_007_06"></p>
+<p><img src="/images/post/tech/tech_007_08.png" alt="tech_007_08"></p>
 </li>
 </ol>
 <p>DeepSeek V3 的程式碼目前在 MIT 協議下公開於 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3">GitHub</a> ，模型則根據公司的模型授權提供。</p>
