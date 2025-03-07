@@ -1,56 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SCRUM on JJ&#39;s Blog</title>
+    <title>Scrum on JJ&#39;s Blog</title>
     <link>https://yucheng2007.github.io/tags/scrum/</link>
-    <description>Recent content in SCRUM on JJ&#39;s Blog</description>
+    <description>Recent content in Scrum on JJ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 19 Sep 2022 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/tags/scrum/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Great ScrumMaster中文版: #ScrumMasterWay</title>
-      <link>https://yucheng2007.github.io/blog/readingnotes_037/</link>
-      <pubDate>Mon, 19 Sep 2022 07:00:00 +0800</pubDate>
-      
-      <guid>https://yucheng2007.github.io/blog/readingnotes_037/</guid>
-      <description>📖 The Great ScrumMaster中文版: #ScrumMasterWay 《The Great ScrumMaster》這是一本以ScrumMaster為核心的探討，作者Zuzana Šochová本身是位敏捷教練也是Scrum的培訓講師，藉由這本書完整的介紹ScrumMaster的角色與責任，同時帶出該角色應該具備的各項軟技能。
-如果你對Scurm有基本的認知，在讀這本書之前，先問自己一個問題，ScrumMaster的工作是什麼？</description>
-    </item>
-    
-    <item>
-      <title>BCG問題解決力：一生受用的策略顧問思考法</title>
-      <link>https://yucheng2007.github.io/blog/readingnotes_030/</link>
-      <pubDate>Sun, 26 Jun 2022 07:00:00 +0800</pubDate>
-      
-      <guid>https://yucheng2007.github.io/blog/readingnotes_030/</guid>
-      <description>📖 BCG問題解決力 《BCG問題解決力》作者徐瑞廷是波士頓顧問公司(BCG)董事總經理，將在台大管理學院開的「策略顧問：方法與實務」課程內容精華成書，透過「假說思考」的方法，找到解決問題的Sweet Spot(甜蜜點)，這本書很有啟發性，適合給有過一些專案實作經驗的人。
-║ 為什麼想讀這本書? 在一次與老闆交換閱讀心得的時候，被推薦的一本書，也算是第一次比較深入了解「策略顧問」這行；策略顧問的核心工作，除了制定策略之外，更重要的是幫助企業執行長解決商業問題。
-這本書與幾年前台大曾轟動一時的通識課《秦始皇︰一場歷史的思辨之旅》有一個共同相似的地方，都是透過「思辨」的方式，培養獨立思考與批判思考的能力。當然本書更著重在於問題解決的方法學與各項核心技能背後潛藏的意義(問對問題、解決問題、客戶訪談、定量分析、專案管理與投影片技巧 etc.)。
-║ 解決問題的基本信念 想要成為問題解決者(problem-solver)，首先，要對問題追根究柢，作者認為在面對問題時，要先問自己三個問題：</description>
-    </item>
-    
+    <lastBuildDate>Sat, 09 Apr 2022 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/tags/scrum/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>告別瀑布，擁抱Scrum：解析微軟與Adobe如何在30天內開發出新軟體</title>
-      <link>https://yucheng2007.github.io/blog/readingnotes_024/</link>
+      <link>https://yucheng2007.github.io/blog/b024_%E5%91%8A%E5%88%A5%E7%80%91%E5%B8%83%E6%93%81%E6%8A%B1-scrum/</link>
       <pubDate>Sat, 09 Apr 2022 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/readingnotes_024/</guid>
+      <guid>https://yucheng2007.github.io/blog/b024_%E5%91%8A%E5%88%A5%E7%80%91%E5%B8%83%E6%93%81%E6%8A%B1-scrum/</guid>
       <description>📖 告別瀑布，擁抱Scrum：解析微軟與Adobe如何在30天內開發出新軟體 《告別瀑布，擁抱Scrum》本書不是在講述敏捷技巧而是對於敏捷管理的系統性介紹，作者Jeff Sutherland及Ken Schwaber同時也是Scrum的創造者之一，從事軟體開發已經有70餘年的經驗，將這套敏捷開發心法推廣，也是這幾年矽谷大企業與新創公司普遍採用的方法。
 書中舉了蠻多實際發生的經典案例，很值得一看，譬如美國FBI的查詢系統建置，由原本耗資4億美元動用400名軟體工程師的專案，最後導入Scrum後，僅用了1年的時間人力縮減到45人且僅耗費3000萬美元即完成90%的功能。
 Adobe當年在開發Premier Pro CS3升級到CS4時，也遇到耗費需多的人力與資源，最後產品推出時間延期與成效不彰的狀況，最後也是導入敏捷開發後，大幅縮短產品推出週期，到現在Adobe甚至將敏捷這套管理方式，開發成軟體(Workfront)商用套件販售。
 關於在講述Scrum時，我們常聽到的每日站立會議(Daily Standup Meeting)、故事(User Story)、衝刺(Sprint) 及 衝刺回顧(Sprint Retrospective) 等事件，以及Scrum的各角色與權責，如產品負責人、Scrum Master、開發團隊等，在本書附錄有詳盡的解釋，也可以搭配看先前分享的另一本書《SCRUM：用一半的時間做兩倍的事》，會更有心得，這也是Jeff Sutherland的另一本著作。</description>
-    </item>
-    
-    <item>
-      <title>SCRUM：用一半的時間做兩倍的事</title>
-      <link>https://yucheng2007.github.io/blog/readingnotes_017/</link>
-      <pubDate>Sat, 22 Jan 2022 07:00:00 +0800</pubDate>
-      
-      <guid>https://yucheng2007.github.io/blog/readingnotes_017/</guid>
-      <description>📖 SCRUM：用一半的時間做兩倍的事 《SCRUM：用一半的時間做兩倍的事》這是本在講述Scrum的理念和背後思維的一本書，作者Jeff Sutherland是Scrum發起者之一，書中講述Scrum在設計上的思維邏輯，透過一些案例與研究探討，讓我們能更清楚知道傳統瀑布與敏捷開發上的優缺，不管是套用到工作或是生活上都相當實用。
-什麼人適合看？ 你聽過Scrum，但不知道這是什麼？你是PM又或者想了解為什麼專案常常delay，且最後結果總是不如客戶預期？想改變傳統的管理或開發方式，但不知道如何下手，或許這本書就很適合你。
-書名「用一半的時間做兩倍的事」個人覺得換成「用一半的時間產出兩倍的效率」這種說法會更為貼切。本書中在講述Scrum時，常會聽到的幾個關鍵名詞，這邊粗略的分享其目的與背後意義。
-每日站立會議(Daily Standup Meeting)：站立的目的是不希望過久的會議時間，用意是讓整個團隊的成員清楚知道，在這一段衝刺期裡每件事的進度以及每日該完成的進度。</description>
     </item>
     
   </channel>
