@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>JJ&#39;s Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="Markdown 是一種輕量級的標記語言，讓你可以在 Notion 中快速格式化文本內容。">
+  
+  <meta name="author" content="JJ.Chang">
+  
+
+  
+  <meta name="theme-name" content="liva-hugo" />
+
+  <meta name="generator" content="Hugo 0.117.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-49V7315XN5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-49V7315XN5');
+  </script>
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand" href="https://yucheng2007.github.io">
+        <span class="text-body">JJ's Blog</span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        
+        <div style="flex: 1;"></div>
+
+        <ul class="navbar-nav">
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/blog/">Blog</a>
+          </li>
+          
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/about/">About</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://yucheng2007.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2>Notion 10 個我最常用的 Markdown 語法介紹</h2>
+        <div class="mb-3 post-meta">
+          <span>By JJ.Chang</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2023-10-10</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          
+          <a href="/categories/%e8%bb%9f%e9%ab%94%e9%96%8b%e7%99%bc%e7%ad%86%e8%a8%98" class="text-primary">軟體開發筆記</a>
+          
+        </div>
+        
+        <img src="https://yucheng2007.github.io/images/post/tech/tech_002_02.png" class="img-fluid w-100 mb-4" alt="Notion 10 個我最常用的 Markdown 語法介紹">
+        
+        <hr class="my-4" style="border-color: lightgray; border-width: 2px; border-style: solid; font-weight: bold;">
+        <div class="content mb-5">
+          <p>會想分享這篇Markdown語法，主要是先前使用的Trello跟目前使用的Notion都是用此語法。</p>
+<p>而最近在嘗試自己架站(Hugo+Github)，Hugo主要是用GO語言實現的靜態網站（Static Site Generator），利用Markdown將內容跟樣式外觀完整分開，再利用生成的靜態網頁直接發佈到Server上。</p>
+<p>網路上對於Markdown的教學很多，譬如「<a href="https://markdown.tw/">Markdown文件</a>」，這裡有完整的語法介紹。而本文只著重在Notion中我自己最常用的十種Markdown元素跟大家介紹分享：</p>
+<ol>
+<li>
+<h5 id="h1h2h3-標題headings">H1、H2、H3 標題（Headings）</h5>
+</li>
+</ol>
+<ul>
+<li>主要分為<strong>一級標題</strong>（<strong>H1</strong>）<strong>、二級標題</strong>（<strong>H2</strong>）<strong>及三級標題</strong>（<strong>H3</strong>）</li>
+<li>在Notion上也可以透過打：「<strong><code>/h1 + Enter</code></strong>」、「<strong><code>/h2 + Enter</code></strong>」、「<strong><code>/h3 + Enter</code></strong>」呼叫對應的標題階層。</li>
+</ul>
+<p><img src="/images/post/tech/tech_002_01.png" alt="Notion"></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#030;font-weight:bold"># 一級標題
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#030;font-weight:bold"></span><span style="color:#030;font-weight:bold">## 二級標題
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#030;font-weight:bold">### 三級標題
+</span></span></span></code></pre></div><ol start="2">
+<li>
+<h5 id="粗體bold斜體italic底線underline">粗體（Bold）、斜體（Italic）、底線（Underline）</h5>
+</li>
+</ol>
+<p>主要是用於突顯重要文字或給予特殊意義時使用，除了用下面Markdown的語法，這三個算是個人最常直接用快捷鍵達成。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>**粗體文字** <span style="color:#09f;font-style:italic">&lt;!-- 快捷鍵：Ctrl + B --&gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="font-style:italic">*斜體文字*</span> <span style="color:#09f;font-style:italic">&lt;!-- 快捷鍵：Ctrl + I --&gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="font-weight:bold">__底線文字__</span> <span style="color:#09f;font-style:italic">&lt;!-- 快捷鍵：Ctrl + U --&gt;</span>
+</span></span></code></pre></div><ol start="3">
+<li>
+<h5 id="列表清單lists">列表清單（Lists）</h5>
+<p>列出清單項目，Markdown支援有序清單（Ordered List）和無序清單（Unordered List）。</p>
+<p>無序清單支援使用星號（*）、加號（+）或是減號（-）作為清單標記；而有序清單需要打「<strong><code>1. + 空格</code></strong>」這樣的指令來建立。</p>
+</li>
+<li>
+<h5 id="待辦事項to-do">待辦事項（To-do）</h5>
+<p>標記待辦事項，勾選已完成事項。待辦事項是相當實用的功能，方便記錄各種事項，只要在每行最前面加上「<strong><code>- [ ]</code></strong>」。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#069;font-weight:bold">- [ ]</span> 這是未完成事項
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#069;font-weight:bold">- [x]</span> 這是已完成事項
+</span></span></code></pre></div></li>
+<li>
+<h5 id="插入連結links自動連結auto-links">插入連結（Links）、自動連結（Auto Links）</h5>
+<p>插入超連結。使用 Markdown「<strong><code>[連結文字](網址)</code></strong>」建立超連結（比插入圖片少了一個驚嘆號）。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>[<span style="color:#309;font-weight:bold">顯示文字</span>](<span style="color:#309">URL</span>) <span style="color:#09f;font-style:italic">&lt;!--</span> <span style="font-weight:bold">**插入連結**</span><span style="color:#09f;font-style:italic"> --&gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>&lt;<span style="color:#309;font-weight:bold">URL</span>&gt; <span style="color:#09f;font-style:italic">&lt;!--</span> <span style="font-weight:bold">**自動連結**</span><span style="color:#09f;font-style:italic"> --&gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>[<span style="color:#309;font-weight:bold">Google</span>](<span style="color:#309">https://www.google.com</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>&lt;<span style="color:#309;font-weight:bold">https:</span><span style="color:#a00;background-color:#faa">//</span><span style="color:#309">www</span><span style="color:#a00;background-color:#faa">.</span><span style="color:#309">google</span><span style="color:#a00;background-color:#faa">.</span><span style="color:#309">com</span>&gt;
+</span></span></code></pre></div></li>
+<li>
+<h5 id="插入圖片insert-image">插入圖片（Insert Image）</h5>
+<p>Markdown 要插入圖片，須使用「<strong><code>![圖片說明文字](圖片網址)</code></strong>」語法，現在大部分 Markdown 軟體，都已支援直接貼上，手 Key 指令的機會已少得多，但在自己寫HTML時還是要知道語法會比較好。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>**![圖片說明文字](圖片網址)**
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>![<span style="color:#309;font-weight:bold">No tion Logo</span>](<span style="color:#309">https://www.notion.so/images/notion-logo-no-framer.png</span>)
+</span></span></code></pre></div></li>
+<li>
+<h5 id="行分隔符horizontal-line">行分隔符（Horizontal Line）</h5>
+<p>插入水平分隔線。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>---
+</span></span></code></pre></div></li>
+<li>
+<h5 id="引用blockquote">引用（Blockquote）</h5>
+<p>引用他人的話或重要資訊。在純Markdwon上使透過用「<strong><code>&gt;+空格</code></strong>」來達成，但在Notion時如果打「<strong><code>&gt;+空格</code></strong>」會變成Toggle List，所以在Notion個人會更推薦用<a href="https://www.notion.so/Callout-1163474c7cbb41fa9e1b41ec01c6fcd6?pvs=21">Callout 區塊</a>替代引言，理由highlight——因為它更加美觀、突顯。Callout 無法透過快捷鍵建立，只能使用指令「<strong><code>/callout</code></strong>」呼叫。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#069;font-weight:bold">&gt; </span><span style="font-style:italic">引用文字 &lt;!-- Markdwon --&gt;
+</span></span></span></code></pre></div></li>
+<li>
+<h5 id="行內程式碼inline-code">行內程式碼（Inline Code）</h5>
+<p>要標記一小段行內程式碼，可以用反引號把它包起來。Markdown 語法為「<strong><code>程式碼</code></strong>」，使用 Notion 的快捷鍵即反白文字後「<strong><code>cmd + e</code></strong>」。</p>
+</li>
+<li>
+<h5 id="程式碼區塊code-block">程式碼區塊（Code Block）</h5>
+<p>使用三個反引號包裹程式碼區塊。Markdown 語法要透過開頭與結尾的三個反引號，才能建立程式碼區塊，而且想要有特定程式語言的語法突顯（Syntax Highlight），還要在開頭的反引號，後面加上程式語言的名稱——比如「python」——才行，在Notion我都是直接使用指令「<strong><code>/Code + Enter</code></strong>」，在選擇要用的語法，快速與方便許多。</p>
+</li>
+</ol>
+<p>總的來說，Markdown語法簡單，是一個強大而靈活的工具，應用範疇廣泛，學會這些基本語法對於提高文字編輯效率和品質非常有幫助。</p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-yucheng2007-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+>
+
+<script>
+  var indexURL = "https://yucheng2007.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://yucheng2007.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/mark.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://yucheng2007.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+  This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button"
+    class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+  (function ($) {
+    const cookieBox = document.getElementById('js-cookie-box');
+    const cookieButton = document.getElementById('js-cookie-button');
+    if (!Cookies.get('cookie-box')) {
+      cookieBox.classList.remove('cookie-box-hide');
+      cookieButton.onclick = function () {
+        Cookies.set('cookie-box', true, {
+          expires:  2 
+    });
+    cookieBox.classList.add('cookie-box-hide');
+  };
+		}
+	}) (jQuery);
+</script>
+
+
+<style>
+  .cookie-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 9999;
+    padding: 1rem 2rem;
+    background: rgb(71, 71, 71);
+    transition: all .75s cubic-bezier(.19, 1, .22, 1);
+    color: #fdfdfd;
+  }
+
+  .cookie-box-hide {
+    display: none;
+  }
+</style>
+</body>
+
+</html>

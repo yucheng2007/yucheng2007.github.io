@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>JJ&#39;s Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="透過Python外掛，自行編寫腳本來實現類似Excel的資料剖析功能。這樣可以將匯入的數據按照逗號分隔拆解成每個欄位，達到直觀閱讀原始數據的效果。">
+  
+  <meta name="author" content="JJ.Chang">
+  
+
+  
+  <meta name="theme-name" content="liva-hugo" />
+
+  <meta name="generator" content="Hugo 0.117.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-49V7315XN5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-49V7315XN5');
+  </script>
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand" href="https://yucheng2007.github.io">
+        <span class="text-body">JJ's Blog</span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        
+        <div style="flex: 1;"></div>
+
+        <ul class="navbar-nav">
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/blog/">Blog</a>
+          </li>
+          
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/about/">About</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://yucheng2007.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2>如何在Notepad++中，垂直對齊逗號分隔值？</h2>
+        <div class="mb-3 post-meta">
+          <span>By JJ.Chang</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2023-09-29</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          
+          <a href="/categories/%e8%bb%9f%e9%ab%94%e9%96%8b%e7%99%bc%e7%ad%86%e8%a8%98" class="text-primary">軟體開發筆記</a>
+          
+        </div>
+        
+        <img src="https://yucheng2007.github.io/images/post/tech/tech_001_06.png" class="img-fluid w-100 mb-4" alt="如何在Notepad&#43;&#43;中，垂直對齊逗號分隔值？">
+        
+        <hr class="my-4" style="border-color: lightgray; border-width: 2px; border-style: solid; font-weight: bold;">
+        <div class="content mb-5">
+          <p>在Excel可以透過「<strong>資料剖析</strong>」的方式將匯入的數據依據分號、逗號或空格拆解到每個欄位(Column)上，方便Raw Data的閱讀。</p>
+<p><img src="/images/post/tech/tech_001_02.png" alt="Excel_Parse"></p>
+<p><em><strong>如果想要在Notepad++上做到一樣的效果要如果做呢？</strong></em></p>
+<p><img src="/images/post/tech/tech_001_01.png" alt="Notepad++_RawData"></p>
+<p>首先，打開Notepad++，點選「<strong>外掛</strong>」→「<strong>管理外掛模組</strong>」搜尋「<strong>PythonScript</strong>」安裝。</p>
+<p><img src="/images/post/tech/tech_001_03.png" alt="Notepad++外掛"></p>
+<p>接者，點選「<strong>New Script</strong>」，命名為「<strong>CSVtoTable.py</strong>」，將下面的Python Source Code貼上，存檔。</p>
+<p><img src="/images/post/tech/tech_001_04.png" alt="CSVtoTable設定"></p>
+<p><strong>CSVtoTable.py</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#069;font-weight:bold">import</span> <span style="color:#0cf;font-weight:bold">csv</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>inputlines <span style="color:#555">=</span> editor<span style="color:#555">.</span>getText()<span style="color:#555">.</span>split(<span style="color:#c30">&#39;</span><span style="color:#c30;font-weight:bold">\n</span><span style="color:#c30">&#39;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span><span style="color:#09f;font-style:italic"># Get rid of empty lines</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>inputlines <span style="color:#555">=</span> [line<span style="color:#555">.</span>strip() <span style="color:#069;font-weight:bold">for</span> line <span style="color:#000;font-weight:bold">in</span> inputlines <span style="color:#069;font-weight:bold">if</span> line<span style="color:#555">.</span>strip()]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>reader <span style="color:#555">=</span> csv<span style="color:#555">.</span>reader(inputlines, delimiter<span style="color:#555">=</span><span style="color:#c30">&#39;,&#39;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>csvlist <span style="color:#555">=</span> [line <span style="color:#069;font-weight:bold">for</span> line <span style="color:#000;font-weight:bold">in</span> reader]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span><span style="color:#09f;font-style:italic"># transpose to calculate the column widths and create a format string which left aligns each row</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>t_csvlist <span style="color:#555">=</span> <span style="color:#366">zip</span>(<span style="color:#555">*</span>csvlist)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>col_widths <span style="color:#555">=</span> [<span style="color:#366">max</span>([<span style="color:#366">len</span>(x) <span style="color:#069;font-weight:bold">for</span> x <span style="color:#000;font-weight:bold">in</span> t_csvlist[y]]) <span style="color:#069;font-weight:bold">for</span> y <span style="color:#000;font-weight:bold">in</span> <span style="color:#366">range</span>(<span style="color:#366">len</span>(t_csvlist))]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span><span style="color:#09f;font-style:italic"># To right align - change &lt; to &gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>fmt_str <span style="color:#555">=</span> <span style="color:#c30">&#39; &#39;</span><span style="color:#555">.</span>join([<span style="color:#c30">&#39;{{:&lt;</span><span style="color:#a00">{0}</span><span style="color:#c30">}}&#39;</span><span style="color:#555">.</span>format(x) <span style="color:#069;font-weight:bold">for</span> x <span style="color:#000;font-weight:bold">in</span> col_widths]) <span style="color:#555">+</span> <span style="color:#c30">&#39;</span><span style="color:#c30;font-weight:bold">\r\n</span><span style="color:#c30">&#39;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>text <span style="color:#555">=</span> []
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span><span style="color:#069;font-weight:bold">for</span> line <span style="color:#000;font-weight:bold">in</span> csvlist: 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>    text<span style="color:#555">.</span>append(fmt_str<span style="color:#555">.</span>format(<span style="color:#555">*</span>line))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span><span style="color:#09f;font-style:italic"># open a new document and put the results in there.    </span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>notepad<span style="color:#555">.</span>new()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>editor<span style="color:#555">.</span>addText(<span style="color:#c30">&#39;&#39;</span><span style="color:#555">.</span>join(text))
+</span></span></code></pre></div><p>載入需要分拆的數據，點選「<strong>Scripts</strong>」，執行剛剛存檔的「<strong>CSVtoTable</strong>」，即會開一個新檔，同時會將欄位都垂直對齊逗號分隔。</p>
+<p><img src="/images/post/tech/tech_001_05.png" alt="CSVtoTable執行"></p>
+<p>以上就是透過Python外掛，自行編寫腳本來實現類似Excel的資料剖析功能。這樣可以將匯入的數據按照逗號分隔拆解成每個欄位，達到直觀閱讀原始數據的效果。</p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-yucheng2007-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+>
+
+<script>
+  var indexURL = "https://yucheng2007.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://yucheng2007.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/mark.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://yucheng2007.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+  This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button"
+    class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+  (function ($) {
+    const cookieBox = document.getElementById('js-cookie-box');
+    const cookieButton = document.getElementById('js-cookie-button');
+    if (!Cookies.get('cookie-box')) {
+      cookieBox.classList.remove('cookie-box-hide');
+      cookieButton.onclick = function () {
+        Cookies.set('cookie-box', true, {
+          expires:  2 
+    });
+    cookieBox.classList.add('cookie-box-hide');
+  };
+		}
+	}) (jQuery);
+</script>
+
+
+<style>
+  .cookie-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 9999;
+    padding: 1rem 2rem;
+    background: rgb(71, 71, 71);
+    transition: all .75s cubic-bezier(.19, 1, .22, 1);
+    color: #fdfdfd;
+  }
+
+  .cookie-box-hide {
+    display: none;
+  }
+</style>
+</body>
+
+</html>

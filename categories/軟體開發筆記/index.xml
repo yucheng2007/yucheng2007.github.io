@@ -9,28 +9,28 @@
     <lastBuildDate>Sat, 18 Jan 2025 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/categories/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DeepSeek V3：中國新創如何以1/11成本挑戰全球頂尖AI模型？</title>
-      <link>https://yucheng2007.github.io/blog/technotes_007/</link>
+      <link>https://yucheng2007.github.io/blog/t007_deepseek_v3/</link>
       <pubDate>Sat, 18 Jan 2025 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/technotes_007/</guid>
+      <guid>https://yucheng2007.github.io/blog/t007_deepseek_v3/</guid>
       <description>DeepSeek V3：中國新創如何以1/11成本挑戰全球頂尖AI模型？ AI 圈近期出現了一個很火紅的新創 DeepSeek，這是一支由清華北大應屆畢業生組成的團隊，他們僅用 1/11 的算力就訓練出了一個超越 Llama 3 效能的開源模型。</description>
     </item>
     
     <item>
       <title>JSON Crack：JSON 數據結構閱讀的好幫手</title>
-      <link>https://yucheng2007.github.io/blog/technotes_006/</link>
+      <link>https://yucheng2007.github.io/blog/t006_json_crack/</link>
       <pubDate>Sun, 05 Jan 2025 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/technotes_006/</guid>
+      <guid>https://yucheng2007.github.io/blog/t006_json_crack/</guid>
       <description>JSON Crack：JSON 數據結構閱讀的好幫手 JSON（JavaScript Object Notation）是我們在開發時，常會用到資料交換的主流格式，無論是 API 回應、設定檔案，還是資料儲存，JSON 無處不在。而當 JSON 資料變得複雜且層級深時，往往我們就會需要花費大量時間手動解析，甚至可能因為結構過於繁瑣而出錯。</description>
     </item>
     
     <item>
-      <title>利用ChatGPT生成Mermaid圖表語法並在Notion中使用</title>
-      <link>https://yucheng2007.github.io/blog/technotes_005/</link>
+      <title>利用 ChatGPT 生成 Mermaid 圖表語法並在 Notion 中使用</title>
+      <link>https://yucheng2007.github.io/blog/t005_%E5%88%A9%E7%94%A8chatgpt%E7%94%9F%E6%88%90mermaid%E5%9C%96%E8%A1%A8%E8%AA%9E%E6%B3%95%E4%B8%A6%E5%9C%A8notion%E4%B8%AD%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Sun, 16 Jun 2024 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/technotes_005/</guid>
+      <guid>https://yucheng2007.github.io/blog/t005_%E5%88%A9%E7%94%A8chatgpt%E7%94%9F%E6%88%90mermaid%E5%9C%96%E8%A1%A8%E8%AA%9E%E6%B3%95%E4%B8%A6%E5%9C%A8notion%E4%B8%AD%E4%BD%BF%E7%94%A8/</guid>
       <description>利用ChatGPT生成Mermaid圖表語法並在Notion中使用 先前我個人都是利用一些網路上免費的資源，如Draw.io（教學）或是yEd（教學）繪製流程圖，另外，也有一款是透過寫程式的方式畫流程圖，對於規劃程式交握程序時，覺得相當便利的WebSequenceDiagrams，這幾套免費的線上軟體，基本上已經可以滿足多數軟體工程師工作上的需求。
 而這次要介紹的Mermaid，我自己會知道也是一次無意間要畫流程圖，想說既然都有使用Notion的習慣，那當然會希望能夠找到一套結合Notion，又能滿足用程式撰寫流程圖需求的工具。
 1. Mermaid簡介與優勢 Mermaid是一種基於Markdown的圖表語法工具，它使得開發者可以通過簡單的文本描述來生成複雜的圖表。這對於需要快速製作流程圖、甘特圖、序列圖等圖表的軟體工程師來說尤其實用。
@@ -40,10 +40,10 @@
     
     <item>
       <title>深入了解半導體設備軟體開發：關鍵技術和趨勢分析</title>
-      <link>https://yucheng2007.github.io/blog/technotes_004/</link>
+      <link>https://yucheng2007.github.io/blog/t004_%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3%E5%8D%8A%E5%B0%8E%E9%AB%94%E8%A8%AD%E5%82%99%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC/</link>
       <pubDate>Wed, 10 Jan 2024 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/technotes_004/</guid>
+      <guid>https://yucheng2007.github.io/blog/t004_%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3%E5%8D%8A%E5%B0%8E%E9%AB%94%E8%A8%AD%E5%82%99%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC/</guid>
       <description>半導體設備的概述 自己本身是從事設備業軟體開發許久，一路從面板（Panel）、太陽能（Solar Energy）、LED（Light Emitting Diode）、OLED（Organic Light Emitting Diode）到半導體（Semiconductor）設備等，在這產業算算也有10年以上的時間，覺得應該要寫一篇關於設備業軟體開發的介紹。
 剛好自己從事的工作跟第三代半導體有相關，其中，第三代半導體技術涉及到更高效、更快速的半導體材料和製程技術。相比於傳統的矽基半導體，第三代半導體（如氮化鎵、碳化矽等）具有更高的電子遷移率、較高的工作溫度和更好的電子特性。這些特點使得第三代半導體在高頻、高功率和高溫應用中具有巨大的潛力，如5G通訊、電力電子、雷射二極體等。
 為了實現這些先進半導體材料的製造，需要專門的製程設備和技術，其中MOCVD是一個核心技術。</description>
@@ -51,10 +51,10 @@
     
     <item>
       <title>淺談時間複雜度與空間複雜度 Time &amp; Space Complexity</title>
-      <link>https://yucheng2007.github.io/blog/technotes_003/</link>
+      <link>https://yucheng2007.github.io/blog/t003_%E6%B7%BA%E8%AB%87%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6%E8%88%87%E7%A9%BA%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6/</link>
       <pubDate>Thu, 19 Oct 2023 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/technotes_003/</guid>
+      <guid>https://yucheng2007.github.io/blog/t003_%E6%B7%BA%E8%AB%87%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6%E8%88%87%E7%A9%BA%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6/</guid>
       <description>最近在刷LeetCode，剛好科普一下「時間複雜度（Time Complexity）」與「空間複雜度（Space Complexity）」。
 在軟體開發和演算法設計中，我們經常需要評估演算法的效率。其中，「時間複雜度」和「空間複雜度」是兩個關鍵概念，對於評估算法性能至關重要。本篇技術分享將淺顯易懂地介紹這兩個概念，並以Python為例進行示範。
 時間複雜度 Time Complexity 簡單的來說就是，電腦執行演算法所需要耗費的時間成本。
@@ -64,10 +64,10 @@
     
     <item>
       <title>Notion 10 個我最常用的 Markdown 語法介紹</title>
-      <link>https://yucheng2007.github.io/blog/technotes_002/</link>
+      <link>https://yucheng2007.github.io/blog/t002_notion10%E5%80%8B%E6%88%91%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%84markdown%E8%AA%9E%E6%B3%95%E4%BB%8B%E7%B4%B9/</link>
       <pubDate>Tue, 10 Oct 2023 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/technotes_002/</guid>
+      <guid>https://yucheng2007.github.io/blog/t002_notion10%E5%80%8B%E6%88%91%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%84markdown%E8%AA%9E%E6%B3%95%E4%BB%8B%E7%B4%B9/</guid>
       <description>會想分享這篇Markdown語法，主要是先前使用的Trello跟目前使用的Notion都是用此語法。
 而最近在嘗試自己架站(Hugo+Github)，Hugo主要是用GO語言實現的靜態網站（Static Site Generator），利用Markdown將內容跟樣式外觀完整分開，再利用生成的靜態網頁直接發佈到Server上。
 網路上對於Markdown的教學很多，譬如「Markdown文件」，這裡有完整的語法介紹。而本文只著重在Notion中我自己最常用的十種Markdown元素跟大家介紹分享：
@@ -76,10 +76,10 @@ H1、H2、H3 標題（Headings） 主要分為一級標題（H1）、二級標�
     
     <item>
       <title>如何在Notepad&#43;&#43;中，垂直對齊逗號分隔值？</title>
-      <link>https://yucheng2007.github.io/blog/technotes_001/</link>
+      <link>https://yucheng2007.github.io/blog/t001_%E5%A6%82%E4%BD%95%E5%9C%A8notepadpp%E5%9E%82%E7%9B%B4%E5%B0%8D%E9%BD%8A%E9%80%97%E8%99%9F%E5%88%86%E9%9A%94%E5%80%BC/</link>
       <pubDate>Fri, 29 Sep 2023 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/technotes_001/</guid>
+      <guid>https://yucheng2007.github.io/blog/t001_%E5%A6%82%E4%BD%95%E5%9C%A8notepadpp%E5%9E%82%E7%9B%B4%E5%B0%8D%E9%BD%8A%E9%80%97%E8%99%9F%E5%88%86%E9%9A%94%E5%80%BC/</guid>
       <description>在Excel可以透過「資料剖析」的方式將匯入的數據依據分號、逗號或空格拆解到每個欄位(Column)上，方便Raw Data的閱讀。
 如果想要在Notepad++上做到一樣的效果要如果做呢？
 首先，打開Notepad++，點選「外掛」→「管理外掛模組」搜尋「PythonScript」安裝。

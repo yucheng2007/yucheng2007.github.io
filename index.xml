@@ -6,7 +6,18 @@
     <description>Recent content on JJ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 07 Mar 2025 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Mar 2025 07:00:00 +0800</lastBuildDate><atom:link href="https://yucheng2007.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>習慣致富 人生實踐版</title>
+      <link>https://yucheng2007.github.io/blog/b115_%E7%BF%92%E6%85%A3%E8%87%B4%E5%AF%8C-%E4%BA%BA%E7%94%9F%E5%AF%A6%E8%B8%90%E7%89%88/</link>
+      <pubDate>Thu, 20 Mar 2025 07:00:00 +0800</pubDate>
+      
+      <guid>https://yucheng2007.github.io/blog/b115_%E7%BF%92%E6%85%A3%E8%87%B4%E5%AF%8C-%E4%BA%BA%E7%94%9F%E5%AF%A6%E8%B8%90%E7%89%88/</guid>
+      <description>📖 習慣致富 人生實踐版 這本書我想聊的不是理財，更多想傳遞的是聰明理財背後的習慣與思維。好的財務習慣就如同好的生活習慣，很少人會意識到不好的習慣，長遠下來影響的不只是單一事件，而是會擴散到你的整個人生跟決策，所以與其相信運氣或算命，或許我們更應該回頭檢視自己的習慣。
+▍這本書在說什麼？ 在分享這本書之前，不知道你是否聽過《原子習慣》？這本書強調一個關鍵觀點：行為改變的第一步，始於「覺察」。我們必須先意識到自己的習慣，才能進一步改變它們。而保持覺察，正是改變習慣最具挑戰性的部分。
+這觀點與這本《習慣致富：人生實踐版》可以說是完全吻合，這次分享的算是 湯姆．柯利（Tom Corley） 繼《習慣致富》後的延伸之作。書中想傳遞的核心理念：財富不過是結果，真正關鍵的是「好的習慣」。</description>
+    </item>
+    
     <item>
       <title>全息人生：專注本業，閒錢投資。輕鬆打造股市印鈔機，COVER 你一生！</title>
       <link>https://yucheng2007.github.io/blog/b114_%E5%85%A8%E6%81%AF%E4%BA%BA%E7%94%9F/</link>
@@ -40,10 +51,10 @@
     
     <item>
       <title>AI 工作術：提升生產力 x 資料分析力</title>
-      <link>https://yucheng2007.github.io/blog/course_016/</link>
+      <link>https://yucheng2007.github.io/blog/c016_ai-%E5%B7%A5%E4%BD%9C%E8%A1%93/</link>
       <pubDate>Tue, 18 Feb 2025 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_016/</guid>
+      <guid>https://yucheng2007.github.io/blog/c016_ai-%E5%B7%A5%E4%BD%9C%E8%A1%93/</guid>
       <description>▍想分享這門課的原因？ 會參加這堂線上直播課，主要是因為講師 彭其捷（Jack）。早在 2023 年，就上過他在 Hahow 開的《新世代工作者必備》，當時他以淺顯易懂的方式介紹了數位轉型時代必備的軟實力，算是一堂相當有趣的入門課。
 今天的線上直播課程，雖然內容主要針對 AI 初學者設計，但對於我這種 AI 重度使用者 來說，最有趣的地方是第一次參與這種大型、多人的線上直播課，確實是一種新鮮的體驗。</description>
     </item>
@@ -60,10 +71,10 @@
     
     <item>
       <title>2025 ❌ Libra Colour 彩色電子書閱讀器 開箱</title>
-      <link>https://yucheng2007.github.io/blog/life_008/</link>
+      <link>https://yucheng2007.github.io/blog/l008_libra_colour/</link>
       <pubDate>Thu, 06 Feb 2025 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/life_008/</guid>
+      <guid>https://yucheng2007.github.io/blog/l008_libra_colour/</guid>
       <description>📚 從實體書到電子書 藉由這篇來記錄 Kobo Forma 的陪伴與屆齡退休，由新人 Libra Colour 彩色閱讀器接棒 🎉</description>
     </item>
     
@@ -90,19 +101,19 @@
     
     <item>
       <title>DeepSeek V3：中國新創如何以1/11成本挑戰全球頂尖AI模型？</title>
-      <link>https://yucheng2007.github.io/blog/technotes_007/</link>
+      <link>https://yucheng2007.github.io/blog/t007_deepseek_v3/</link>
       <pubDate>Sat, 18 Jan 2025 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/technotes_007/</guid>
+      <guid>https://yucheng2007.github.io/blog/t007_deepseek_v3/</guid>
       <description>DeepSeek V3：中國新創如何以1/11成本挑戰全球頂尖AI模型？ AI 圈近期出現了一個很火紅的新創 DeepSeek，這是一支由清華北大應屆畢業生組成的團隊，他們僅用 1/11 的算力就訓練出了一個超越 Llama 3 效能的開源模型。</description>
     </item>
     
     <item>
       <title>面對轉型變革的中階領導力</title>
-      <link>https://yucheng2007.github.io/blog/course_015/</link>
+      <link>https://yucheng2007.github.io/blog/c015_%E9%9D%A2%E5%B0%8D%E8%BD%89%E5%9E%8B%E8%AE%8A%E9%9D%A9%E7%9A%84%E4%B8%AD%E9%9A%8E%E9%A0%98%E5%B0%8E%E5%8A%9B/</link>
       <pubDate>Wed, 15 Jan 2025 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_015/</guid>
+      <guid>https://yucheng2007.github.io/blog/c015_%E9%9D%A2%E5%B0%8D%E8%BD%89%E5%9E%8B%E8%AE%8A%E9%9D%A9%E7%9A%84%E4%B8%AD%E9%9A%8E%E9%A0%98%E5%B0%8E%E5%8A%9B/</guid>
       <description>面對轉型變革的中階領導力 當企業面臨數位轉型與變革的壓力時，中階主管該如何有效帶領團隊穩健前行、創造新局？這堂課程或許能為我們找到答案。
 ▍想分享這門課的原因 每個想要精進自我領導能力的人，或多或少都面臨過這樣的瓶頸：工作一忙就把團隊放牛吃草，或無暇思考更長遠的領導方針。
 而我之所以想分享這門課，是因為它恰好聚焦在三明治主管最需要的層面——除了「向上管理」，更重要的是如何「帶動人心、激發團隊潛能」。
@@ -122,19 +133,19 @@
     
     <item>
       <title>JSON Crack：JSON 數據結構閱讀的好幫手</title>
-      <link>https://yucheng2007.github.io/blog/technotes_006/</link>
+      <link>https://yucheng2007.github.io/blog/t006_json_crack/</link>
       <pubDate>Sun, 05 Jan 2025 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/technotes_006/</guid>
+      <guid>https://yucheng2007.github.io/blog/t006_json_crack/</guid>
       <description>JSON Crack：JSON 數據結構閱讀的好幫手 JSON（JavaScript Object Notation）是我們在開發時，常會用到資料交換的主流格式，無論是 API 回應、設定檔案，還是資料儲存，JSON 無處不在。而當 JSON 資料變得複雜且層級深時，往往我們就會需要花費大量時間手動解析，甚至可能因為結構過於繁瑣而出錯。</description>
     </item>
     
     <item>
       <title>2024 Year in Review </title>
-      <link>https://yucheng2007.github.io/blog/life_007/</link>
+      <link>https://yucheng2007.github.io/blog/l007_2024_year_in_review/</link>
       <pubDate>Tue, 31 Dec 2024 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/life_007/</guid>
+      <guid>https://yucheng2007.github.io/blog/l007_2024_year_in_review/</guid>
       <description>2024 Year in Review 回顧 2024，無論過程順不順利，計畫是否如預期完成，我們都很努力走過了 2024。
 今年最大的挑戰是「轉念與探索」。在工作上，從年初的人事變動到年底漸入佳境，過程雖然艱辛，但收穫也很多，很感謝這一路走來的夥伴們。
 在探索上，2024 是與 AI 共處的一年。AI 的崛起讓跨領域學習變得更容易，也大大提升了個人的工作效率。整體而言，今年朝著正確的道路努力前行，透過回顧反思今年做得好與不好的地方。</description>
@@ -163,11 +174,11 @@
     </item>
     
     <item>
-      <title>台大 2024 生成式 AI 導論 </title>
-      <link>https://yucheng2007.github.io/blog/course_014/</link>
+      <title>台大 2024 生成式 AI 導論</title>
+      <link>https://yucheng2007.github.io/blog/c014_%E5%8F%B0%E5%A4%A72024%E7%94%9F%E6%88%90%E5%BC%8Fai%E5%B0%8E%E8%AB%96/</link>
       <pubDate>Fri, 06 Dec 2024 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_014/</guid>
+      <guid>https://yucheng2007.github.io/blog/c014_%E5%8F%B0%E5%A4%A72024%E7%94%9F%E6%88%90%E5%BC%8Fai%E5%B0%8E%E8%AB%96/</guid>
       <description>台大 2024 生成式 AI 導論 你是否曾經好奇，為什麼 ChatGPT 能夠像人類一樣進行對話，並且理解我們的需求？這堂台大開的「生成式 AI 導論」課程，帶我們深入探索了 AI 的內在運作機制，從最基礎的概念到實際應用，用有趣的上課方式一窺 AI 發展的奧秘。</description>
     </item>
     
@@ -248,20 +259,20 @@
     
     <item>
       <title>OKR：企業管理的雙刃劍，推動成長還是加重負擔？</title>
-      <link>https://yucheng2007.github.io/blog/course_013/</link>
+      <link>https://yucheng2007.github.io/blog/c013_okr/</link>
       <pubDate>Thu, 03 Oct 2024 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_013/</guid>
+      <guid>https://yucheng2007.github.io/blog/c013_okr/</guid>
       <description>OKR：企業管理的雙刃劍，推動成長還是加重負擔？ OKR（目標關鍵成果）自 2010 年開始迅速在矽谷風行，許多著名公司如 Google、Microsoft、Amazon 等都將其作為核心績效管理工具。這套管理制度將「目標」（Objectives）和「關鍵成果」（Key Results）結合，以促進員工自主設定目標，讓企業達成更加清晰的願景。
 ▍OKR 的基礎介紹 OKR 的概念來自 &amp;ldquo;Objectives and Key Results&amp;rdquo;，目標必須具體且具挑戰性，而關鍵成果則是可衡量的行動指標，這使 OKR 不僅僅是一種管理工具，更是一種促進透明溝通和提升企業一致性的文化變革工具。</description>
     </item>
     
     <item>
       <title>個人寫作課：會說就能寫，三種思維提升寫作力</title>
-      <link>https://yucheng2007.github.io/blog/course_012/</link>
+      <link>https://yucheng2007.github.io/blog/c012_%E5%80%8B%E4%BA%BA%E5%AF%AB%E4%BD%9C%E8%AA%B2/</link>
       <pubDate>Wed, 02 Oct 2024 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_012/</guid>
+      <guid>https://yucheng2007.github.io/blog/c012_%E5%80%8B%E4%BA%BA%E5%AF%AB%E4%BD%9C%E8%AA%B2/</guid>
       <description>寫作對現代人來說是不可或缺的技能，無論是在工作報告、生活記錄，還是表達個人觀點，文字始終是我們傳遞思想的橋樑。然而，許多人包括我自己也常會卡在靈感不足、無法開始動筆或寫作不流暢的困境。透過這篇分享文，來講講我上這堂課的收穫和體悟。
 ▍想分享這門課的原因？ 這堂《個人寫作課》是在 HaHow 平台上搜尋寫作技巧時看到的，課程包含 3 大章節 16 單元（約 4 時 31 分鐘），講師 林子威 結合多年的寫作經驗，透過「自然語言寫作技巧」，將寫作變成一件可以系統學習的事情。</description>
     </item>
@@ -354,10 +365,10 @@ Given two sorted arrays nums1 and nums2 of size m and n respectively, return the
     
     <item>
       <title>區塊鏈基礎概念：去中心化與防偽機制</title>
-      <link>https://yucheng2007.github.io/blog/course_011/</link>
+      <link>https://yucheng2007.github.io/blog/c011_%E5%8D%80%E5%A1%8A%E9%8F%88%E5%9F%BA%E7%A4%8E%E6%A6%82%E5%BF%B5/</link>
       <pubDate>Wed, 24 Jul 2024 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_011/</guid>
+      <guid>https://yucheng2007.github.io/blog/c011_%E5%8D%80%E5%A1%8A%E9%8F%88%E5%9F%BA%E7%A4%8E%E6%A6%82%E5%BF%B5/</guid>
       <description>▍想分享這門課的原因？ 課程一開始就從目前最夯的虛擬貨幣（比特幣）的實際案例出發，帶入到區塊鏈的基礎概念。
 開頭舉了一個讓我印象深刻的案例，講的是虛擬貨幣對於委內瑞拉這個國家來說，是如何拯救了一個家庭。
 委內瑞拉是一個位於中南美洲的國家，長期處於經濟動盪不安，或許你無法想像在2018年委內瑞拉一杯咖啡要價新台幣$75元，到了2019年直接飆升到新台幣$28萬元（沒錯！他們的通膨就是這麼扯），可以參考這篇「不是窮人就是移民 一國通膨失控的下場」。
@@ -382,10 +393,10 @@ Given two sorted arrays nums1 and nums2 of size m and n respectively, return the
     
     <item>
       <title>卡片筆記術：高效內容產出的秘密</title>
-      <link>https://yucheng2007.github.io/blog/course_010/</link>
+      <link>https://yucheng2007.github.io/blog/c010_%E5%8D%A1%E7%89%87%E7%AD%86%E8%A8%98%E8%A1%93/</link>
       <pubDate>Sun, 07 Jul 2024 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_010/</guid>
+      <guid>https://yucheng2007.github.io/blog/c010_%E5%8D%A1%E7%89%87%E7%AD%86%E8%A8%98%E8%A1%93/</guid>
       <description>▍為什麼想分享這門課？ 說到卡片筆記術，一定會想到德國社會學家盧曼博士，先前分享過他的著作《卡片盒筆記》，講述他是如何透過自創的筆記方法：「卡片盒」，在三十年內高效產出了 70 本書和 400 篇論文。
 他的方法就是講想法手寫筆記在一張張卡片上，將每張卡片建立編碼放入對應卡片盒，讓不同的卡片產生連結。（別懷疑，就是這麼簡單），當時讀完對於筆記有一個很深刻的體悟：
 💡 不要用分類和主題來整理筆記，而是用脈絡和連結來整理筆記。
@@ -403,11 +414,11 @@ Given two sorted arrays nums1 and nums2 of size m and n respectively, return the
     </item>
     
     <item>
-      <title>利用ChatGPT生成Mermaid圖表語法並在Notion中使用</title>
-      <link>https://yucheng2007.github.io/blog/technotes_005/</link>
+      <title>利用 ChatGPT 生成 Mermaid 圖表語法並在 Notion 中使用</title>
+      <link>https://yucheng2007.github.io/blog/t005_%E5%88%A9%E7%94%A8chatgpt%E7%94%9F%E6%88%90mermaid%E5%9C%96%E8%A1%A8%E8%AA%9E%E6%B3%95%E4%B8%A6%E5%9C%A8notion%E4%B8%AD%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Sun, 16 Jun 2024 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/technotes_005/</guid>
+      <guid>https://yucheng2007.github.io/blog/t005_%E5%88%A9%E7%94%A8chatgpt%E7%94%9F%E6%88%90mermaid%E5%9C%96%E8%A1%A8%E8%AA%9E%E6%B3%95%E4%B8%A6%E5%9C%A8notion%E4%B8%AD%E4%BD%BF%E7%94%A8/</guid>
       <description>利用ChatGPT生成Mermaid圖表語法並在Notion中使用 先前我個人都是利用一些網路上免費的資源，如Draw.io（教學）或是yEd（教學）繪製流程圖，另外，也有一款是透過寫程式的方式畫流程圖，對於規劃程式交握程序時，覺得相當便利的WebSequenceDiagrams，這幾套免費的線上軟體，基本上已經可以滿足多數軟體工程師工作上的需求。
 而這次要介紹的Mermaid，我自己會知道也是一次無意間要畫流程圖，想說既然都有使用Notion的習慣，那當然會希望能夠找到一套結合Notion，又能滿足用程式撰寫流程圖需求的工具。
 1. Mermaid簡介與優勢 Mermaid是一種基於Markdown的圖表語法工具，它使得開發者可以通過簡單的文本描述來生成複雜的圖表。這對於需要快速製作流程圖、甘特圖、序列圖等圖表的軟體工程師來說尤其實用。
@@ -480,10 +491,10 @@ Given two sorted arrays nums1 and nums2 of size m and n respectively, return the
     
     <item>
       <title>Introduction to SEMI E187-Specification for Cyber Security of Fab Equipment</title>
-      <link>https://yucheng2007.github.io/blog/course_009/</link>
+      <link>https://yucheng2007.github.io/blog/c009_semi_e187_specification/</link>
       <pubDate>Wed, 08 May 2024 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_009/</guid>
+      <guid>https://yucheng2007.github.io/blog/c009_semi_e187_specification/</guid>
       <description>▍想分享這門課的原因？ 近年資安威脅無所不在，常聽到很多半導體大廠遭到駭客攻擊，為更有效提升產業供應鏈安全，催生出台灣首個半導體晶圓設備資安標準 SEMI E187 - Specification for Cybersecurity of Fab Equipment（以下簡稱SEMI E187)，同時也是少數由台灣主導制定的全球性產業標準之一。</description>
     </item>
     
@@ -504,10 +515,10 @@ Given two sorted arrays nums1 and nums2 of size m and n respectively, return the
     
     <item>
       <title>說得多，不如說得對！職場人必懂的：精準表達溝通術</title>
-      <link>https://yucheng2007.github.io/blog/course_008/</link>
+      <link>https://yucheng2007.github.io/blog/c008_%E8%81%B7%E5%A0%B4%E4%BA%BA%E5%BF%85%E6%87%82%E7%9A%84%E7%B2%BE%E6%BA%96%E8%A1%A8%E9%81%94%E6%BA%9D%E9%80%9A%E8%A1%93/</link>
       <pubDate>Sat, 27 Apr 2024 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_008/</guid>
+      <guid>https://yucheng2007.github.io/blog/c008_%E8%81%B7%E5%A0%B4%E4%BA%BA%E5%BF%85%E6%87%82%E7%9A%84%E7%B2%BE%E6%BA%96%E8%A1%A8%E9%81%94%E6%BA%9D%E9%80%9A%E8%A1%93/</guid>
       <description>想分享這門課的原因 不管是在生活中或是職場江湖走跳，善於溝通表達的人，一直都有很大的優勢。
 這堂課用淺顯易懂又輕鬆的口吻，快速教我們掌握幾個溝通上的關鍵心法，避免我們在職場裡辛苦完成工作後，卻因為表達溝通太差而導致績效和專業形象被大打折扣，嚴重時甚至會阻礙升遷。
 從這門課中獲得的收穫 課堂開頭，講師就先提到在多數矽谷公司的升遷計畫，如果沒有良好的溝通技能就沒有好的升遷機會（No Communication No Promotion）。
@@ -594,10 +605,10 @@ Given two sorted arrays nums1 and nums2 of size m and n respectively, return the
     
     <item>
       <title>寫給上班族的一封信 | 老黑</title>
-      <link>https://yucheng2007.github.io/blog/life_006/</link>
+      <link>https://yucheng2007.github.io/blog/l006_%E5%AF%AB%E7%B5%A6%E4%B8%8A%E7%8F%AD%E6%97%8F%E7%9A%84%E4%B8%80%E5%B0%81%E4%BF%A1/</link>
       <pubDate>Wed, 31 Jan 2024 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/life_006/</guid>
+      <guid>https://yucheng2007.github.io/blog/l006_%E5%AF%AB%E7%B5%A6%E4%B8%8A%E7%8F%AD%E6%97%8F%E7%9A%84%E4%B8%80%E5%B0%81%E4%BF%A1/</guid>
       <description>寫給上班族的一封信 | 老黑 今天讀到一位作家前輩分享的文章，覺得非常值得收藏與細細品讀，推薦給還在江湖打滾的你我。
 先介紹一下老黑這位人物，他是一位在外商退休的老總，在45歲時就已經達到財務自由，但他所謂的財富自由，並不是賺得像郭台銘一樣盆滿缽滿，而是賺足夠的收入與心靈富足。
 以下是老黑分享在外商工作二十多年後的回顧，這些想法是老黑從離開職場以來的沉澱積累，正文開始：
@@ -616,10 +627,10 @@ Given two sorted arrays nums1 and nums2 of size m and n respectively, return the
     
     <item>
       <title>人生與職場的平衡：廣結善緣，同時保持斷捨離，達到事業和生活的完美結合？</title>
-      <link>https://yucheng2007.github.io/blog/life_005/</link>
+      <link>https://yucheng2007.github.io/blog/l005_%E4%BA%BA%E7%94%9F%E8%88%87%E8%81%B7%E5%A0%B4%E7%9A%84%E5%B9%B3%E8%A1%A1/</link>
       <pubDate>Sun, 21 Jan 2024 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/life_005/</guid>
+      <guid>https://yucheng2007.github.io/blog/l005_%E4%BA%BA%E7%94%9F%E8%88%87%E8%81%B7%E5%A0%B4%E7%9A%84%E5%B9%B3%E8%A1%A1/</guid>
       <description>📖 人生與職場的平衡：廣結善緣，同時保持斷捨離，達到事業和生活的完美結合？ 最近職場上遇到些人的問題，跟幾個前輩聊有蠻多的感觸，自認作為基層主管兢兢業業，盡可能排解團隊的阻礙跟疑惑，讓公開透明可以在團隊中運作得很順利。
 但職場上本來就是變化多變，尤其人的問題更是難預料，假日讀到幾篇關於職場的文章（心靈雞湯？），這些經歷真的是唯有自己親自走過才會懂！
 簡單概分為對內（自己）與對外（原則）兩大部分，搭配自己的經驗做簡單的心得分享：
@@ -650,10 +661,10 @@ Given a string s, find the length of the longest substring without repeating cha
     
     <item>
       <title>深入了解半導體設備軟體開發：關鍵技術和趨勢分析</title>
-      <link>https://yucheng2007.github.io/blog/technotes_004/</link>
+      <link>https://yucheng2007.github.io/blog/t004_%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3%E5%8D%8A%E5%B0%8E%E9%AB%94%E8%A8%AD%E5%82%99%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC/</link>
       <pubDate>Wed, 10 Jan 2024 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/technotes_004/</guid>
+      <guid>https://yucheng2007.github.io/blog/t004_%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3%E5%8D%8A%E5%B0%8E%E9%AB%94%E8%A8%AD%E5%82%99%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC/</guid>
       <description>半導體設備的概述 自己本身是從事設備業軟體開發許久，一路從面板（Panel）、太陽能（Solar Energy）、LED（Light Emitting Diode）、OLED（Organic Light Emitting Diode）到半導體（Semiconductor）設備等，在這產業算算也有10年以上的時間，覺得應該要寫一篇關於設備業軟體開發的介紹。
 剛好自己從事的工作跟第三代半導體有相關，其中，第三代半導體技術涉及到更高效、更快速的半導體材料和製程技術。相比於傳統的矽基半導體，第三代半導體（如氮化鎵、碳化矽等）具有更高的電子遷移率、較高的工作溫度和更好的電子特性。這些特點使得第三代半導體在高頻、高功率和高溫應用中具有巨大的潛力，如5G通訊、電力電子、雷射二極體等。
 為了實現這些先進半導體材料的製造，需要專門的製程設備和技術，其中MOCVD是一個核心技術。</description>
@@ -661,10 +672,10 @@ Given a string s, find the length of the longest substring without repeating cha
     
     <item>
       <title>2023 Year in Review </title>
-      <link>https://yucheng2007.github.io/blog/life_004/</link>
+      <link>https://yucheng2007.github.io/blog/l004_2023_year_in_review/</link>
       <pubDate>Sun, 31 Dec 2023 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/life_004/</guid>
+      <guid>https://yucheng2007.github.io/blog/l004_2023_year_in_review/</guid>
       <description>回顧2023，發生了不少狗屁倒灶的事，但整體而言，在自己能夠控制的事情上，都還算有朝著年初訂的目標前進。
 🚩 閱讀方面：
 今年30本的讀書心得目標順利達成，有好幾本相當值得推薦的書籍。像是劉軒的《超男進化論》鼓勵男生們從追求「擁有」的人生境態，逐漸走向追尋「成為」；林楷倫的《偽魚販指南》看見不同的人生與情親羈絆，生活上很多事不是你能選擇的，你能做的就是學會面對他；《逆思維》提醒「重新思考」與「再學習」的重要性。
@@ -782,10 +793,10 @@ You are given two non-empty linked lists representing two non-negative integers.
     
     <item>
       <title>淺談時間複雜度與空間複雜度 Time &amp; Space Complexity</title>
-      <link>https://yucheng2007.github.io/blog/technotes_003/</link>
+      <link>https://yucheng2007.github.io/blog/t003_%E6%B7%BA%E8%AB%87%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6%E8%88%87%E7%A9%BA%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6/</link>
       <pubDate>Thu, 19 Oct 2023 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/technotes_003/</guid>
+      <guid>https://yucheng2007.github.io/blog/t003_%E6%B7%BA%E8%AB%87%E6%99%82%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6%E8%88%87%E7%A9%BA%E9%96%93%E8%A4%87%E9%9B%9C%E5%BA%A6/</guid>
       <description>最近在刷LeetCode，剛好科普一下「時間複雜度（Time Complexity）」與「空間複雜度（Space Complexity）」。
 在軟體開發和演算法設計中，我們經常需要評估演算法的效率。其中，「時間複雜度」和「空間複雜度」是兩個關鍵概念，對於評估算法性能至關重要。本篇技術分享將淺顯易懂地介紹這兩個概念，並以Python為例進行示範。
 時間複雜度 Time Complexity 簡單的來說就是，電腦執行演算法所需要耗費的時間成本。
@@ -818,10 +829,10 @@ Given an array of integers nums and an integer target, return the indices of the
     
     <item>
       <title>Notion 10 個我最常用的 Markdown 語法介紹</title>
-      <link>https://yucheng2007.github.io/blog/technotes_002/</link>
+      <link>https://yucheng2007.github.io/blog/t002_notion10%E5%80%8B%E6%88%91%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%84markdown%E8%AA%9E%E6%B3%95%E4%BB%8B%E7%B4%B9/</link>
       <pubDate>Tue, 10 Oct 2023 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/technotes_002/</guid>
+      <guid>https://yucheng2007.github.io/blog/t002_notion10%E5%80%8B%E6%88%91%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%84markdown%E8%AA%9E%E6%B3%95%E4%BB%8B%E7%B4%B9/</guid>
       <description>會想分享這篇Markdown語法，主要是先前使用的Trello跟目前使用的Notion都是用此語法。
 而最近在嘗試自己架站(Hugo+Github)，Hugo主要是用GO語言實現的靜態網站（Static Site Generator），利用Markdown將內容跟樣式外觀完整分開，再利用生成的靜態網頁直接發佈到Server上。
 網路上對於Markdown的教學很多，譬如「Markdown文件」，這裡有完整的語法介紹。而本文只著重在Notion中我自己最常用的十種Markdown元素跟大家介紹分享：
@@ -830,10 +841,10 @@ H1、H2、H3 標題（Headings） 主要分為一級標題（H1）、二級標�
     
     <item>
       <title>如何在Notepad&#43;&#43;中，垂直對齊逗號分隔值？</title>
-      <link>https://yucheng2007.github.io/blog/technotes_001/</link>
+      <link>https://yucheng2007.github.io/blog/t001_%E5%A6%82%E4%BD%95%E5%9C%A8notepadpp%E5%9E%82%E7%9B%B4%E5%B0%8D%E9%BD%8A%E9%80%97%E8%99%9F%E5%88%86%E9%9A%94%E5%80%BC/</link>
       <pubDate>Fri, 29 Sep 2023 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/technotes_001/</guid>
+      <guid>https://yucheng2007.github.io/blog/t001_%E5%A6%82%E4%BD%95%E5%9C%A8notepadpp%E5%9E%82%E7%9B%B4%E5%B0%8D%E9%BD%8A%E9%80%97%E8%99%9F%E5%88%86%E9%9A%94%E5%80%BC/</guid>
       <description>在Excel可以透過「資料剖析」的方式將匯入的數據依據分號、逗號或空格拆解到每個欄位(Column)上，方便Raw Data的閱讀。
 如果想要在Notepad++上做到一樣的效果要如果做呢？
 首先，打開Notepad++，點選「外掛」→「管理外掛模組」搜尋「PythonScript」安裝。
@@ -916,10 +927,10 @@ CSVtoTable.py
     
     <item>
       <title>AMD執行長蘇媽的職場學</title>
-      <link>https://yucheng2007.github.io/blog/life_001/</link>
+      <link>https://yucheng2007.github.io/blog/l001_amd%E5%9F%B7%E8%A1%8C%E9%95%B7%E8%98%87%E5%AA%BD%E7%9A%84%E8%81%B7%E5%A0%B4%E5%AD%B8/</link>
       <pubDate>Wed, 26 Jul 2023 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/life_001/</guid>
+      <guid>https://yucheng2007.github.io/blog/l001_amd%E5%9F%B7%E8%A1%8C%E9%95%B7%E8%98%87%E5%AA%BD%E7%9A%84%E8%81%B7%E5%A0%B4%E5%AD%B8/</guid>
       <description>記得台灣前陣子最熱的話題是輝達（NVIDIA）執行長黃仁勳來台，過沒多久有「半導體女王」稱號，美商超微（AMD）執行長蘇姿丰也旋風訪台，繼黃仁勳後再次掀起一波AI熱潮。
 相較於大家熟知的NVIDIA CEO黃仁勳，業界對於蘇媽的評價都是行事作風相當低調，這也就讓我更好奇這號人物的。而最令人驚訝的是這兩位大人物除了有相似的背景，翻開祖譜赫然發現原來他們還有親戚關係。
 或許他們的成功和時代演進有關，但誰也沒料到二十年後的半導體會是兵家必爭之地，2023的今天「生成式AI」會發展得如此迅速。成功除了機運外，擁有配得上的實力也很重要。
@@ -932,10 +943,10 @@ CSVtoTable.py
     
     <item>
       <title>婚姻的想像與期待！</title>
-      <link>https://yucheng2007.github.io/blog/life_002/</link>
+      <link>https://yucheng2007.github.io/blog/l002_%E5%A9%9A%E5%A7%BB%E7%9A%84%E6%83%B3%E5%83%8F%E8%88%87%E6%9C%9F%E5%BE%85/</link>
       <pubDate>Mon, 17 Jul 2023 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/life_002/</guid>
+      <guid>https://yucheng2007.github.io/blog/l002_%E5%A9%9A%E5%A7%BB%E7%9A%84%E6%83%B3%E5%83%8F%E8%88%87%E6%9C%9F%E5%BE%85/</guid>
       <description>藝人Melody(殷悅)7月7日閃電宣布離婚，與企業家老公吳育奇結束17年婚姻，離婚聲明強調雙方和平結束關係。
 日子是自己在過，冷暖自知，只有自己才知道怎麼對自己好⋯始終還是來到了一個盡頭⋯既然如此就要勇敢面對。
 感謝曾經的付出，以及所有一起經歷的時光⋯為了孩子，為了彼此⋯我期許已努力過而選擇改變的關係往後可以朝著更好的方向走⋯
@@ -947,10 +958,10 @@ CSVtoTable.py
     
     <item>
       <title>瞭解原理 &#43; 優質詠唱 = AI 時代人人必學的 ChatGPT 駕馭術</title>
-      <link>https://yucheng2007.github.io/blog/course_007/</link>
+      <link>https://yucheng2007.github.io/blog/c007_ai%E6%99%82%E4%BB%A3%E4%BA%BA%E4%BA%BA%E5%BF%85%E5%AD%B8%E7%9A%84chatgpt%E9%A7%95%E9%A6%AD%E8%A1%93/</link>
       <pubDate>Fri, 14 Jul 2023 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_007/</guid>
+      <guid>https://yucheng2007.github.io/blog/c007_ai%E6%99%82%E4%BB%A3%E4%BA%BA%E4%BA%BA%E5%BF%85%E5%AD%B8%E7%9A%84chatgpt%E9%A7%95%E9%A6%AD%E8%A1%93/</guid>
       <description>想分享這門課的原因 AI的發展一直都是科技業非常關注的一件事情，不知道大家還有印象2016年Google AI AlphaGo對戰南韓棋王李世乭的新聞，當時大家都還認為AI要贏人類是不可能的事情，結果AlphaGo戰勝棋王跌破很多人的眼鏡😮😮😮
 那時候AlphaGo採用的技術是深度神經網路、加強式學習與蒙地卡羅樹狀搜尋，比較像是一種適用於一般連續性決策問題，我個人認知還屬於分辨式人工智慧（Discriminative AI）。
 而近期在美國科羅拉多州博覽會（Colorado State Fair）的藝術（Fine Art）競賽，數位藝術類別，大家可以先欣賞首獎作品(上圖)。</description>
@@ -998,10 +1009,10 @@ CSVtoTable.py
     
     <item>
       <title>新世代工作者必備：15 項數位能力領域與相關學習資源</title>
-      <link>https://yucheng2007.github.io/blog/course_004/</link>
+      <link>https://yucheng2007.github.io/blog/c004_%E6%96%B0%E4%B8%96%E4%BB%A3%E5%B7%A5%E4%BD%9C%E8%80%85%E5%BF%85%E5%82%99/</link>
       <pubDate>Sat, 10 Jun 2023 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_004/</guid>
+      <guid>https://yucheng2007.github.io/blog/c004_%E6%96%B0%E4%B8%96%E4%BB%A3%E5%B7%A5%E4%BD%9C%E8%80%85%E5%BF%85%E5%82%99/</guid>
       <description>想分享這門課的原因 這門課程的上課老師彭其捷，本身也是位斜槓青年，出版過十本資料視覺化與使用者經驗相關書籍，對於現今常聽到的一些數位職涯發展有興趣，想要更深入點探索的人很適合這堂課。
 這堂課會從五大數位重點介紹，課程內容算相當紮實(約4hr)：
 數據素養：資料工程、數據分析、資料視覺化 資料科學：運算思維、機器學習、人工智慧 遠端平台：網站開發、雲端系統、萬物聯網 數位行銷：電商服務、行銷科技、流量分析 元宇宙：實境技術、NFT區塊鏈、加密貨幣 個人覺得從這堂課程除了可以掌握到各領域的基本知識框架外，還可以藉由這些關鍵字再往下探索更多知識，而在每個章節後面都會帶到這個領域的相關職務需求(分管理職與技術職)與相關資源，提供給有興趣的人去思考職涯發展，算是相當值得推薦。
@@ -1033,10 +1044,10 @@ CSVtoTable.py
     
     <item>
       <title>永續戰略執行力 - 從0到1精通ESG : 公司治理放大鏡</title>
-      <link>https://yucheng2007.github.io/blog/course_003/</link>
+      <link>https://yucheng2007.github.io/blog/c003_%E6%B0%B8%E7%BA%8C%E6%88%B0%E7%95%A5%E5%9F%B7%E8%A1%8C%E5%8A%9B/</link>
       <pubDate>Tue, 23 May 2023 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_003/</guid>
+      <guid>https://yucheng2007.github.io/blog/c003_%E6%B0%B8%E7%BA%8C%E6%88%B0%E7%95%A5%E5%9F%B7%E8%A1%8C%E5%8A%9B/</guid>
       <description>想分享這門課的原因 近幾年企業界包含漢民內部也開了很多ESG相關的課程，ESG代表的是企業社會責任，許多企業或投資人會將ESG評分，視為評估一間企業是否永續經營重要的指標及投資決策。
 這堂課除了認識ESG是什麼外，這堂課主要是從「公司治理面」的一些細節，透過實際案例，帶我們認識企業經營上的眉角。
 從這門課中獲得的收穫 這堂課比較不算是基礎入門班，而是直接透過實際案例當教材說明公司治理議題與準則。
@@ -1164,10 +1175,10 @@ CSVtoTable.py
     
     <item>
       <title>化解團隊的焦慮與抗拒，變革就能推得動！</title>
-      <link>https://yucheng2007.github.io/blog/course_006/</link>
+      <link>https://yucheng2007.github.io/blog/c006_%E5%8C%96%E8%A7%A3%E5%9C%98%E9%9A%8A%E7%9A%84%E7%84%A6%E6%85%AE%E8%88%87%E6%8A%97%E6%8B%92/</link>
       <pubDate>Mon, 30 Jan 2023 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_006/</guid>
+      <guid>https://yucheng2007.github.io/blog/c006_%E5%8C%96%E8%A7%A3%E5%9C%98%E9%9A%8A%E7%9A%84%E7%84%A6%E6%85%AE%E8%88%87%E6%8A%97%E6%8B%92/</guid>
       <description>想分享這門課的原因 「變革」這件事情，不管是組織結構調整、團隊換主管甚至是個人職務上的微調與制度流程的改變，這些都是你我職涯中很常會遇到的事情。
 尤其是身處於新創團隊或是研發單位，對於各種變革更是家常便飯，藉由這堂課可以更快學習到變革本身的意義與個人面對變革時的正向心態調整與帶領團隊執行變革時，要注意的事項與正確引導。
 從這門課中獲得的收穫 這堂課分兩部分，第一部份面對變革由「自我調適」出發，課程中會帶出個人變革的行動步驟：從了解變革、正面思考到行為調整。在了解變革背後的意義後，在面對變革反應時會更加從容(抗拒、觀察、適應、擁抱)。
@@ -1190,10 +1201,10 @@ CSVtoTable.py
     
     <item>
       <title>2022 Year in Review </title>
-      <link>https://yucheng2007.github.io/blog/life_003/</link>
+      <link>https://yucheng2007.github.io/blog/l003_2022_year_in_review/</link>
       <pubDate>Sat, 31 Dec 2022 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/life_003/</guid>
+      <guid>https://yucheng2007.github.io/blog/l003_2022_year_in_review/</guid>
       <description>2022年bucket list有7件達成，2件還要持續努力；整體來說都還是有照著自己的計劃前進XD
 閱讀方面：給自己訂了30本心得分享的目標，實際完成了32本；截至目前Blog累積也已經分享了47篇閱讀心得、創作 63,918 字。 運動方面：目標健身房每周3次，隨然體重沒降到目標值，但養成規律的運動習慣，也讓自己比較不會遇到困難就先找藉口。 線上課程：目標10堂課，去年七月公司剛好加入Hahow for Business，目前累積完成31堂課，耗時3153分鐘。 整體回顧，2022年經歷了很多事情，一些是無法控制的，過程中難免會感到孤獨，但回頭看自己又更獨立與勇敢了。就像志玲姊姊《剛剛好的優雅》書中所說：</description>
     </item>
@@ -1210,10 +1221,10 @@ CSVtoTable.py
     
     <item>
       <title>軟體開發的利器：技術人要懂的 DevOps 通識課</title>
-      <link>https://yucheng2007.github.io/blog/course_001/</link>
+      <link>https://yucheng2007.github.io/blog/c001_%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E7%9A%84%E5%88%A9%E5%99%A8/</link>
       <pubDate>Thu, 22 Dec 2022 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_001/</guid>
+      <guid>https://yucheng2007.github.io/blog/c001_%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC%E7%9A%84%E5%88%A9%E5%99%A8/</guid>
       <description>想分享這門課的原因 這堂課約莫是去年年底時上的，如果是資通訊background的人，這堂課算是相當優質的課程。
 約兩個小時的課程，可以認識DevOps是什麼，同時也會了解五大科技龍頭FAAMG之所以可以走在這麼前面，DevOps在其中扮演什麼樣的角色。
 這裡可以簡單提一下Amazon的AWS，在《Amazon稱霸全球的戰略》這本書有介紹，亞馬遜在創業初期就非常重視IT技術，AWS（Amazon web services）就是一個原本從企業內部間交流的資訊平台，慢慢發展成現在的雲端網路服務，也是目前亞馬遜的金雞母。
@@ -1224,10 +1235,10 @@ DevOps(Development和Operations的組合詞)是一種重視「軟體開發人員
     
     <item>
       <title>運用 OTPR 敏捷工作法，優化你的人生選擇</title>
-      <link>https://yucheng2007.github.io/blog/course_005/</link>
+      <link>https://yucheng2007.github.io/blog/c005_%E9%81%8B%E7%94%A8otpr%E6%95%8F%E6%8D%B7%E5%B7%A5%E4%BD%9C%E6%B3%95/</link>
       <pubDate>Thu, 22 Dec 2022 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_005/</guid>
+      <guid>https://yucheng2007.github.io/blog/c005_%E9%81%8B%E7%94%A8otpr%E6%95%8F%E6%8D%B7%E5%B7%A5%E4%BD%9C%E6%B3%95/</guid>
       <description>想分享這門課的原因 會發現這堂課主要是講師是在業界相當有名的游舒帆 Gipi，他本身是商業思維學院院長，在FB上常會分享很多關於企業經營管理、人才培育與組織變革等實用的貼文。
 這堂《OTPR 敏捷工作法》課非常的淺顯易懂，用類似故事對話的方式，由淺入深的引導大家去思考如何做好「自我管理」及「做最重要的事」。
 從這門課中獲得的收穫 上完這堂課，會對OTPR敏捷工作法有基礎的認識，這套方法應用在個人或工作職場上都相當適合，下面就這課堂的心得跟大家概略分享。
@@ -1357,10 +1368,10 @@ OTPR分別代表目標管理（OKR）、時間管理（Time Management）、專�
     
     <item>
       <title>高績效帶人學：6 堂課教出好人才</title>
-      <link>https://yucheng2007.github.io/blog/course_002/</link>
+      <link>https://yucheng2007.github.io/blog/c002_%E9%AB%98%E7%B8%BE%E6%95%88%E5%B8%B6%E4%BA%BA%E5%AD%B8/</link>
       <pubDate>Mon, 19 Sep 2022 07:00:00 +0800</pubDate>
       
-      <guid>https://yucheng2007.github.io/blog/course_002/</guid>
+      <guid>https://yucheng2007.github.io/blog/c002_%E9%AB%98%E7%B8%BE%E6%95%88%E5%B8%B6%E4%BA%BA%E5%AD%B8/</guid>
       <description>想分享這門課的原因 這堂課厲害的地方，除了是課程本身有趣外，個人覺得授課老師佔了很關鍵的腳色。
 講師透過相當淺顯易懂的方式，活潑且強調重點的簡報設計，帶我們認識帶人與育才的關鍵「教學五步驟」與「目標設定與績效評估」的重要指標。
 從這門課中獲得的收穫 課堂中用順口溜的方式，帶出教學五步驟，個人覺得相當活潑且好記：
