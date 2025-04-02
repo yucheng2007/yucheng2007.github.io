@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>JJ&#39;s Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="從 SVN 到 TortoiseGit，再到 SourceTree，真正的轉變不是工具，而是開發思維的進化。">
+  
+  <meta name="author" content="JJ.Chang">
+  
+
+  
+  <meta name="theme-name" content="liva-hugo" />
+
+  <meta name="generator" content="Hugo 0.117.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://yucheng2007.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://yucheng2007.github.io/images/favicon.png " type="image/x-icon">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-49V7315XN5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-49V7315XN5');
+  </script>
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand" href="https://yucheng2007.github.io">
+        <span class="text-body">JJ's Blog</span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        
+        <div style="flex: 1;"></div>
+
+        <ul class="navbar-nav">
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/blog/">Blog</a>
+          </li>
+          
+           
+          
+          <li class="nav-item"> 
+            <a class="nav-link" href="https://yucheng2007.github.io/about/">About</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://yucheng2007.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2>Git 版本控管工具：SourceTree 介紹</h2>
+        <div class="mb-3 post-meta">
+          <span>By JJ.Chang</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2025-04-02</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          
+          <a href="/categories/%e8%bb%9f%e9%ab%94%e9%96%8b%e7%99%bc%e7%ad%86%e8%a8%98" class="text-primary">軟體開發筆記</a>
+          
+        </div>
+        
+        <img src="https://yucheng2007.github.io/images/post/tech/tech_008_01.png" class="img-fluid w-100 mb-4" alt="Git 版本控管工具：SourceTree 介紹">
+        
+        <hr class="my-4" style="border-color: lightgray; border-width: 2px; border-style: solid; font-weight: bold;">
+        <div class="content mb-5">
+          <h6 id="git-版本控管工具sourcetree-介紹">Git 版本控管工具：SourceTree 介紹</h6>
+<h4 id="版本控管的重要性">▍版本控管的重要性</h4>
+<p><strong>版本控管（Version Control）</strong> 對於寫程式的人來說應該不會陌生，它不只是團隊協作的重要基礎，更是維護程式品質與專案穩定性的關鍵工具。</p>
+<p>相信有使用過版控系統的朋友，都能體會到好的版控帶你上天堂，套用一張近期爆紅的「吉卜力風漫畫」讓大家對版控這件事有共鳴 XD</p>
+<p><img src="/images/post/tech/tech_008_02.png" alt="tech_008_02"></p>
+<p>我自己使用版控多年的經驗，雖然也沒到大師級非常的透徹所有功能，但在團隊開發中，若沒有好的版本控管工具，就很容易發生以下情形：</p>
+<ol>
+<li>檔案衝突無法即時且正確處理。</li>
+<li>難以追蹤每次修改的原因與內容。</li>
+<li>團隊之間不易同步最新程式碼，造成溝通失誤、效率低落。</li>
+</ol>
+<p>透過版本控管系統，開發者能夠有效追蹤代碼變更、管理多個版本，並在出現錯誤時迅速回退到先前的穩定狀態。</p>
+<p>常見的版本控管技術首推 Git，它分散式架構與強大的分支操作功能，已成為大多數軟體專案的標準配置。接下來，我會先簡要介紹幾款常見的版本控管工具和使用者介面（UI）工具，包含：<strong>SVN、TortoiseGit、SourceTree</strong>，並進一步分享為什麼後來我將主要工具切換到 SourceTree。</p>
+<h4 id="常見的版本控管工具介紹與比較">▍常見的版本控管工具介紹與比較</h4>
+<p>以下簡單整理這幾年工作中實際使用過的版本控管工具（Version Control Tools），並針對每款工具的使用經驗與優缺點做個概要說明，提供給有需要的朋友參考：</p>
+<ol>
+<li>
+<p><strong>SVN（Subversion）：集中式版本控管</strong></p>
+<p><img src="/images/post/tech/tech_008_03.png" alt="tech_008_03"></p>
+<ul>
+<li>SVN 是一種集中式的版本控管工具（Centralized Version Control），所有的程式碼都集中存放於伺服器上。當使用者要進行開發時，會從伺服器下載一個工作複本（Working Copy），最後再將修改推回到中央伺服器。</li>
+<li>雖然 SVN 在早期廣為使用，但現在多數新專案都轉向分散式版本控管（Git 為代表），主要是 Git 更適合大量的分支作業與分散協作。</li>
+</ul>
+</li>
+<li>
+<p><strong>TortoiseGit：Git 的圖形化界面工具</strong></p>
+<p><img src="/images/post/tech/tech_008_04.png" alt="tech_008_04"></p>
+<ul>
+<li>TortoiseGit 以「外殼整合」（Shell Integration）的方式提供了在 Windows 檔案總管右鍵點選的 Git 相關功能。因為其名稱與 SVN 介面工具 TortoiseSVN 的介面風格相仿，也被許多人用來作為從 SVN 轉移到 Git 的初始圖形化介面。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.inote.tw/sourcetree">SourceTree</a>：跨平台的 Git／Mercurial 圖形化工具</p>
+<p><img src="/images/post/tech/tech_008_05.png" alt="tech_008_05"></p>
+<ul>
+<li>SourceTree 是一款由 Atlassian 開發的免費圖形化版本控制工具（GUI），專為 Git 和 Mercurial 設計，適用於 Windows 和 macOS 平台。它提供直觀的使用者介面，讓開發者能夠輕鬆管理本地與遠端的代碼倉庫，並簡化 Git 的操作流程，特別適合不熟悉命令行的使用者。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/images/post/tech/tech_008_06.png" alt="tech_008_06"></p>
+<h4 id="sourcetree-是什麼為什麼推薦使用">▍SourceTree 是什麼？為什麼推薦使用？</h4>
+<p>首先，先快速講一下為什麼會想要介紹 SourceTree 這款版控軟體，最主要是被它的操作介面與一站式的管理燒到，真的是比我習慣的 TortoiseGit 還方便很多。</p>
+<p>SourceTree 是一款由 Atlassian 開發的免費 Git 和 Mercurial 客戶端管理工具，跨平台設計適用於 Windows 和 Mac OS。它提供了一個直觀的圖形用戶界面（GUI），使開發者能夠更輕鬆地管理版本控制，而無需使用命令行，下面介紹一下我看到的優點：</p>
+<ol>
+<li>
+<p><strong>版本控管可視化</strong></p>
+<ul>
+<li>SourceTree 透過「樹狀視圖」將本地端與遠端的分支、標籤（Tags）及 Commit 歷程整齊且清晰地呈現。對於一些需要同時管理多條分支，而且可能有多人協作的專案，能立即看出哪條分支正處於活躍狀態、哪條分支已完成功能等待合併。</li>
+<li><strong>好處</strong>：避免誤開發到錯誤分支，減少合併衝突時的焦頭爛額。</li>
+</ul>
+</li>
+<li>
+<p><strong>干擾少、專案管理更順暢</strong></p>
+<ul>
+<li>
+<p>相較於命令列（CLI）的 Git 操作，SourceTree 最大的價值在於可視化與操作簡便：</p>
+<ul>
+<li>透過滑鼠點擊就能完成 <strong>Stage</strong>（暫存）、<strong>Commit</strong>、<strong>Push</strong>、<strong>Pull</strong>、<strong>Merge</strong> 等操作。</li>
+<li>修改檔內容可在介面內直接看到變更比較（Diff），並且可選擇對個別檔案或個別行進行部分暫存（Partial Staging）。</li>
+</ul>
+</li>
+<li>
+<p>對很多對 Git 指令還不夠熟悉的開發者而言，這樣的 GUI 介面在學習曲線、效率與出錯風險之間，取得了一個相當良好的平衡點。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>跨平台與多遠端平台支援</strong></p>
+<ul>
+<li>SourceTree 不只支援 Windows，也支援 macOS，甚至提供了部分 Linux 變通方案（雖然官方並未完整支援 Linux）。</li>
+<li>無論你的專案在 GitHub、GitLab 還是 Bitbucket，都可以快速匯入並管理。</li>
+</ul>
+</li>
+</ol>
+<p>雖然我自己事都在 Windows 上開發，但 SourceTree 的跨平台設計，讓不管是 Windows 工作站開發，還是 Mac 上做前端或行動裝置 App 開發，都能夠滿足多種作業系統下的開發需求，對跨平台開發者而言相當友善。</p>
+<h4 id="曾經使用-tortoisegit為何最後換成-sourcetree">▍曾經使用 TortoiseGit，為何最後換成 SourceTree？</h4>
+<p>我以往的開發都是使用 TortoiseGit，這套也算是我入門 Git 圖形化操作的工具。過去曾經有用過 SVN，後來也轉到 Git，就一直使用大家熟悉的小烏龜 TortoiseGit。</p>
+<p>原則上大規模的專案使用都沒問題，但近期頻繁操作，與跟同事交流，我發現 TortoiseGit 在以下幾個點上有些力不從心，這也導致我想轉 SourceTree，下面簡單就 TortoiseGit 與 SourceTree 在幾項比較上做分析：</p>
+<ol>
+<li>
+<p><strong>分支管理的易讀性</strong></p>
+<ul>
+<li>TortoiseGit 雖然能從右鍵功能表切分支、合併等等，但多分支情況下視覺化稍嫌不足。</li>
+<li>SourceTree 的樹狀結構可以在同一個視圖中輕鬆追蹤多條分支變化，讓合併衝突前的檢查更為輕鬆直覺。</li>
+</ul>
+</li>
+<li>
+<p><strong>批次處理與整合度</strong></p>
+<ul>
+<li>當專案同時含多個子模組（Submodule），或需要經常同步不同遠端倉庫時，在 SourceTree 內可以用更「集中的方式」批次執行或檢視各模組情況。</li>
+<li>TortoiseGit 雖然可以做到類似操作，<strong>但需要在各個資料夾中分別執行操作</strong>，容易發生遺漏或因記憶錯誤而造成分支混亂。</li>
+</ul>
+</li>
+<li>
+<p><strong>UI 與使用者體驗</strong></p>
+<ul>
+<li>SourceTree 提供了更直覺的檔案比對工具，包含明確的 Diff、歷史記錄比對、也可安裝額外的外部比對工具（如 Beyond Compare、Kaleidoscope 等）與之整合。</li>
+<li>TortoiseGit 的對話框雖然中規中矩，但缺乏對大量分支交互的完整支援，也沒有統一的「<strong>一站式操作流程</strong>」。</li>
+</ul>
+</li>
+</ol>
+<p>簡單總整一下 SourceTree 最讓我驚豔的地方還是「<strong>方便</strong>」，尤其在開發規模更大、分支更多元，或需要在不同平台跨專案協作，SourceTree 或許能帶來更一致的使用體驗與更高的開發效率。</p>
+<h4 id="總結">▍總結</h4>
+<p>這篇不是教你怎麼操作 Git 指令，也不會逐一比較各款版本控管工具的功能，而是從實際使用者的角度，分享幾個主流工具的體驗與心得。如果是想要知道實際操作跟使用技巧，這幾款開源的工具，網路上教學很多，大家自行 Google 或是問 AI 就行了。</p>
+<p>在目前軟體開發生態中，<strong>版本控管的必備工具幾乎都是使用 Git</strong>。然而，如何「<strong>更有效率地</strong>」掌握 Git 的操作細節，就看你選擇了什麼樣的圖形化介面工具。</p>
+<p>最終該選哪一款工具，還是要回到<strong>團隊的開發流程</strong>與<strong>個人的操作習慣</strong>。如果你偏好清楚直覺的視覺化介面、流暢的分支管理，以及良好的平台整合性，那麼 <strong>SourceTree</strong> 就很推薦值得一試。</p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-yucheng2007-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+>
+
+<script>
+  var indexURL = "https://yucheng2007.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://yucheng2007.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/mark.js"></script>
+
+<script src="https://yucheng2007.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://yucheng2007.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+  This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button"
+    class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+  (function ($) {
+    const cookieBox = document.getElementById('js-cookie-box');
+    const cookieButton = document.getElementById('js-cookie-button');
+    if (!Cookies.get('cookie-box')) {
+      cookieBox.classList.remove('cookie-box-hide');
+      cookieButton.onclick = function () {
+        Cookies.set('cookie-box', true, {
+          expires:  2 
+    });
+    cookieBox.classList.add('cookie-box-hide');
+  };
+		}
+	}) (jQuery);
+</script>
+
+
+<style>
+  .cookie-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 9999;
+    padding: 1rem 2rem;
+    background: rgb(71, 71, 71);
+    transition: all .75s cubic-bezier(.19, 1, .22, 1);
+    color: #fdfdfd;
+  }
+
+  .cookie-box-hide {
+    display: none;
+  }
+</style>
+</body>
+
+</html>
